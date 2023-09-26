@@ -47,6 +47,10 @@
             font-size: 14px; /* Smaller font size for description */
             margin-bottom: 10px; /* Add space below the description */
         }
+        #contact {
+            margin-top: 30px;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -64,6 +68,7 @@
             <p class="title"><span id="title"></span></p>
             <p><span id="lineDescription"></span></p>
         </div>
+        <p id="contact">Have any comments or suggestions? Send me an email at <a href="mailto:elostealo@gmail.com">elostealo@gmail.com</a>.</p>
     </div>
 
     <script>
@@ -79,6 +84,8 @@
             { elo: 750, type: "Type 3", title: "Line 750-3", description: "This is line 750-3 description." }
         ];
 
+        let currentColor = ''; // Store the current button color
+
         function generateRandomLine(eloValue) {
             const filteredDatabase = database.filter(line => line.elo === eloValue);
             if (filteredDatabase.length === 0) {
@@ -92,6 +99,22 @@
                 document.getElementById("title").textContent = line.title;
                 document.getElementById("lineDescription").textContent = line.description;
             }
+
+            // Change button color
+            if (eloValue === 250) {
+                currentColor = '#add8e6'; // Light blue
+            } else if (eloValue === 500) {
+                currentColor = '#ff9999'; // Light red
+            } else if (eloValue === 750) {
+                currentColor = '#dda0dd'; // Light purple
+            }
+
+            document.getElementById("btn250").style.backgroundColor = '';
+            document.getElementById("btn500").style.backgroundColor = '';
+            document.getElementById("btn750").style.backgroundColor = '';
+            document.getElementById("btn250").style.backgroundColor = currentColor;
+            document.getElementById("btn500").style.backgroundColor = currentColor;
+            document.getElementById("btn750").style.backgroundColor = currentColor;
         }
     </script>
 </body>
