@@ -24,13 +24,16 @@
             font-size: 24px;
             /* Adjust font size for mobile */
             @media screen and (max-width: 768px) {
-                font-size: 48px;
+                font-size: 18px;
             }
         }
 
         #description {
             font-weight: normal;
             font-size: 16px;
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
         }
 
         #content {
@@ -81,6 +84,9 @@
 
         #lineDescription {
             font-size: 14px;
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+            }
             word-wrap: break-word;
             max-width: 100%;
         }
@@ -88,6 +94,9 @@
         #description-above-buttons {
             font-style: italic;
             font-size: 12px;
+            @media screen and (max-width: 768px) {
+                font-size: 8px;
+            }
             margin-bottom: 5px;
         }
 
@@ -102,6 +111,9 @@
             background-color: rgba(0, 0, 0, 0.5);
             padding: 5px 0;
             font-size: 12px;
+            @media screen and (max-width: 768px) {
+                font-size: 8px;
+            }
             color: white;
         }
         .white-box {
@@ -124,7 +136,7 @@
 <body>
     <div id="header">
         <h1>Elo Stealo</h1>
-        <p id="description">A fun way to make Chess more equal.</p>
+        <p id="description">Stupid rules to make Chess more equal.</p>
     </div>
     <div id="content">
         <p id="description-above-buttons">What's the Elo difference between you and your opponent?</p>
@@ -143,28 +155,30 @@
     <script>
         const database = [
             { elo: 250, type: "New Rule", title: "Anarchist", description: "You must *always* take en passant." },
-            { elo: 250, type: "New Rule", title: "Double Anarchist", description: "You must *never* take en passant." },
-            { elo: 250, type: "New Rule", title: "King Unsafety", description: "You can't castle." },
+            { elo: 250, type: "New Rule", title: "The Anti 'chist", description: "You must *never* take en passant." },
+            { elo: 250, type: "New Rule", title: "King Unsafety", description: "Castle like it's 1619.<br>And by that I mean you can't castle, cause the rule isn't established yet." },
             { elo: 250, type: "New Rule", title: "Master Builder", description: "You can only promote to a Rook." },
             { elo: 500, type: "New Rule", title: "Stablehand", description: "You can only promote to a Knight." },
-            { elo: 500, type: "New Rule", title: "Pious", description: "You can only promote to a Bishop." },
+            { elo: 500, type: "New Rule", title: "Crusader", description: "You can only promote to a Bishop." },
             { elo: 750, type: "New Rule", title: "Bad Boss", description: "Your Pawns haven't worked enough late nights and weekends to deserve promotion.<br>So you won't promote them, ever." },
             { elo: 250, type: "New Rule", title: "Feingold is Forced", description: "You can't move your f Pawn, not even to capture." },
             { elo: 250, type: "New Rule", title: "Slow Pokes", description: "Your Pawns can only move one square on their first move." },
-            { elo: 250, type: "New Rule", title: "Double Time", description: "Your Pawns *must* move two spaces on their first turn. If they can't move two spaces, they can't move. (You can capture, though.)" },
-            { elo: 500, type: "New Rule", title: "Easing the Tension, Baby", description: "Your Pawns must *always* capture Pawns if they can. <br>This includes en passant." },
+            { elo: 250, type: "New Rule", title: "Double Time", description: "Your Pawns *must* move two spaces on their first turn.<br>If they can't move two spaces, they can't move. That includes capturing." },
+            { elo: 500, type: "New Rule", title: "Easing the Tension, Baby", description: "Your Pawns must *always* capture Pawns if they can.<br>This includes en passant." },
             { elo: 500, type: "New Rule", title: "The Simplifier", description: "If you can trade pieces of equal value, you must.<br>This does not include Pawns, and Bishops and Knights count as equal value." },
-            { elo: 500, type: "New Rule", title: "Introducing the Quook", description: "Your Queen can only move like a Rook.<br>(It can still check and pin diagonally)" },
-            { elo: 500, type: "New Rule", title: "Introducing the Quishop", description: "Your Queen can only move like a Bishop.<br>(It can still check and pin horizontally)" },
+            { elo: 750, type: "New Rule", title: "The Simplifier II: Even Simpler", description: "If you can trade pieces of equal value, you must.<br>This includes Pawns, and Bishops and Knights count as equal value." },
+            { elo: 500, type: "New Rule", title: "Introducing the Quook", description: "Your Queen can only move like a Rook.<br>(It can still check and pin diagonally.)" },
+            { elo: 500, type: "New Rule", title: "Introducing the Quishop", description: "Your Queen can only move like a Bishop.<br>(It can still check and pin horizontally and vertically.)" },
             { elo: 250, type: "New Rule", title: "Check Please!", description: "You can't start developing your pieces until you've been put in check." },
             { elo: 750, type: "New Rule", title: "V.I.N.s", description: "If you lose both Knights, you must resign." },
             { elo: 750, type: "New Rule", title: "V.I.B.s", description: "If you lose both Bishops, you must resign." },
-            { elo: 500, type: "New Rule", title: "Last Pawn Standing", description: "If you lose all your Pawns, you must resign." },
+            { elo: 500, type: "New Rule", title: "V.I.P.s", description: "If you lose all your Pawns, you must resign." },
+            { elo: 750, type: "New Rule", title: "V.I.Q.", description: "If you lose your Queen, you must resign." },
             { elo: 250, type: "New Rule", title: "Achill-e's Square", description: "If your opponent gets a piece on |e1| / ~e8~, you must resign." },
             { elo: 500, type: "New Rule", title: "There Is No Square", description: "You can't put any pieces on—nor travel through—|d4| / ~d5~." },
             { elo: 750, type: "New Rule", title: "The Centre Is Lava", description: "You can't land any pieces in the four centre squares." },
-            { elo: 500, type: "New Rule", title: "Chaaaaaarge!!", description: "Your knights can only move forward." },
-            { elo: 250, type: "New Rule", title: "Magnet", description: "If you can take a piece, you have to take the piece.<br>Expires after one capture." },
+            { elo: 500, type: "New Rule", title: "Chaaaaaarge!!", description: "Your Knights can only move forward." },
+            { elo: 250, type: "New Rule", title: "Wooden Magnet", description: "If you can take a piece, you have to take the piece.<br>Expires after one capture." },
             { elo: 500, type: "New Rule", title: "Electromagnet", description: "If you can take a piece, you have to take the piece.<br>Expires after two captures." },
             { elo: 750, type: "New Rule", title: "Black Hole", description: "If you can take a piece, you have to take the piece.<br>Expires after three captures." },
             { elo: 250, type: "Task", title: "Oh No, My Knight!", description: "Sac your Knight for a Pawn at the first opportunity." },
@@ -177,9 +191,10 @@
             { elo: 750, type: "Task", title: "Botez Guarantee", description: "Hang your Queen until it's captured." },
             { elo: 500, type: "Task", title: "Check In 5", description: "Get a check by turn 5." },
             { elo: 250, type: "Task", title: "Contrarian", description: "Castle to the opposite side of your opponent.<br>(Note: if your opponent doesn't castle, you can't either.)" },
-            { elo: 500, type: "Task", title: "Kentucky Derby", description: "Get a Knight to the |8th rank| / ~1st rank~." },
-            { elo: 250, type: "Task", title: "Double Diagonals", description: "Fianchetto both Bishops to |b2 and g2| / ~b7 and g7~." },
-            { elo: 250, type: "Task", title: "Sniper", description: "Put a bishop in the corner of the board." },
+            { elo: 500, type: "Task", title: "Kentucky Tour", description: "Get a Knight to the |8th rank| / ~1st rank~." },
+            { elo: 750, type: "Task", title: "Triple Crown Tour", description: "Get a Knight to the |8th rank| / ~1st rank~ and then back again." },
+            { elo: 250, type: "Task", title: "Double Diags", description: "Fianchetto both Bishops to |b2 and g2| / ~b7 and g7~." },
+            { elo: 250, type: "Task", title: "Sniper!", description: "Put a bishop in the corner of the board." },
             { elo: 500, type: "Task", title: "Nerf a Knight", description: "Put a Knight in the corner of the board." },
             { elo: 500, type: "Task", title: "Disconnected", description: "If you connect your rooks, you lose." },
             { elo: 250, type: "Opening", title: "Time Odds", description: "Use 1/10th of your time on your second move." },
@@ -196,10 +211,10 @@
             { elo: 750, type: "Opening", title: "Tempt Fate", description: "Open with |f3, g4| / ~f6, g5~." },
             { elo: 500, type: "Opening", title: "Gates Are Open, Come On In", description: "Open with |d3, f3| / ~d6, f6~." },
             { elo: 250, type: "Opening", title: "Queen Activity", description: "Get your Queen out on turn two." },
-            { elo: 250, type: "Opening", title: "Anti-Finegold", description: "Open with |f4, f5| / ~f5, f6~." },
-            { elo: 250, type: "Opening", title: "Scrambled", description: "Open with Pawn moves that spell \"egg\"" },
+            { elo: 250, type: "Opening", title: "Anti-Feingold", description: "Open with |f4, f5| / ~f5, f6~." },
+            { elo: 250, type: "Opening", title: "Over Easy", description: "Open with Pawn moves that spell \"egg\"" },
             { elo: 250, type: "Opening", title: "Open S-s-m-", description: "Open with e, a, and e Pawn moves." },
-            { elo: 500, type: "Opening", title: "Eroooooy Jenkins!", description: "If your e Pawn can advance or capture, you must move it.<br>Lasts until it is captured." },
+            { elo: 500, type: "Opening", title: "Eroooooy Jenkinsss!", description: "If your e Pawn can advance or capture, you must move it.<br>Lasts until it is captured." },
             { elo: 250, type: "Opening", title: "Nonconfrontational", description: "Go 5 turns without capturing a piece." },
             { elo: 500, type: "Opening", title: "Pacifist", description: "Go 8 turns without capturing a piece." },
             { elo: 500, type: "New Rule", title: "Rally Cap", description: "You can't capture until you're down at least 3 points of material." },
@@ -208,32 +223,32 @@
             { elo: 750, type: "Opening", title: "Greater Wall", description: "Open by moving all your Pawns up 2 squares." },
             { elo: 250, type: "Opening", title: "Rush A", description: "Open by pushing your A pawn until it can go no further." },
             { elo: 250, type: "Opening", title: "Rush B", description: "Open by pushing your B pawn until it can go no further." },
-            { elo: 250, type: "Opening", title: "Stutter Step", description: "Open with |e3, e4| / ~e5, e6~." },
+            { elo: 250, type: "Opening", title: "Stutter Step", description: "Open with |e3, e4| / ~e6, e5~.<br>Then go |e5| / ~e4~ if there's room." },
             { elo: 500, type: "Opening", title: "Playing the Ponies", description: "Begin the game with four Knight moves." },
             { elo: 750, type: "Opening", title: "The Pony Parade", description: "Begin the game with six Knight moves." },
-            { elo: 250, type: "Opening", title: "100% Natty!", description: "Get pumped up by opening with 3 pawn moves on the h file, g file, then the h file again." },
+            { elo: 250, type: "Opening", title: "It's A 100% Natty Opening, Bro!", description: "Get pumped up by opening with 3 pawn moves on the h file, g file, then the h file again." },
             { elo: 500, type: "Task", title: "Riggs and Murtaugh", description: "Get two connected Pawns to the |5th rank| / ~4th rank~." },
             { elo: 750, type: "Task", title: "Thelma and Louise", description: "Get two connected Pawns to the |6th rank| / ~3rd rank~." },
             { elo: 750, type: "Task", title: "Sam and Frodo", description: "Get two connected Pawns to the |7th rank| / ~2nd rank~." },
             { elo: 750, type: "Task", title: "My Little Ponies", description: "Have three Knights at one time." },
             { elo: 750, type: "Task", title: "Seminary", description: "Have three Bishops at one time." },
             { elo: 500, type: "Task", title: "King of the Middle", description: "Occupy 3 of the 4 centre squares." },
-            { elo: 250, type: "Task", title: "A Royal Affair", description: "Get your Queen adjacent to the opponent's King (diagonals count)." },
-            { elo: 500, type: "Task", title: "It's Arrested Development", description: "You can't start developing your minor pieces until you've captured a Pawn." },
+            { elo: 250, type: "Task", title: "A Royal Affair", description: "Get your Queen adjacent to the opponent's King." },
+            { elo: 500, type: "Task", title: "It's Arrested Development", description: "You can't start developing your minor pieces<br>until you've captured a Pawn." },
             { elo: 500, type: "Task", title: "Big Queenside Attack", description: "Have 5 attacking pieces on the a through d files." },
             { elo: 500, type: "Task", title: "Big Kingside Attack", description: "Have 5 attacking pieces on the e through h files." },
             { elo: 250, type: "Opening", title: "Say Cheese!", description: "Open with |d4, e3, f4| / ~d5, e6, f5~." },
             { elo: 250, type: "Task", title: "Dual Wield", description: "Put your Bishops or Rooks side-by-side." },
             { elo: 500, type: "Task", title: "The Rad One Radiates", description: "Get Rad1 or Rad8 on your scoresheet." },
-            { elo: 500, type: "Task", title: "DIY", description: "Castle by hand." },
-            { elo: 750, type: "Task", title: "Thank You For Coming To My Ned Talk", description: "Get Ned on your scoresheet. (I'll save you the hassle: |e3, Ne2, Na3, c3, Nc2, Ned4| / ~e6, Ne7, Na6, c6, Nc7, Ned5~.)" },
+            { elo: 500, type: "Task", title: "DIY", description: "Castle by hand to get your King to the left or right of a Rook." },
+            { elo: 750, type: "Task", title: "Thank You For Coming To My Ned Talk", description: "Get Ned on your scoresheet.<br>(I'll save you the hassle: |e3, Ne2, Na3, c3, Nc2, Ned4| / ~e6, Ne7, Na6, c6, Nc7, Ned5~.)" },
             { elo: 500, type: "Opening", title: "Roll Call!", description: "Open the game by moving every Pawn in order from a to h." },
             { elo: 500, type: "New Rule", title: "No Take Backsies", description: "You can't immediately recapture after losing a piece.<br>Expires after one lost piece." },
             { elo: 750, type: "New Rule", title: "No Take Backsies, Stamped It", description: "You can't immediately recapture after losing a piece.<br>Expires after two lost pieces." },
             { elo: 250, type: "Task", title: "Hey Diddle Diddle, Rooks In The Middle", description: "Get your Rooks on the d and e files." },
             { elo: 500, type: "New Rule", title: "Mimic", description: "Mirror your opponent's moves, and, if they ask, insist that you're not doing it.<br>Lasts until you can't mirror them anymore." },
-            { elo: 750, type: "New Rule", title: "You're Grounded, Mister!", description: "Your Knights can't jump. They need a clear path.<br>(One diagonal move and one horizontal / vertical move.)" },
-            { elo: 750, type: "New Rule", title: "Hungry, Hungry Monarch", description: "You can only capture Pawns with your Pawns or your King." }
+            { elo: 750, type: "New Rule", title: "You're Grounded, Mister!", description: "Your Knights can't jump without a clear path of<br>one diagonal move and one horizontal / vertical move.)" },
+            { elo: 750, type: "New Rule", title: "Hungry, Hungry Monarch", description: "You can only capture Pawns with your own Pawns or your King." }
         ];
 
         function generateRandomLine(eloValue) {
