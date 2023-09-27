@@ -60,7 +60,7 @@
 
         button:hover {
             outline: 4px solid black;
-            background-color: #EEEEEE;
+            background-color: #FFFFFF;
         }
 
         #output {
@@ -129,11 +129,11 @@
 </head>
 <body>
     <div id="header">
-        <h1>Elo Stealo.</h1>
+        <h1>Elo Stealo</h1>
         <p id="description">Stupid rules for fairer chess.</p>
     </div>
     <div id="content">
-        <p id="description-above-buttons">Choose your Elo difference for a rule to help equalize.<br>Your new rule should be kept secret unless it specifically says otherwise.<br>If you can't follow your rule, you lose.</p>
+        <p id="description-above-buttons">Choose your Elo difference and get a rule to help equalize.<br>Your new rule should be kept secret unless it says otherwise.<br>If you break your rule or can't complete your task, you lose.</p>
         <button id="btn250" onclick="generateRandomLine(250)">250</button>
         <button id="btn500" onclick="generateRandomLine(500)">500</button>
         <button id="btn750" onclick="generateRandomLine(750)">750</button>
@@ -144,16 +144,16 @@
             <p><span id="lineDescription"></span></p>
         </div>
     </div>
-    <p id="contact">Have any comments or suggestions? Send me an email at <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
+    <p id="contact">Have any comments or suggestions? Let me know at <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
 
     <script>
         const database = [
-            { elo: 250, type: "New Rule", title: "The Anarchist", description: "En passant is forced. Like, actually.<br><br>Read this rule to your opponent." },
-            { elo: 250, type: "New Rule", title: "The Anti-'chist", description: "You refuse to take en passant on principal<br>because you think r/anarchychess is an abomination.<br><br>Read this rule to your opponent." },
+            { elo: 250, type: "New Rule", title: "The Anarchist", description: "En passant is forced. Like, actually.<br>Make sure your opponent knows that this is how you feel." },
+            { elo: 250, type: "New Rule", title: "The Anti-'chist", description: "You refuse to take en passant on principal<br>because you think r/anarchychess is an abomination.<br>Spread the word to your opponent." },
             { elo: 500, type: "New Rule", title: "King Unsafety", description: "Castle like it's the year 1619.<br>And by that I mean you can't castle, cause the rule isn't established yet." },
-            { elo: 250, type: "New Rule", title: "The Master Builder", description: "You can only promote to a rook.<br><br>Read this rule to your opponent." },
-            { elo: 500, type: "New Rule", title: "The Stablehand", description: "You can only promote to a knight.<br><br>Read this rule to your opponent." },
-            { elo: 500, type: "New Rule", title: "The Crusader", description: "You can only promote to a bishop.<br><br>Read this rule to your opponent." },
+            { elo: 250, type: "New Rule", title: "The Master Builder", description: "You can only promote to a rook.<br>Make sure your opponent knows this." },
+            { elo: 500, type: "New Rule", title: "The Stablehand", description: "You can only promote to a knight.<br>Make sure your opponent knows this." },
+            { elo: 500, type: "New Rule", title: "The Crusader", description: "You can only promote to a bishop.<br>Make sure your opponent knows this." },
             { elo: 750, type: "New Rule", title: "Bad Boss", description: "Your pawns haven't worked enough late nights and weekends to deserve promotion.<br>So you won't promote them. Ever." },
             { elo: 500, type: "New Rule", title: "Feingold is Forced", description: "\"Try not to move your f pawn,\" is solid advice.<br>\"Never move your f pawn,\" is terrible advice.<br><br>So... never move your f pawn." },
             { elo: 250, type: "New Rule", title: "Slowpokes", description: "Your pawns only move one square on their first move." },
@@ -161,8 +161,8 @@
             { elo: 500, type: "New Rule", title: "Easing the Tension, Baby", description: "Your pawns always capture pawns when they can.<br>This includes en passant." },
             { elo: 500, type: "New Rule", title: "The Simplifier", description: "If you can trade for a piece of equal or greater value, you must.<br>Knights and bishops count as equal.<br>This doesn't include pawns." },
             { elo: 750, type: "New Rule", title: "The Simplifier II: Even Simpler", description: "If you can trade for a piece of equal or greater value, you must.<br>Knights and bishops count as equal.<br>This includes pawns." },
-            { elo: 500, type: "New Rule", title: "The Quook", description: "Your queen now moves like a rook.<br>(It can still check and pin diagonally.)" },
-            { elo: 500, type: "New Rule", title: "The Quishop", description: "Your queen now moves like a bishop.<br>(It can still check and pin horizontally and vertically.)" },
+            { elo: 500, type: "New Rule", title: "The Quook", description: "Alakazam, alakazook.<br>Your queen now moves just like a rook.<br>(It can still check and pin diagonally.)" },
+            { elo: 500, type: "New Rule", title: "The Quishop", description: "Alakazam, alakazishop.<br>Your queen now moves just like a bishop.<br>(It can still check and pin horizontally and vertically.)" },
             { elo: 250, type: "New Rule", title: "Check Please!", description: "You can't start developing your major and minor pieces<br>until you've been put in check." },
             { elo: 750, type: "New Rule", title: "V.I.N.s", description: "If you lose both knights, you must resign." },
             { elo: 750, type: "New Rule", title: "V.I.B.s", description: "If you lose both bishops, you must resign." },
@@ -195,15 +195,9 @@
             { elo: 500, type: "Task", title: "Snipers!!", description: "Put both bishops in the corner of the board." },
             { elo: 500, type: "Task", title: "Nerf a Knight", description: "Put a knight in the corner of the board." },
             { elo: 750, type: "Task", title: "Dunces", description: "Put both knights in the corner of the board." },
-<<<<<<< HEAD
             { elo: 500, type: "New Rule", title: "Estranged Rooks", description: "If you connect your rooks, you lose." },
-            { elo: 250, type: "Opening", title: "Time Odds", description: "Read this rule to your opponent.<br><br>Use 1/5 of your time on your second move." },
-            { elo: 500, type: "Opening", title: "Berzerker", description: "Read this rule to your opponent.<br><br>Use 1/2 of your time on your second move." },
-=======
-            { elo: 500, type: "Task", title: "Estranged Rooks", description: "If you connect your rooks, you lose." },
-            { elo: 250, type: "Opening", title: "Time Odds", description: "Use 1/5 of your time on your second move.<br><br>Read this rule to your opponent." },
-            { elo: 500, type: "Opening", title: "Berzerker", description: "Use 1/2 of your time on your second move.<br><br>Read this rule to your opponent." },
->>>>>>> parent of 60fb691 (Update index.html)
+            { elo: 250, type: "Opening", title: "Time Odds", description: "<br><br>Use 1/5 of your time on your second move." },
+            { elo: 500, type: "Opening", title: "Berzerker", description: "<br><br>Use 1/2 of your time on your second move." },
             { elo: 500, type: "Opening", title: "Centre Rush", description: "Open with |d4, e4, c4, f4| / ~d5, e5, c5, f5~." },
             { elo: 500, type: "Opening", title: "Wide Peepos", description: "Open with |a4, h4| / ~a5, h5~.<br>Then if you can, follow up with |a5, h5| / ~a4, h4~." },
             { elo: 500, type: "Opening", title: "Guns Out", description: "Open with |a4, Ra3, h4, Rh3| / ~a5, Ra6, h5, Rh6~." },
@@ -220,13 +214,13 @@
             { elo: 250, type: "Opening", title: "Anti-Feingold", description: "Open with |f4, f5| / ~f5, f6~.<br>Because nobody tells you what to do.<br>Not even a GM." },
             { elo: 250, type: "Opening", title: "Over Easy", description: "Open with pawn moves that spell \"egg\"." },
             { elo: 250, type: "Opening", title: "Open S_s_m_", description: "Open with e, a, and e pawn moves." },
-            { elo: 500, type: "Opening", title: "Eroooooy Jenkinsss!", description: "Shout, \"Eroooooooooy Jeeeenkinssssss!\" at your opponent,<br>and then push your e pawn as far as it'll go.<br>Keep advancing or capturing at every opportunity until it's captured." },
+            { elo: 500, type: "Opening", title: "Eroooooy Jenkinsss!", description: "Shout, \"Eroooooooooy Jeeeenkinssssss!\" at your opponent,<br>and then push your e pawn as far as it'll go.<br>You must continue advancing or capturing Eroy at every opportunity." },
             { elo: 250, type: "Opening", title: "Nonconfrontational", description: "Go 5 turns without capturing a piece." },
             { elo: 500, type: "Opening", title: "Pacifist", description: "Go 8 turns without capturing a piece." },
             { elo: 500, type: "New Rule", title: "Rally Caps On", description: "You can't capture any pieces until you're down<br>at least 3 points of material." },
             { elo: 750, type: "New Rule", title: "Comeback Kid", description: "You can't capture any pieces until you're down<br>at least 6 points of material." },
-            { elo: 500, type: "Opening", title: "The Great Wall", description: "Open by moving all your pawns up one square.<br>If your opponent stops you, well, you did your best." },
-            { elo: 750, type: "Opening", title: "The Greater Wall", description: "Open by moving all your pawns up 2 squares.<br>If your opponent stops you, just do your best." },
+            { elo: 500, type: "Opening", title: "The Great Wall", description: "Open by moving all your pawns up one square.<br>If your opponent stops you, that's okay.<br>As long as you did your best." },
+            { elo: 750, type: "Opening", title: "The Greater Wall", description: "Open by moving all your pawns up 2 squares.<br>If your opponent stops you, that's okay.<br>As long as you did your best." },
             { elo: 250, type: "Opening", title: "Rush A", description: "Open by pushing your A pawn until it can go no further." },
             { elo: 250, type: "Opening", title: "Rush B", description: "Open by pushing your B pawn until it can go no further." },
             { elo: 250, type: "Opening", title: "Stutter Step", description: "Open with |e3, e4| / ~e6, e5~.<br>Then go for |e5| / ~e4~ if there's room." },
@@ -250,16 +244,16 @@
             { elo: 500, type: "Task", title: "The Rad One Radiates", description: "Get |Rad1| or ~Rad8~ on your scoresheet.<br><br>Yeah, that would be hella rad." },
             { elo: 500, type: "Task", title: "DIY", description: "Castle by hand, getting your king to the left<br>or right of a rook on the |1st| / ~8th~ rank." },
             { elo: 750, type: "Task", title: "Thank You For Coming To My Ned Talk", description: "Get \"Ned\" on your scoresheet. Here, let me help:<br>|e3, Ne2, Na3, c3, Nc2, Ned4| / ~e6, Ne7, Na6, c6, Nc7, Ned5~." },
-            { elo: 500, type: "Opening", title: "Roll Call!", description: "Open the game by moving every pawn in order from a to h." },
-            { elo: 750, type: "Opening", title: "Gotta Push 'Em All!", description: "Until you've moved every piece once,<br>you can't move the same piece twice." },
+            { elo: 500, type: "Opening", title: "Roll Call!", description: "Open the game by moving every pawn in order from a to h.<br>Shout, \"Give me an a!\", \"Give me a b!\" and so on as you go.<br>If a pawn is lost before you get to h, continue on in a sad voice." },
+            { elo: 750, type: "Opening", title: "Gotta Push 'Em All!", description: "Until you've moved every piece on the board once,<br>you can't move the same piece twice." },
             { elo: 500, type: "New Rule", title: "No Take Backsies", description: "You can't immediately recapture after losing a piece.<br>Expires after one lost piece." },
             { elo: 750, type: "New Rule", title: "No Take Backsies, Double Stamped It", description: "You can't immediately recapture after losing a piece.<br>Expires after two lost pieces." },
             { elo: 500, type: "New Rule", title: "Mirror Mirror, On The Board", description: "Mimic your opponent's moves (start with |a3| if you're white).<br>If they ask if you're mimicking them, mimic what they say, too.<br>Lasts until you can't legally mimic them anymore." },
             { elo: 750, type: "New Rule", title: "Same Same, But Different", description: "Whatever piece your opponent moves, you have to move as well.<br>Lasts until you no longer have the piece they're moving." },
-            { elo: 750, type: "New Rule", title: "You're Grounded, Mister!", description: "Read this rule to your opponent.<br><br>Your knights can't jump.<br>They need a clear path (one diagonal square and one horizontal / vertical) to move." },
-            { elo: 750, type: "New Rule", title: "Hungry Hungry Monarch", description: "You can only capture pawns with your own pawns or your king." }
-            { elo: 500, type: "Task", title: "Martin For A Minute", description: "Read this rule to your opponent.<br><br>Open Chess.com and start a game against the bot Martin.<br>Make Martin your colour, then let him |begin the game| / ~respond to your opponent's moves~ for five turns.<br>Then you take it from there." },
-           
+            { elo: 750, type: "New Rule", title: "You're Grounded, Mister!", description: "Your knights can't jump.<br>They need a clear path (one diagonal square and one horizontal / vertical) to move." },
+            { elo: 750, type: "New Rule", title: "Hungry Hungry Monarch", description: "You can only capture your opponent's pawns with a pawn or king." },
+            { elo: 500, type: "Task", title: "Coach Martin", description: "Read this rule to your opponent:<br><br>Open Chess.com and start a game against the bot Martin, making him your colour.<br>Then let Martin either |begin the game| or ~respond to your opponent's moves~ for 5 turns.<br>After his 5 turns, you take over as if nothing happened." },
+            { elo: 750, type: "Task", title: "Become Martin", description: "Read this rule to your opponent:<br><br>Open Chess.com and start a game against the bot Martin, making him your colour.<br>Then let Martin either |begin the game| or ~respond to your opponent's moves~ for 8 turns.<br>After his 8 turns, you take over as if nothing happened." },
         ];
 
         function generateRandomLine(eloValue) {
