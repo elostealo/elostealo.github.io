@@ -146,7 +146,7 @@
             <p><span id="lineDescription"></span></p>
         </div>
     </div>
-    <p id="contact">Have any comments or suggestions? Let me know at <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
+    <p id="contact">Have any feedback, comments, or suggestions? Let me know at <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
 
     <script>
         const database = [
@@ -157,22 +157,22 @@
             { elo: 500, type: "New Rule", title: "Easing the Tension, Baby", description: "Your pawns always capture pawns when they can.<br>This includes en passant." },
             { elo: 500, type: "New Rule", title: "The Simplifier", description: "If you can trade for a piece of equal or greater value, you must.<br><br><i>Knights and bishops count as equal.<br>This doesn't include pawns.</i>" },
             { elo: 750, type: "New Rule", title: "The Simplifier II: Even Simpler", description: "If you can trade for a piece of equal or greater value, you must.<br><br><i>Knights and bishops count as equal.<br>This includes pawns.</i>" },
-            { elo: 250, type: "New Rule", title: "Wooden Magnet", description: "If you can take a piece, you have to take the piece.<br><br><i>Expires after one capture.</i>" },
-            { elo: 500, type: "New Rule", title: "Electromagnet", description: "If you can take a piece, you have to take the piece.<br><br><i>Expires after two captures.</i>" },
-            { elo: 750, type: "New Rule", title: "Magnetic (Playing) Field", description: "If you can take a piece, you have to take the piece.<br><br><i>Expires after three captures.</i>" },
+            { elo: 250, type: "New Rule", title: "Antichess x1", description: "If you can take a piece, you have to take the piece.<br><br><i>Expires after one capture.</i>" },
+            { elo: 500, type: "New Rule", title: "Antichess x2", description: "If you can take a piece, you have to take the piece.<br><br><i>Expires after two captures.</i>" },
+            { elo: 750, type: "New Rule", title: "Antichess x3", description: "If you can take a piece, you have to take the piece.<br><br><i>Expires after three captures.</i>" },
             { elo: 500, type: "New Rule", title: "Mirror Mirror, On The Board", description: "Mimic your opponent's moves.<br>If they ask if you're mimicking them, mimic what they say, too.<br><br><i>If you're white, start with |a3|.<br>Lasts until you can't legally mimic their move.</i>" },
             { elo: 500, type: "New Rule", title: "Same Same, But Different", description: "Whatever piece your opponent moves, you have to move as well.<br>Doesn't have to be the exact piece, just that type of piece.<br><br><i>If you're white, start with |a3|.<br>Lasts until you can't legally move the piece they move.</i>" },
             <!-- promotion stuff -->
             { elo: 250, type: "New Rule", title: "The Master Builder", description: "You can only promote to a rook.<br><br><i>Tell your opponent.</i>" },
             { elo: 500, type: "New Rule", title: "The Stablehand", description: "You can only promote to a knight.<br><br><i>Tell your opponent.</i>" },
             { elo: 500, type: "New Rule", title: "The Crusader", description: "You can only promote to a bishop.<br><br><i>Tell your opponent.</i>" },
-            { elo: 750, type: "New Rule", title: "Bad Boss", description: "Your pawns haven't worked enough late nights and weekends to deserve promotion.<br>So you won't promote them. Ever." },
+            { elo: 750, type: "New Rule", title: "Bad Boss", description: "You can't promote your pawns.<br>Or rather, you refuse to." },
             <!-- restrictions -->
             { elo: 500, type: "Old Rule", title: "Practically Regicide", description: "You can't castle." },
-            { elo: 500, type: "Old Rule", title: "Figurehead", description: "You can't move your king." },
+            { elo: 750, type: "Old Rule", title: "Figurehead", description: "You can't move your king." },
             { elo: 500, type: "New Rule", title: "Feingold is Forced", description: "You can't move your f pawn, not even to capture." },
             { elo: 250, type: "New Rule", title: "Slowpokes", description: "Your pawns only move one square on their first move." },
-            { elo: 250, type: "New Rule", title: "Double Time", description: "Your pawns <i>must</i> move two squares on their first move.<br>Which means they can't capture on the |3rd| / ~6th~ rank." },
+            { elo: 250, type: "New Rule", title: "Double Time", description: "Your pawns <i>must</i> move two squares on their first move.<br><br><i>Note: this means they can't capture until you've moved them.</i>" },
             { elo: 500, type: "New Rule", title: "The Quook", description: "Alakazam, alakazook.<br>Your queen now moves just like a rook.<br><br><i>Note: it can still check and pin diagonally.</i>" },
             { elo: 500, type: "New Rule", title: "The Quishop", description: "Alakazam, alakazishop.<br>Your queen now moves just like a bishop.<br><br><i>Note: it can still check and pin horizontally and vertically.</i>" },
             { elo: 750, type: "New Rule", title: "Hungry Hungry Monarch", description: "You can only capture your opponent's pawns with a pawn or king." },
@@ -200,40 +200,40 @@
             { elo: 250, type: "New Rule", title: "Odd Todd", description: "If you stop your clock on an even number, you must resign." },
             <!-- TASKS -->
             <!-- sacrifices -->
-            { elo: 250, type: "Task", title: "Oh No, My Knight!", description: "Sac your knight for a pawn at the first opportunity." },
-            { elo: 250, type: "Task", title: "Oh No, My Bishop!", description: "Sac your bishop for a pawn at the first opportunity." },
-            { elo: 250, type: "Task", title: "The ROOOOOK!", description: "Sac your rook for a bishop or knight at the first opportunity." },
-            { elo: 500, type: "Task", title: "The ROOOOOKS!!", description: "Sac both rooks for a bishop or knight at the first opportunity." },
-            { elo: 500, type: "Task", title: "Oh No, My Queen!", description: "Sac your queen for a rook, bishop, or knight at the first opportunity." },
-            { elo: 750, type: "Task", title: "Oh F***, My Queen!", description: "Sac your queen for a pawn at the first opportunity." },
-            { elo: 500, type: "Task", title: "Botez Gambit", description: "Leave your queen where it can be captured by<br>a lesser piece for 1 turn and hope they don't notice." },
-            { elo: 750, type: "Task", title: "Botez Guarantee", description: "Leave your queen where it can be captured by<br>a lesser piece until it's captured,<br>then get really mad about it." },
+            { elo: 250, type: "Quest", title: "Oh No, My Knight!", description: "Sac your knight for a pawn at the first opportunity." },
+            { elo: 250, type: "Quest", title: "Oh No, My Bishop!", description: "Sac your bishop for a pawn at the first opportunity." },
+            { elo: 250, type: "Quest", title: "The ROOOOOK!", description: "Sac your rook for a bishop or knight at the first opportunity." },
+            { elo: 500, type: "Quest", title: "The ROOOOOKS!!", description: "Sac both rooks for a bishop or knight at the first opportunity." },
+            { elo: 500, type: "Quest", title: "Oh No, My Queen!", description: "Sac your queen for a rook, bishop, or knight at the first opportunity." },
+            { elo: 750, type: "Quest", title: "Oh F***, My Queen!", description: "Sac your queen for a pawn at the first opportunity." },
+            { elo: 500, type: "Quest", title: "Botez Gambit", description: "Leave your queen where it can be captured by<br>a lesser piece for 1 turn and hope they don't notice." },
+            { elo: 750, type: "Quest", title: "Botez Guarantee", description: "Leave your queen where it can be captured by<br>a lesser piece until it's captured,<br>then get really mad about it." },
             <!-- piece x to place y -->
-            { elo: 500, type: "Task", title: "Kentucky Derby", description: "Get a knight to the |8th rank| / ~1st rank~." },
-            { elo: 750, type: "Task", title: "And The Preakness, Too", description: "Get a knight to the |8th rank| / ~1st rank~ and then back again." },
-            { elo: 250, type: "Task", title: "Double Diagonals", description: "Fianchetto both bishops to |b2 and g2| / ~b7 and g7~." },
-            { elo: 250, type: "Task", title: "Sniper!", description: "Put a bishop in the corner of the board." },
-            { elo: 500, type: "Task", title: "Snipers!!", description: "Put both bishops in the corner of the board." },
-            { elo: 500, type: "Task", title: "Nerf a Knight", description: "Put a knight in the corner of the board." },
-            { elo: 750, type: "Task", title: "Dunces", description: "Put both knights in the corner of the board." },
-            { elo: 500, type: "Task", title: "Shaggy and Scooby", description: "Get two connected pawns to the |5th rank| / ~4th rank~." },
-            { elo: 750, type: "Task", title: "Thelma and Louise", description: "Get two connected pawns to the |6th rank| / ~3rd rank~." },
-            { elo: 750, type: "Task", title: "Sam and Frodo", description: "Get two connected pawns to the |7th rank| / ~2nd rank~." },
-            { elo: 750, type: "Task", title: "Thank You For Coming To My Ned Talk", description: "Get \"Ned\" on your scoresheet.<br><br>Here, let me help:<br>|e3, Ne2, Na3, c3, Nc2, Ned4| / ~e6, Ne7, Na6, c6, Nc7, Ned5~." },
-            { elo: 500, type: "Task", title: "DIY", description: "Castle by hand, getting your king to the left<br>or right of a rook on the |1st| / ~8th~ rank." },
-            { elo: 250, type: "Task", title: "Big Queenside Attack", description: "Have 5 attacking pieces on the a through d files." },
-            { elo: 250, type: "Task", title: "Big Kingside Attack", description: "Have 5 attacking pieces on the e through h files." },
+            { elo: 500, type: "Quest", title: "The Preakness", description: "Get a knight to the |8th rank| / ~1st rank~." },
+            { elo: 750, type: "Quest", title: "The Belmont Stakes", description: "Get a knight to the |8th rank| / ~1st rank~ and then back again." },
+            { elo: 250, type: "Quest", title: "Double Diagonals", description: "Fianchetto both bishops to |b2 and g2| / ~b7 and g7~." },
+            { elo: 250, type: "Quest", title: "Sniper!", description: "Put a bishop in the corner of the board." },
+            { elo: 500, type: "Quest", title: "Snipers!!", description: "Put both bishops in the corner of the board." },
+            { elo: 500, type: "Quest", title: "Nerf a Knight", description: "Put a knight in the corner of the board." },
+            { elo: 750, type: "Quest", title: "Dunces", description: "Put both knights in the corner of the board." },
+            { elo: 500, type: "Quest", title: "Shaggy and Scooby", description: "Get two connected pawns to the |5th rank| / ~4th rank~." },
+            { elo: 750, type: "Quest", title: "Thelma and Louise", description: "Get two connected pawns to the |6th rank| / ~3rd rank~." },
+            { elo: 750, type: "Quest", title: "Sam and Frodo", description: "Get two connected pawns to the |7th rank| / ~2nd rank~." },
+            { elo: 750, type: "Quest", title: "Thank You For Coming To My Ned Talk", description: "Get \"Ned\" on your scoresheet.<br><br>Here, let me help:<br>|e3, Ne2, Na3, c3, Nc2, Ned4| / ~e6, Ne7, Na6, c6, Nc7, Ned5~." },
+            { elo: 500, type: "Quest", title: "DIY", description: "Castle by hand, getting your king to the left<br>or right of a rook on the |1st| / ~8th~ rank." },
+            { elo: 250, type: "Quest", title: "Queenside Stan", description: "Have 5 attacking pieces on the a through d files." },
+            { elo: 250, type: "Quest", title: "Kingside Stan", description: "Have 5 attacking pieces on the e through h files." },
             <!-- reactive -->
-            { elo: 250, type: "Task", title: "Contrarian", description: "Castle to the opposite side of your opponent.<br><br><i>If your opponent doesn't castle, you can't either.<br>If you lose castling rights and your opponent castles, you must resign.</i>" },
-            { elo: 250, type: "Task", title: "\"It's One Pawn Michael,<br>What Could It Cost? $10?\"", description: "You can't develop any pieces until you've lost one pawn." },
-            { elo: 500, type: "Task", title: "\"Oh My God, We're Having<br>A Fire... Sale!\"", description: "You can't develop any pieces until you've lost three pawns." },
-            { elo: 750, type: "Task", title: "\"I've Made A Huge Mistake\"", description: "You can't develop any pieces until you've lost five pawns." },
-            { elo: 750, type: "Task", title: "My Little Ponies", description: "Have three knights at once." },
-            { elo: 750, type: "Task", title: "Seminary", description: "Have three bishops at once." },
-            { elo: 500, type: "Task", title: "King of the Middle", description: "Occupy 3 of the 4 centre squares at one time." },
-            { elo: 500, type: "Task", title: "The Rad One Radiates", description: "Get |Rad1| or ~Rad8~ on your scoresheet.<br><br><font size=-2>Yeah, that would be hella rad.</font>" },
-            { elo: 500, type: "Task", title: "Coach Martin", description: "Open Chess.com and start a game against the bot Martin.<br>Make him your colour and then let Martin either |begin the game|<br>or ~respond to your opponent's moves~ for 5 turns.<br>After his 5 turns are up, you take over.<br><br><i>Tell your opponent.</i>" },
-            { elo: 750, type: "Task", title: "I Am Become Martin", description: "Open Chess.com and start a game against the bot Martin.<br>Make him your colour, then let Martin either |begin the game|<br>or ~respond to your opponent's moves~ for 8 turns.<br>After his 8 turns are up, you take over.<br><br><i>Tell your opponent.</i>" },
+            { elo: 250, type: "Quest", title: "Contrarian", description: "Castle to the opposite side of your opponent.<br><br><i>If your opponent doesn't castle, you can't either.<br>If you lose castling rights and your opponent castles, you must resign.</i>" },
+            { elo: 250, type: "Quest", title: "\"It's One Pawn Michael,<br>What Could It Cost? $10?\"", description: "You can't develop any pieces until you've lost one pawn." },
+            { elo: 500, type: "Quest", title: "\"Oh My God, We're Having<br>A Fire... Sale!\"", description: "You can't develop any pieces until you've lost three pawns." },
+            { elo: 750, type: "Quest", title: "\"I've Made A Huge Mistake\"", description: "You can't develop any pieces until you've lost five pawns." },
+            { elo: 750, type: "Quest", title: "My Little Ponies", description: "Have three knights at once." },
+            { elo: 750, type: "Quest", title: "Seminary", description: "Have three bishops at once." },
+            { elo: 500, type: "Quest", title: "King of the Middle", description: "Occupy 3 of the 4 centre squares at one time." },
+            { elo: 500, type: "Quest", title: "The Rad One Radiates", description: "Get |Rad1| or ~Rad8~ on your scoresheet.<br><br><font size=-2>Yeah, that would be hella rad.</font>" },
+            { elo: 500, type: "Quest", title: "Coach Martin", description: "Open Chess.com and start a game against the bot Martin.<br>Make him your colour and then let Martin either |begin the game|<br>or ~respond to your opponent's moves~ for 5 turns.<br>After his 5 turns are up, you take over.<br><br><i>Tell your opponent.</i>" },
+            { elo: 750, type: "Quest", title: "I Am Become Martin", description: "Open Chess.com and start a game against the bot Martin.<br>Make him your colour, then let Martin either |begin the game|<br>or ~respond to your opponent's moves~ for 8 turns.<br>After his 8 turns are up, you take over.<br><br><i>Tell your opponent.</i>" },
             <!-- OPENINGS -->
             <!-- specific moves -->
             { elo: 500, type: "Opening", title: "Guns Out", description: "Open with |a4, Ra3, h4, Rh3| / ~a5, Ra6, h5, Rh6~." },
@@ -279,8 +279,8 @@
             { elo: 500, type: "Opening", title: "You Are Kenough", description: "Open with pawn moves that spell \"beach.\"<br><br><i>Note: if you can't finish, just play on as normal.</i>" },
             { elo: 750, type: "Opening", title: "Friend Of The Devil", description: "Open with pawn moves that spell \"deadhead.\"<br><br><i>Note: if you can't finish, just play on as normal.</i>" },
             <!-- meh rules-->
-            <!-- { elo: 250, type: "Task", title: "A Royal Affair", description: "Get your queen close enough to kiss the opponent's king." }, -->
-            <!-- { elo: 250, type: "Task", title: "Dual Wield", description: "Put both bishops or rooks side-by-side." }, -->
+            <!-- { elo: 250, type: "Quest", title: "A Royal Affair", description: "Get your queen close enough to kiss the opponent's king." }, -->
+            <!-- { elo: 250, type: "Quest", title: "Dual Wield", description: "Put both bishops or rooks side-by-side." }, -->
             <!-- { elo: 250, type: "Opening", title: "Stutter Step", description: "Open with |e3, e4| / ~e6, e5~.<br>Then go for |e5| / ~e4~ if there's room." }, -->
             <!-- { elo: 500, type: "Opening", title: "Centre Rush", description: "Open with |d4, e4, c4, f4| / ~d5, e5, c5, f5~." }, -->
             <!-- { elo: 250, type: "Opening", title: "Queen Activity", description: "Get your queen out on turn two." }, -->
