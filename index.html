@@ -109,15 +109,6 @@
             height: 10px;
         }
 
-        #contact {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 5px 0;
-            font-size: 12px;
-            color: white;
-        }
         .white-box {
             background-color: white; /* White background for | words */
             color: black; /* Black text for | words */
@@ -147,25 +138,25 @@
         }
 
         a:link {
-          color: white;
+          color: black;
           background-color: transparent;
           text-decoration: underline;
         }
 
         a:visited {
-          color: white;
+          color: black;
           background-color: transparent;
           text-decoration: underline;
         }
 
         a:hover {
-          color: lightgray;
+          color: darkgrey;
           background-color: transparent;
           text-decoration: underline;
         }
 
         a:active {
-          color: white;
+          color: darkgrey;
           background-color: transparent;
           text-decoration: underline;
         }
@@ -178,7 +169,7 @@
 
     </div>
     <div id="content">
-        <p id="description-above-buttons">Choose your Elo difference for a rule to help equalize the game.<br>If you break a rule or can't complete a quest, you must resign.</p>
+        <p id="description-above-buttons">Choose your Elo difference for a rule to help equalize the game.<br>If you break a rule or can't complete a quest, you must resign.<br>Send comments or feedback to <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
         <button id="btn250" onclick="generateRandomLine(250)">250</button>
         <button id="btn500" onclick="generateRandomLine(500)">500</button>
         <button id="btn750" onclick="generateRandomLine(750)">750</button>
@@ -190,7 +181,6 @@
             <p><span id="lineDescription"></span></p>
         </div>
     </div>
-    <p id="contact">Have any feedback, comments, or suggestions?<br>Let me know at <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
 
     <script>
         const database = [
@@ -242,8 +232,8 @@
             { elo: 750, type: "New Rule", title: "Comeback Kid", description: "√Private√<br><br>You can't capture any pieces until you're down at least 10 points of&nbsp;material." }, // prob bad
             { elo: 1000, type: "New Rule", title: "A Comeback For The Ages", description: "√Private√<br><br>You can't capture any pieces until you're down at least 12 points of&nbsp;material." }, // prob bad
             { elo: 500, type: "New Rule", title: "Negative Nancy", description: "`Public`<br><br>You must sacrifice <i>at least</i> a pawn by move 5, and keep a 1 point material deficit for the rest of&nbsp;the&nbsp;game." },
-            { elo: 750, type: "New Rule", title: "In The Red", description: "`Public`<br><br>You must sacrifice <i>at least</i> a knight or bishop by move 5, and keep a 3 point material deficit for the rest of&nbsp;the&nbsp;game." },
-            { elo: 1000, type: "New Rule", title: "Underwater", description: "`Public`<br><br>sacrifice <i>at least</i> two minor pieces by move 8, and keep the a 6 point material deficit for the rest of&nbsp;the&nbsp;game." },
+            { elo: 750, type: "New Rule", title: "In The Red", description: "`Public`<br><br>You must sacrifice <i>at least</i> a knight or bishop by move 5, and keep a 2 point material deficit for the rest of&nbsp;the&nbsp;game." },
+            { elo: 1000, type: "New Rule", title: "Underwater", description: "`Public`<br><br>sacrifice <i>at least</i> two minor pieces by move 8, and keep the a 4 point material deficit for the rest of&nbsp;the&nbsp;game." },
             { elo: 500, type: "New Rule", title: "There Is No Square", description: "`Public`<br><br>You can't put any pieces on—nor travel through—|c4|&nbsp;/&nbsp;~c5~.<br><br><i>Note: you can still check and pin pieces through&nbsp;it.</i>" },
             { elo: 500, type: "New Rule", title: "There Is No Square", description: "`Public`<br><br>You can't put any pieces on—nor travel through—|d4|&nbsp;/&nbsp;~d5~.<br><br><i>Note: you can still check and pin pieces through&nbsp;it.</i>" },
             { elo: 500, type: "New Rule", title: "There Is No Square", description: "`Public`<br><br>You can't put any pieces on—nor travel through—|e4|&nbsp;/&nbsp;~e5~.<br><br><i>Note: you can still check and pin pieces through&nbsp;it.</i>" },
