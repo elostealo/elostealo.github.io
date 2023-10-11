@@ -170,7 +170,7 @@
 
     </div>
     <div id="content">
-        <p id="description-above-buttons">Choose your Elo gap for a rule to help equalize the game.<br>If you break a rule or fail a quest, you must resign.<br>Send comments or feedback to <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
+        <p id="description-above-buttons">Choose your Elo gap for a rule to equalize the game.<br>If you break a rule or fail a quest, you must resign.<br>This is in beta, so please help improve it by sending<br>comments, ideas, or feedback to <a href="mailto:elostealo1@gmail.com">elostealo1@gmail.com</a>.</p>
         <button id="btn250" onclick="generateRandomLine(250)">250</button>
         <button id="btn500" onclick="generateRandomLine(500)">500</button>
         <button id="btn750" onclick="generateRandomLine(750)">750</button>
@@ -186,6 +186,12 @@
     <script>
         const database = [
             // NEW RULES
+
+// Inner Space - "You can't land any pieces on the [a[ or [h[ files, nor on the 1st or 8th rank."
+// Chss - "You can't make any moves with a vowel in them. (As in, no moving pieces from the a or e file, and no moving pieces to the a or e file.)"
+// Deer In Headlights - "Your pieces can't move if a bishop, rook, or queen is staring at them."
+// Caged Horses - "Your knights can't advance past your furthest pawn. If you lose your furthest pawn, your knights can only move backwards until they
+
             // forced moves
             { elo: 250, type: "New Rule", title: "The Anarchist", description: "`Public`<br><br>En passant is forced." },
             { elo: 250, type: "New Rule", title: "The Anti-'chist", description: "`Public`<br><br>You refuse to take en passant on principal because you think r/anarchychess is an&nbsp;abomination." },
@@ -198,11 +204,17 @@
             { elo: 1000, type: "New Rule", title: "Straight-Up Antichess", description: "`Public`<br><br>If you can take a piece, you have to take&nbsp;the piece.<br><br><i>Does not expire.</i>" },
             { elo: 500, type: "New Rule", title: "Mirror Mirror, On&nbsp;The&nbsp;Board", description: "√Private√<br><br>Mimic your opponent's moves.<br>If they ask if you're mimicking them, mimic what they say,&nbsp;too.<br><br><i>If you're white, start with |a3|.<br>Lasts until you can't legally mimic their move.</i>" },
             { elo: 500, type: "New Rule", title: "Same Same, But Different", description: "√Private√<br><br>Whatever piece your opponent moves, you have to move the same kind of piece as&nbsp;well.<br><br><i>If you're white, start with |a3|.<br>Lasts until you can't legally move the piece they move.</i>" },
+            { elo: 500, type: "New Rule", title: "\"Nuh Uh!\"", description: "`Public`<br><br>After your turn, your opponent can force you find a different move by saying  \"Nuh&nbsp;uh!\"<br><br>This phrase can only be used once." },
+            { elo: 750, type: "New Rule", title: "\"No Way, José!\"", description: "`Public`<br><br>After your turn, your opponent can force you find a different move by saying either  \"No way, José!\" or \"Nuh&nbsp;uh!\"<br><br>Each phrase can only be used once." },
+            { elo: 1000, type: "New Rule", title: "\"I Don't Think So, Tim.\"", description: "`Public`<br><br>After your turn, your opponent can force you find a different move by saying either \"I don't think so, Tim\",  \"No way, José!\", or \"Nuh&nbsp;uh!\"<br><br>Each phrase can only be used once." },
+            // { elo: 500, type: "New Rule", title: "Mouse Slip", description: "`Public`<br><br>After your turn, your opponent can say \"Mouse slip!\" and move your queen, rook, or bishop one square short of where you placed it, or move your knight to the legal move that's one square diagonal from where it landed.<br>If you captured your opponent's piece, place it back on the board.<br>They cannot force an illegal move. This can only be used once." },
+
             // promotion stuff
             { elo: 250, type: "New Rule", title: "The Master Builder", description: "`Public`<br><br>You can only promote to a rook." },
-            { elo: 500, type: "New Rule", title: "The Stablehand", description: "`Public`<br><br>You can only promote to a knight." },
-            { elo: 500, type: "New Rule", title: "Pious", description: "`Public`<br><br>You can only promote to a bishop." },
+            { elo: 250, type: "New Rule", title: "The Stablehand", description: "`Public`<br><br>You can only promote to a knight." },
+            { elo: 250, type: "New Rule", title: "Pious", description: "`Public`<br><br>You can only promote to a bishop." },
             { elo: 750, type: "New Rule", title: "Bad Boss", description: "`Public`<br><br>You can't promote your pawns.<br>Or rather, you refuse to because you're a filthy&nbsp;capitalist." },
+
             // restrictions
             { elo: 500, type: "New Rule", title: "Practically Regicide", description: "`Public`<br><br>You can't castle." },
             { elo: 750, type: "New Rule", title: "Figurehead", description: "`Public`<br><br>You can't move your king." },
@@ -211,7 +223,7 @@
             { elo: 750, type: "New Rule", title: "Pick A Pawn, Any Pawn", description: "`Public`<br><br>You can only move one pawn.<br>You can move it as often as you&nbsp;want." },
             { elo: 1000, type: "New Rule", title: "You Were The Chosen&nbsp;Pawn!", description: "`Public`<br><br>You can only move one pawn, one time." },
             { elo: 1000, type: "New Rule", title: "Pawns Are Forced", description: "`Public`<br><br>If you can legally move a pawn, you have to move a&nbsp;pawn." }, // prob bad
-            { elo: 500, type: "New Rule", title: "Feingold is Forced", description: "`Public`<br><br>You can't move your f pawn, not even to&nbsp;capture." },
+            { elo: 500, type: "New Rule", title: "Feingold is Forced", description: "`Public`<br><br>You can't move your µfµ pawn, not even to&nbsp;capture." },
             { elo: 250, type: "New Rule", title: "Slowpokes", description: "`Public`<br><br>Your pawns only move one square on their first&nbsp;move." },
             { elo: 250, type: "New Rule", title: "Double Time", description: "`Public`<br><br>Your pawns <i>must</i> move two squares on their first&nbsp;move." },
             { elo: 500, type: "New Rule", title: "The Quook", description: "`Public`<br><br>Alakazam, alakazook.<br>Your queen now moves just like a rook.<br><br><i>It can still check and pin&nbsp;diagonally.</i>" },
@@ -247,6 +259,13 @@
             { elo: 500, type: "New Rule", title: "No Take Backsies, Double&nbsp;Stamped&nbsp;It", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Expires after two lost pieces.</i>" },
             { elo: 750, type: "New Rule", title: "No Take Backsies, Triple&nbsp;Stamped&nbsp;It", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Expires after three lost pieces.</i>" },
             { elo: 1000, type: "New Rule", title: "No Take Backsies Times&nbsp;Infinity", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Doesn't Expire.</i>" },
+            { elo: 1000, type: "New Rule", title: "Pre-Prepare-To-Move", description: "`Public`<br><br>As soon as your turn is done, you have to touch the piece you plan to move&nbsp;next.<br>You can only choose a different piece if your opponent captures the piece you've touched, or if you can't legally move&nbsp;it." },
+            { elo: 500, type: "New Rule", title: "Rooks On Rails", description: "`Public`<br><br>Your rooks can't leave the µaµ and µhµ files.<br>They can still check and pin from there." },
+            { elo: 750, type: "New Rule", title: "Galaga", description: "`Public`<br><br>Your rooks can't leave the |1st| / ~8th~ rank.<br>They can still check and pin from there." },
+            { elo: 750, type: "New Rule", title: "Dancing King", description: "`Public`<br><br>You can only respond to checks by moving your&nbsp;king.<br>If you can't move your king out of check, it's&nbsp;mate." },
+            { elo: 250, type: "New Rule", title: "Over The Shoulder", description: "`Public`<br><br>You have to play from the same side as your opponent.<br>If it's not an over the board game, flip the board." },
+            { elo: 500, type: "New Rule", title: "Right To Castling Rights", description: "√Private√<br><br>You can only castle if you're down three or more points of material." },
+
             // resigny guys
             { elo: 750, type: "New Rule", title: "V.I.N.s", description: "`Public`<br><br>If you lose both knights, you must resign." },
             { elo: 750, type: "New Rule", title: "V.I.B.s", description: "`Public`<br><br>If you lose both bishops, you must resign." },
@@ -260,9 +279,11 @@
             { elo: 750, type: "New Rule", title: "Achill-e's Square", description: "`Public`<br><br>If your opponent gets a piece on |e1| / ~e8~, you&nbsp;must&nbsp;resign." },
             { elo: 1000, type: "New Rule", title: "Check Is Mate", description: "`Public`<br><br>If your opponent puts you in check, you&nbsp;must&nbsp;resign." },
             { elo: 500, type: "New Rule", title: "No Look Rooks", description: "`Public`<br><br>If you connect your rooks, you&nbsp;must&nbsp;resign." },
-            { elo: 500, type: "New Rule", title: "Even Steven", description: "`Public`<br><br>If you stop your clock on an odd number, you&nbsp;must&nbsp;resign." },
-            { elo: 500, type: "New Rule", title: "Odd Todd", description: "`Public`<br><br>If you stop your clock on an even number, you&nbsp;must&nbsp;resign." },
+            { elo: 250, type: "New Rule", title: "Even Steven", description: "`Public`<br><br>If you stop your clock on an odd number, you&nbsp;must&nbsp;resign." },
+            { elo: 250, type: "New Rule", title: "Odd Todd", description: "`Public`<br><br>If you stop your clock on an even number, you&nbsp;must&nbsp;resign." },
             { elo: 250, type: "New Rule", title: "Underclocked", description: "`Public`<br><br>You can never end your turn with more time than your&nbsp;opponent." },
+
+
             // QUESTS
             // sacrifices
             { elo: 250, type: "Quest", title: "Oh No, My Knight!", description: "`Public`<br><br>Sac your knight for a pawn at the first&nbsp;opportunity." },
@@ -279,6 +300,7 @@
             { elo: 1000, type: "Quest", title: "The Elusive Double&nbsp;Botez&nbsp;Gambit", description: "√Private√<br><br>Hang your queen until it's captured.<br>Then promote to a queen and hang that one,&nbsp;too." },
             { elo: 750, type: "Quest", title: "Pawn Seeking Missiles", description: "`Public`<br><br>Take out 3 pawns with knight, bishop, and rook&nbsp;sacrifices." },
             { elo: 1000, type: "Quest", title: "Four Horsemen of the&nbsp;Apawncalypse", description: "`Public`<br><br>Take out 4 pawns with knight, bishop, and rook&nbsp;sacrifices." },
+            
             // piece x to place y
             { elo: 500, type: "Quest", title: "The Preakness", description: "`Public`<br><br>Get a knight to the |8th| / ~1st~ rank." },
             { elo: 750, type: "Quest", title: "The Belmont Stakes", description: "`Public`<br><br>Get a knight to the |8th| / ~1st~ rank and then&nbsp;back&nbsp;again." },
@@ -287,9 +309,9 @@
             { elo: 500, type: "Quest", title: "Snipers!!", description: "`Public`<br><br>Put both bishops in the corner of the board." },
             { elo: 500, type: "Quest", title: "Nerf a Knight", description: "√Private√<br><br>Put a knight in the corner of the board." },
             { elo: 1000, type: "Quest", title: "Dunces", description: "√Private√<br><br>Put both knights into two corners of the board at&nbsp;once." },
-            { elo: 500, type: "Quest", title: "Shaggy and Scooby", description: "`Public`<br><br>Get two connected pawns to the |5th&nbsp;|&nbsp;/&nbsp;~4th~&nbsp;rank." },
-            { elo: 750, type: "Quest", title: "Thelma and Louise", description: "`Public`<br><br>Get two connected pawns to the |6th&nbsp;|&nbsp;/&nbsp;~3rd~&nbsp;rank." },
-            { elo: 750, type: "Quest", title: "Sam and Frodo", description: "`Public`<br><br>Get two connected pawns to the |7th&nbsp;|&nbsp;/&nbsp;~2nd~&nbsp;rank." },
+            { elo: 500, type: "Quest", title: "Shaggy and Scooby", description: "`Public`<br><br>Get two connected pawns to the |5th|&nbsp;/&nbsp;~4th~&nbsp;rank." },
+            { elo: 750, type: "Quest", title: "Thelma and Louise", description: "`Public`<br><br>Get two connected pawns to the |6th|&nbsp;/&nbsp;~3rd~&nbsp;rank." },
+            { elo: 750, type: "Quest", title: "Sam and Frodo", description: "`Public`<br><br>Get two connected pawns to the |7th|&nbsp;/&nbsp;~2nd~&nbsp;rank." },
             { elo: 1000, type: "Quest", title: "The Three Amigos", description: "`Public`<br><br>Get three connected pawns to the |7th|&nbsp;/&nbsp;~2nd~&nbsp;rank." },
             { elo: 1000, type: "Quest", title: "Thank You For Coming To My&nbsp;Ned&nbsp;Talk", description: "√Private√<br><br>Get \"Ned\" on your scoresheet.<br><br>Here, let me help:<br>|e3, Ne2, Na3, c3, Nc2, Ned4|<br>or ~e6, Ne7, Na6, c6, Nc7, Ned5~." },
             { elo: 500, type: "Quest", title: "DIY", description: "`Public`<br><br>Castle by hand, getting your king to the left or right of a rook on the |1st|&nbsp;/&nbsp;~8th~&nbsp;rank." },
@@ -300,12 +322,13 @@
             { elo: 750, type: "Quest", title: "Kingside Purist", description: "√Private√<br><br>Have all your attacking pieces on the µeµ through µhµ&nbsp;files." },
             { elo: 1000, type: "Quest", title: "Queenside? What Queenside?", description: "√Private√<br><br>Have all your attacking pieces plus your king on the µaµ through µdµ files, and no pawns on the µeµ through µhµ&nbsp;files." },
             { elo: 1000, type: "Quest", title: "Kingside? What Kingside?", description: "√Private√<br><br>Have all your attacking pieces plus your king on the µeµ through µhµ files, and no pawns on the µaµ through µdµ&nbsp;files." },
+            
             // reactive
-            { elo: 250, type: "Quest", title: "Contrarian", description: "√Private√<br><br>Castle to the opposite side of your opponent.<br><br><i>If your opponent doesn't castle, you&nbsp;can't&nbsp;either.<br>If you lose castling rights and your opponent castles, you&nbsp;must&nbsp;resign.</i>" },
-            { elo: 250, type: "Quest", title: "\"It's One Pawn Michael,<br>What Could It Cost? $10?\"", description: "√Private√<br><br>You can't develop any pieces until you're down one&nbsp;pawn." },
-            { elo: 500, type: "Quest", title: "\"Oh My God, We're Having A&nbsp;Fire...&nbsp;Sale!\"", description: "√Private√<br><br>You can't develop any pieces until you're down two&nbsp;pawns." },
-            { elo: 750, type: "Quest", title: "\"I've Made A Huge Mistake\"", description: "√Private√<br><br>You can't develop any pieces until you're down three&nbsp;pawns." },
-            { elo: 1000, type: "Quest", title: "\"Say Goodbye To <i>These!</i>\"", description: "√Private√<br><br>You can't develop any pieces until you're down four&nbsp;pawns." },
+            { elo: 500, type: "Quest", title: "Contrarian", description: "√Private√<br><br>Castle to the opposite side of your opponent.<br><br><i>If your opponent doesn't castle, you&nbsp;can't&nbsp;either.<br>If you lose castling rights and your opponent castles, you&nbsp;must&nbsp;resign.</i>" },
+            { elo: 250, type: "Quest", title: "\"It's One Pawn Michael,<br>What Could It Cost? $10?\"", description: "√Private√<br><br>You can't develop any pieces until you're down one pawn or you reach&nbsp;move&nbsp;4." },
+            { elo: 500, type: "Quest", title: "\"Oh My God, We're Having A&nbsp;Fire...&nbsp;Sale!\"", description: "√Private√<br><br>You can't develop any pieces until you're down two pawns or you reach&nbsp;move&nbsp;6." },
+            { elo: 750, type: "Quest", title: "\"I've Made A Huge Mistake\"", description: "√Private√<br><br>You can't develop any pieces until you're down three pawns or reach&nbsp;move&nbsp;8." },
+            { elo: 1000, type: "Quest", title: "\"Say Goodbye To <i>These!</i>\"", description: "√Private√<br><br>You can't develop any pieces until you're down four pawns or reach&nbsp;move&nbsp;10." },
             { elo: 750, type: "Quest", title: "My Little Ponies", description: "`Public`<br><br>You can't mate unless you have three knights on the&nbsp;board." },
             { elo: 1000, type: "Quest", title: "Animal Husbandry", description: "`Public`<br><br>You can't mate unless you have four knights on the&nbsp;board." },
             { elo: 750, type: "Quest", title: "Seminary", description: "`Public`<br><br>You can't mate unless you have three bishops on the&nbsp;board." },
@@ -317,6 +340,7 @@
             { elo: 500, type: "Quest", title: "Martin For A Moment", description: "`Public`<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour and then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;5&nbsp;turns.<br><br>After his 5 turns are up, you take&nbsp;over." },
             { elo: 750, type: "Quest", title: "Martin For A Minute", description: "`Public`<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour, then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;8&nbsp;turns.<br><br>After his 8 turns are up, you take&nbsp;over." },
             { elo: 1000, type: "Quest", title: "I Am Become Martin, Destroyer&nbsp;Of&nbsp;Chances", description: "`Public`<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour, then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;12&nbsp;turns.<br><br>After his 12 turns are up, you take&nbsp;over." },
+            
             // OPENINGS
             // specific moves
             { elo: 500, type: "Opening", title: "Guns Out", description: "√Private√<br><br>Open with |a4, Ra3, h4, Rh3| / ~a5, Ra6, h5, Rh6~." },
@@ -328,6 +352,7 @@
             { elo: 500, type: "Opening", title: "Anti-Feingold", description: "√Private√<br><br>Open with |f4, f5| / ~f5, f6~." },
             { elo: 500, type: "Opening", title: "Say Cheese!", description: "√Private√<br><br>Open with |c4, d3, e3, f4| / ~c5, d6, e6, f5~, then say, \"Say Cheese!\" and take a&nbsp;picture." },
             { elo: 250, type: "Opening", title: "Wide Peepos", description: "√Private√<br><br>Open with |a4, h4| / ~a5, h5~." },
+            
             // opening tasks
             { elo: 250, type: "Opening", title: "Time Odds", description: "√Private√<br><br>Use 1/5 of your time on your third move.<br>Make increasingly loud pondering noises while you&nbsp;wait." },
             { elo: 500, type: "Opening", title: "Berzerker", description: "√Private√<br><br>Use 1/2 of your time on your third move.<br>Make increasingly loud pondering noises while you&nbsp;wait." },
@@ -336,29 +361,31 @@
             { elo: 750, type: "Opening", title: "Pawn Tsunami", description: "√Private√<br><br>Open with eight pawn moves." },
             { elo: 750, type: "Opening", title: "Roll Call!", description: "√Private√<br><br>Open the game with |a3| / ~a6~, then move every pawn in order from µaµ to µhµ while cheering, \"Give me an a!\", \"Give me a b!\" and&nbsp;so&nbsp;on.<br>You can make other moves in between, but you cannot move a pawn out of order.<br>If a pawn is lost before you get to µhµ, skip it and continue in a sad&nbsp;voice.<br>When finished, cheer (or sadly cheer), \"What does that spell? Absidefguh!\"" },
             { elo: 500, type: "Opening", title: "Eroooooy Jenkinsss!", description: "√Private√<br><br>Shout, \"Eroooooooooy Jeeeenkinssssss!\" at your opponent, and then push your µeµ pawn as far as it'll&nbsp;go.<br><br>You must immediately play any legal move that pushes Eroy&nbsp;forward." },
-            { elo: 250, type: "Opening", title: "Rush A", description: "√Private√<br><br>Open by pushing your µaµ pawn until it can go no&nbsp;further." }, // prob bad
-            { elo: 250, type: "Opening", title: "Rush B", description: "√Private√<br><br>Open by pushing your µbµ pawn until it can go no&nbsp;further." }, // prob bad
+            // { elo: 250, type: "Opening", title: "Rush A", description: "√Private√<br><br>Open by pushing your µaµ pawn until it can go no&nbsp;further." }, 
+            // { elo: 250, type: "Opening", title: "Rush B", description: "√Private√<br><br>Open by pushing your µbµ pawn until it can go no&nbsp;further." },
             { elo: 250, type: "Opening", title: "Prancing With Myself", description: "√Private√<br><br>Begin the game with 3 knight&nbsp;moves." },
             { elo: 500, type: "Opening", title: "I Wanna Prance With&nbsp;Somebody", description: "√Private√<br><br>Begin the game with 4 knight&nbsp;moves." },
             { elo: 750, type: "Opening", title: "Save The Last Prance For Me", description: "√Private√<br><br>Begin the game with 6 knight&nbsp;moves." },
             { elo: 1000, type: "Opening", title: "Shut Up And Prance", description: "√Private√<br><br>Begin the game with 8 knight&nbsp;moves." },
             { elo: 750, type: "Opening", title: "Recon Mission", description: "√Private√<br><br>You can't develop any other pieces until you've sent a knight into your opponent's half and then back to its starting&nbsp;square." },
+            
             // opening restrictions
-            { elo: 500, type: "Opening", title: "Nonconfrontational", description: "√Private√<br><br>Go 5 turns without capturing a piece." },
-            { elo: 750, type: "Opening", title: "Conscientious Objector", description: "√Private√<br><br>Go 7 turns without capturing a piece." },
-            { elo: 1000, type: "Opening", title: "Pacifist", description: "√Private√<br><br>Go 9 turns without capturing a piece." }, // prob bad
+            // { elo: 500, type: "Opening", title: "Nonconfrontational", description: "√Private√<br><br>Go 5 turns without capturing a piece." },
+            // { elo: 750, type: "Opening", title: "Conscientious Objector", description: "√Private√<br><br>Go 7 turns without capturing a piece." },
+            // { elo: 1000, type: "Opening", title: "Pacifist", description: "√Private√<br><br>Go 9 turns without capturing a piece." }, // prob bad
             { elo: 1000, type: "Opening", title: "Gotta Push 'Em All!", description: "√Private√<br><br>You have to move every major and minor piece once before you can move any of them a second&nbsp;time.<br>If your opponent captures a piece, consider it moved." },
+            
             // spelling bee
             { elo: 250, type: "Opening", title: "The Egg", description: "√Private√<br><br>Open with |e3, g3, g4| / ~e6, g6, g5~" },
             { elo: 250, type: "Opening", title: "Hopefully Not Prophecy", description: "√Private√<br><br>Open with |d3, e4, a3, d4| / ~d6, e5, a6, d5~" },
             { elo: 250, type: "Opening", title: "Open S_s_m_", description: "√Private√<br><br>Open with |e3, a3, e4| / ~e6, a6, e5~." },
             { elo: 250, type: "Opening", title: "\"Bro, It's A 100% Natty Opening,&nbsp;Bro!\"", description: "√Private√<br><br>Open with |h3, g3, h4| / ~h6, g6, h5~." },
-            { elo: 250, type: "Opening", title: "Take A Load Off", description: "√Private√<br><br>Open with pawn moves that spell \"ahh.\"<br>Continue pushing your µhµ pawn if you dare.<br>The further you push, the longer a relaxed sigh you&nbsp;let&nbsp;out." },
-            { elo: 250, type: "Opening", title: "Boo!", description: "√Private√<br><br>Open with pawn moves that spell \"aah.\"<br>Add more µaµ pawn pushes if you're brave&nbsp;enough.<br>Then scream. The further your a pawn has moved, the longer the&nbsp;scream." },
-            { elo: 500, type: "Opening", title: "Knee Slapper", description: "√Private√<br><br>Open with pawn moves that spell \"ha.\"<br>Keep pushing your µhµ and µaµ pawns for added&nbsp;challenge.<br>Then laugh maniacally, articulating each completed&nbsp;\"ha.\"" },
-            { elo: 500, type: "Opening", title: "Schemin' Schemer", description: "√Private√<br><br>Open with pawn moves that spell \"he.\"<br>Keep pushing your µhµ and µeµ pawns for added&nbsp;challenge.<br>Then rub your hands together as you articulate each completed&nbsp;\"he.\"" },
-            { elo: 750, type: "Opening", title: "You Are Kenough", description: "√Private√<br><br>Open with pawn moves that spell \"beach.\"<br><br><i>If your opponent interrupts, continue as soon as it's&nbsp;legal.<br>If you lose a necessary pawn, the opening ends and you continue from&nbsp;there.<br>But if you complete it in one go, you must shout,&nbsp;\"Sublime!!\"" },
-            { elo: 750, type: "Opening", title: "The Other Bongcloud", description: "√Private√<br><br>Open with pawn moves that spell \"cheech.\"" }, // prob bad
+            { elo: 250, type: "Opening", title: "Take A Load Off", description: "√Private√<br><br>Open with pawn moves that spell \"ahh.\"<br>Continue pushing your µhµ pawn if you dare.<br>The further your µhµ pawn is moved, the longer a relaxed sigh you&nbsp;let&nbsp;out." },
+            { elo: 250, type: "Opening", title: "Boo!", description: "√Private√<br><br>Open with pawn moves that spell \"aah!\"<br>Add more µaµ pawn pushes if you're brave&nbsp;enough.<br>Then scream. The further your µaµ pawn has moved, the longer the&nbsp;scream." },
+            { elo: 250, type: "Opening", title: "Knee Slapper", description: "√Private√<br><br>Open with pawn moves that spell \"ha.\"<br>Keep pushing your µhµ and µaµ pawns for added&nbsp;challenge.<br>Then laugh maniacally, articulating each completed&nbsp;\"ha.\"" },
+            { elo: 250, type: "Opening", title: "Schemin' Schemer", description: "√Private√<br><br>Open with pawn moves that spell \"he.\"<br>Keep pushing your µhµ and µeµ pawns for added&nbsp;challenge.<br>Then rub your hands together as you articulate each completed&nbsp;\"he.\"" },
+            { elo: 500, type: "Opening", title: "You Are Kenough", description: "√Private√<br><br>Open with pawn moves that spell \"beach.\"<br><br><i>If your opponent interrupts, continue as soon as it's&nbsp;legal.<br>If you lose a necessary pawn, the opening ends and you continue from&nbsp;there.<br>But if you complete it in one go, you must shout,&nbsp;\"Sublime!!\"" },
+            { elo: 500, type: "Opening", title: "The Other Bongcloud", description: "√Private√<br><br>Open with pawn moves that spell \"cheech.\"<br><br><i>If your opponent interrupts, continue as soon as it's&nbsp;legal.<br>If you lose a necessary pawn, the opening ends and you continue from&nbsp;there.<br>But if you complete it in one go, you must say, \"Far&nbsp;out,&nbsp;man.\"" },
             // { elo: 500, type: "Opening", title: "The Great Wall", description: "√Private√<br><br>Open by moving all your pawns up one square.<br>If your opponent prevents you from completing your wall, say \"Just great, now the Mongols can invade!\" and then play on as&nbsp;normal." },
             // { elo: 750, type: "Opening", title: "The Greater Wall", description: "√Private√<br><br>Open by moving all your pawns up 2 squares.<br>If your opponent prevents you from completing your wall, say \"Just great, now the Mongols can invade!\" and then play on as&nbsp;normal." }, 
             // { elo: 500, type: "Opening", title: "Sulfurous", description: "√Private√<br><br>Open with pawn moves that spell \"badegg.\"<br><br><i>If your opponent interrupts, continue as soon as it's&nbsp;legal.<br>If you lose a necessary pawn, the opening ends and you continue from&nbsp;there.</i>" }, // prob bad
