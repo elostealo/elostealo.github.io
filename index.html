@@ -211,7 +211,7 @@
         <button id="btn500" onclick="generateRandomLine(500)">500</button>
         <button id="btn750" onclick="generateRandomLine(750)">750</button>
         <button id="btn1000" onclick="generateRandomLine(1000)">1000</button>
-        <button id="btnHikaru" onclick="generateRandomLine('Hikaru')">Hikaru Mode</button>
+        <button id="btnMagnus" onclick="generateRandomLine('Magnus')">Magnus Mode</button>
         <div id="spacer"></div>
         <div id="output">
             <p><span id="type"></span></p>
@@ -234,7 +234,7 @@
             // NEW RULE--------------------------------------------------------------------------------------------------------------------------------------
             { elo: 750, type: "—New Rule—", title: "Hungry Hungry Monarch", description: "`Public`<br><br>You can only capture your opponent's pawns with a pawn or&nbsp;king." },
             { elo: 1000, type: "—New Rule—", title: "Poison Pawns", description: "`Public`<br><br>You can only capture your opponent's pawns with your&nbsp;pawns." },
-            { elo: 'Hikaru', type: "—New Rule—", title: "Bulletproof", description: "√Private√<br><br>You cannot capture pawns." },
+            { elo: 'Magnus', type: "—New Rule—", title: "Bulletproof", description: "√Private√<br><br>You cannot capture pawns." },
             { elo: 750, type: "—New Rule—", title: "Offside Rule", description: "`Public`<br><br>Your attacking pieces can't push ahead of your furthest&nbsp;pawn." },
             { elo: 1000, type: "—New Rule—", title: "Canadian Rules", description: "`Public`<br><br>If you think your opponent could've made a better move, give them the option by saying, \"You sure about that,&nbsp;bud?\"<br>Only say this one time per move." },
             { elo: 1000, type: "—New Rule—", title: "I Can't Even", description: "√Private√<br><br>You can't capture on even-numbered turns unless it's the only legal&nbsp;move." },
@@ -243,12 +243,12 @@
             { elo: 750, type: "—New Rule—", title: "Best Before Turn 8", description: "`Public`<br><br>You can't move your queen after the 8th&nbsp;turn." },
             { elo: 1000, type: "—New Rule—", title: "Best Before Turn 5", description: "`Public`<br><br>You can't move your queen after the 5th&nbsp;turn." },
             { elo: 500, type: "—New Rule—", title: "Spectrophobia", description: "`Public`<br><br>If your bishop, rook, or queen can attack its equal piece on the opponent's side, it must run away to a square where it no&nbsp;longer&nbsp;can.." },
-            { elo: 750, type: "—New Rule—", title: "Dissimilar", description: "`Public`<br><br>You can't move the same piece your opponent just moved unless you legally&nbsp;have&nbsp;to.<br>This includes pawns." },
+            { elo: 750, type: "—New Rule—", title: "Unique Snowflake", description: "`Public`<br><br>You can't move the same piece your opponent just moved unless you legally&nbsp;have&nbsp;to.<br>This includes pawns." },
             { elo: 250, type: "—New Rule—", title: "Over The Shoulder", description: "`Public`<br><br>You have to play from the same side as your opponent.<br>If it's not an over the board game, flip the board." },
             { elo: 500, type: "—New Rule—", title: "No Take Backsies", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Expires after one lost piece.</i>" },
             { elo: 750, type: "—New Rule—", title: "No Take Backsies, Double&nbsp;Stamped&nbsp;It", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Expires after two lost pieces.</i>" },
             { elo: 1000, type: "—New Rule—", title: "No Take Backsies, Triple&nbsp;Stamped&nbsp;It", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Expires after three lost pieces.</i>" },
-            { elo: 'Hikaru', type: "—New Rule—", title: "No Take Backsies Times&nbsp;Infinity", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Doesn't Expire.</i>" },
+            { elo: 'Magnus', type: "—New Rule—", title: "No Take Backsies Times&nbsp;Infinity", description: "`Public`<br><br>You can't immediately recapture after losing a&nbsp;piece.<br><br><i>Doesn't Expire.</i>" },
             { elo: 1000, type: "—New Rule—", title: "Pre-Prepare-To-Move", description: "`Public`<br><br>As soon as your turn is done, you have to touch the piece you plan to move&nbsp;next.<br>You can only choose a different piece if your opponent captures the piece you've touched, or if you can't legally move&nbsp;it." },
             // CASTLING RULE----------------------------------------------------------------------------------------------------------------------------------
             { elo: 500, type: "—Castling Rule—", title: "Practically Regicide", description: "`Public`<br><br>You can't castle." },
@@ -276,7 +276,7 @@
             { elo: 500, type: "—Royal Restriction—", title: "Ball And Chain", description: "`Public`<br><br>Your king and queen must be within two squares of each other, as long as your queen shall&nbsp;live." },
             { elo: 750, type: "—Royal Restriction—", title: "Mawwiage", description: "`Public`<br><br>Your king and queen must always be next to each other, as long as your queen shall&nbsp;live." },
             { elo: 1000, type: "—Royal Restriction—", title: "Wuv, Twue Wuv", description: "`Public`<br><br>Your king and queen must always be next to each&nbsp;other.<br>If you lose your queen, you must resign." },
-            { elo: 'Hikaru', type: "—Piece Restriction—", title: "Immobile Nobles", description: "`Public`<br><br>Your king and queen can't move.<br>If you lose your queen, you must resign." },
+            { elo: 'Magnus', type: "—Piece Restriction—", title: "Immobile Nobles", description: "`Public`<br><br>Your king and queen can't move.<br>If you lose your queen, you must resign." },
             // ROOK RESTRICTION------------------------------------------------------------------------------------------------------------------------------
             { elo: 500, type: "—Rook Restriction—", title: "Rooks On Rails", description: "`Public`<br><br>Your rooks can't leave the µaµ and µhµ files.<br>They can still check and pin from there." },
             { elo: 500, type: "—Rook Restriction—", title: "No Look Rooks", description: "`Public`<br><br>You can't connect your rooks.<br>If your opponent makes a move that connects them, you must disconnect&nbsp;them." },
@@ -308,8 +308,8 @@
             { elo: 500, type: "—Pawn Restriction—", title: "Pawn Particular", description: "`Public`<br><br>You can only move 3 pawns.<br>You can move them as often as you&nbsp;want." },
             { elo: 750, type: "—Pawn Restriction—", title: "'Portant Pawns", description: "`Public`<br><br>You can only move 2 pawns.<br>You can move them as often as you&nbsp;want." },
             { elo: 1000, type: "—Pawn Restriction—", title: "Pick A Pawn, Any Pawn", description: "`Public`<br><br>You can only move one pawn.<br>You can move it as often as you&nbsp;want." },
-            { elo: 'Hikaru', type: "—Pawn Restriction—", title: "You Were The Chosen&nbsp;Pawn!", description: "`Public`<br><br>You can only move one pawn, one time." },
-            { elo: 'Hikaru', type: "—Pawn Restriction—", title: "Wide Peepos", description: "`Public`<br><br>You can only move your µaµ and µhµ pawns." },
+            { elo: 'Magnus', type: "—Pawn Restriction—", title: "You Were The Chosen&nbsp;Pawn!", description: "`Public`<br><br>You can only move one pawn, one time." },
+            { elo: 'Magnus', type: "—Pawn Restriction—", title: "Wide Peepos", description: "`Public`<br><br>You can only move your µaµ and µhµ pawns." },
             { elo: 500, type: "—Pawn Restriction—", title: "Feingold is Forced", description: "`Public`<br><br>You can't move your µfµ pawn, not even to&nbsp;capture." }, //
             { elo: 500, type: "—Pawn Restriction—", title: "Stick Together!", description: "`Public`<br><br>Your pawns can't move unless they're part of&nbsp;a&nbsp;chain.<br>They <i>can</i> move to break the chain, but will be stuck&nbsp;after." },
             { elo: 250, type: "—Pawn Restriction—", title: "Stranded", description: "`Public`<br><br>Isolated pawns can't move." },
@@ -322,28 +322,28 @@
             { elo: 1000, type: "—Pawn Restriction—", title: "Red Rover", description: "√Private√<br><br>You can only have one pawn off off the opening line at&nbsp;a&nbsp;time.<br>You can only move your next pawn if the previous one is promoted or&nbsp;captured." },
             { elo: 750, type: "—Pawn Restriction—", title: "Out Of Bounds", description: "`Public`<br><br>Your pawns can't go past the |5th| / ~4th~ rank." },
             // PIECE RESTRICTION-----------------------------------------------------------------------------------------------------------------------------
-            { elo: 'Hikaru', type: "—OP Opponent—", title: "Medusa", description: "√Private√<br><br>If your opponent's queen can attack a piece, that piece can't&nbsp;move.<br>Because of this, only your knight can capture&nbsp;it." },
+            { elo: 'Magnus', type: "—OP Opponent—", title: "Medusa", description: "√Private√<br><br>If your opponent's queen can attack a piece, that piece can't&nbsp;move.<br>Because of this, only your knight can capture&nbsp;it." },
             { elo: 1000, type: "—OP Opponent—", title: "Stonework Afficionado", description: "√Private√<br><br>You can't capture rooks unless it's the only legal&nbsp;move." },
             { elo: 1000, type: "—OP Opponent—", title: "Sacred", description: "√Private√<br><br>You can't capture bishops unless it's the only legal&nbsp;move." },
             { elo: 1000, type: "—OP Opponent—", title: "PETA", description: "√Private√<br><br>You can't capture knights unless it's the only legal&nbsp;move." },
             // OP OPPONENT-----------------------------------------------------------------------------------------------------------------------------------
-            { elo: 'Hikaru', type: "—Piece Restriction—", title: "No Pacifists Allowed", description: "√Private√<br><br>You can only move attacking pieces if they're capturing another&nbsp;piece." },
+            { elo: 'Magnus', type: "—Piece Restriction—", title: "No Pacifists Allowed", description: "√Private√<br><br>You can only move attacking pieces if they're capturing another&nbsp;piece." },
             { elo: 1000, type: "—Piece Restriction—", title: "Everybody Take Turns", description: "`Public`<br><br>You can't ever move the same piece twice in&nbsp;a&nbsp;row." },
             { elo: 250, type: "—Piece Restriction—", title: "Fight Or Flight", description: "`Public`<br><br>If your bishop, rook, or queen can attack its equal piece on the opponent's side, it must either capture it, or run away to a square where it can no longer attack&nbsp;that&nbsp;piece." },
             { elo: 500, type: "—Piece Restriction—", title: "Self Destruct", description: "`Public`<br><br>If your bishop, rook, or queen can attack its same piece on the opponent's side, it&nbsp;must&nbsp;capture." },
             { elo: 750, type: "—Piece Restriction—", title: "Self Care", description: "`Public`<br><br>You can't capture a piece with the same type of&nbsp;piece.<br>Pawns are okay." },
-            { elo: 'Hikaru', type: "—Piece Restriction—", title: "Burn The Boats!", description: "`Public`<br><br>Your pieces can only move forward." },
+            { elo: 'Magnus', type: "—Piece Restriction—", title: "Burn The Boats!", description: "`Public`<br><br>Your pieces can only move forward." },
             { elo: 750, type: "—Piece Restriction—", title: "Creep", description: "√Private√<br><br>No piece can move more than three ranks forward at&nbsp;a&nbsp;time." },
             { elo: 1000, type: "—Piece Restriction—", title: "Crawl", description: "√Private√<br><br>No piece can move more than two ranks forward at&nbsp;a&nbsp;time." },
-            { elo: 'Hikaru', type: "—Piece Restriction—", title: "Union Mandated Break", description: "`Public`<br><br>A piece can't be moved again the turn after it captures&nbsp;something." },
+            { elo: 'Magnus', type: "—Piece Restriction—", title: "Union Mandated Break", description: "`Public`<br><br>A piece can't be moved again the turn after it captures&nbsp;something." },
             { elo: 500, type: "—Piece Restriction—", title: "Deer In The Headlights", description: "`Public`<br><br>You can't move pinned pieces." },
             // BOARD RESTRICTION------------------------------------------------------------------------------------------------------------------------------
             { elo: 500, type: "—Board Restriction—", title: "There Is No Square", description: "`Public`<br><br>You can't put any pieces on—nor travel through—the&nbsp;µ∫≈µ&nbsp;square.<br><br><i>Note: you can still check and pin pieces through&nbsp;it.</i>" },
             { elo: 250, type: "—Board Restriction—", title: "The Centre Is Icky", description: "`Public`<br><br>You can only have two pieces on the four centre squares at any given&nbsp;time." },
             { elo: 500, type: "—Board Restriction—", title: "The Centre Is Toxic", description: "`Public`<br><br>You can only have one piece on the four centre squares at any given&nbsp;time." },
             { elo: 1000, type: "—Board Restriction—", title: "The Centre Is Lava", description: "`Public`<br><br>You can't place any pieces on the four centre&nbsp;squares." },
-            { elo: 'Hikaru', type: "—Board Restriction—", title: "The Centre Is Radioactive", description: "`Public`<br><br>You can't place any pieces on—nor travel through—the four centre&nbsp;squares.<br><br><i>Note: you can still check and pin pieces through&nbsp;them.</i>" },
-            { elo: 'Hikaru', type: "—Board Restriction—", title: "Chss", description: "√Private√<br><br>You can't make any moves that involve&nbsp;vowels.<br>As in, no moves on or from the µaµ or µeµ&nbsp;files." },
+            { elo: 'Magnus', type: "—Board Restriction—", title: "The Centre Is Radioactive", description: "`Public`<br><br>You can't place any pieces on—nor travel through—the four centre&nbsp;squares.<br><br><i>Note: you can still check and pin pieces through&nbsp;them.</i>" },
+            { elo: 'Magnus', type: "—Board Restriction—", title: "Chss", description: "√Private√<br><br>You can't make any moves that involve&nbsp;vowels.<br>As in, no moves on or from the µaµ or µeµ&nbsp;files." },
             { elo: 1000, type: "—Board Restriction—", title: "The Nightman", description: "√Private√<br><br>You can only capture pieces on dark coloured&nbsp;squares." },
             { elo: 1000, type: "—Board Restriction—", title: "The Dayman", description: "√Private√<br><br>You can only capture pieces on light coloured&nbsp;squares." },
             { elo: 250, type: "—Board Restriction—", title: "Square Trap!", description: "`Public`<br><br>If you land a piece on µ∫≈µ, that piece can no longer&nbsp;move." },
@@ -361,7 +361,7 @@
             { elo: 500, type: "—Forced Move—", title: "Counterpunch", description: "`Public`<br><br>If your opponent captures a piece, you must capture a piece back if you&nbsp;can.<br>If there's a choice, you can choose which piece to&nbsp;capture." },
             { elo: 750, type: "—Forced Move—", title: "Cheap Shot", description: "`Public`<br><br>If your opponent captures a piece, you have to capture a piece back if you&nbsp;can.<br>If there's a choice, you must capture the least important&nbsp;piece." },
             { elo: 1000, type: "—Forced Move—", title: "Pawn's Revenge!", description: "`Public`<br><br>If your opponent takes a pawn, you must move a pawn on the next unless it isn't a legal&nbsp;move." },
-            { elo: 'Hikaru', type: "—Forced Move—", title: "Duck, Duck, Duck, Duck, Goose!", description: "√Private√<br><br>Every fifth move must be with your king." },
+            { elo: 'Magnus', type: "—Forced Move—", title: "Duck, Duck, Duck, Duck, Goose!", description: "√Private√<br><br>Every fifth move must be with your king." },
             { elo: 1000, type: "—Forced Move—", title: "Rampage!", description: "`Public`<br><br>Every time you capture a piece, if you can use that piece on your next turn to capture again, you&nbsp;must." },
             // PROMOTIONAL------------------------------------------------------------------------------------------------------------------------------------
             { elo: 250, type: "—Promotional—", title: "The Master Builder", description: "`Public`<br><br>You can only promote to a rook." },
@@ -391,7 +391,7 @@
             { elo: 500, type: "—Fail Condition—", title: "V.I.P.s", description: "`Public`<br><br>If you lose all your pawns, you must resign." },
             { elo: 1000, type: "—Fail Condition—", title: "V.I.P.", description: "√Private√<br><br>If you lose your µ∫µ pawn, you must resign." },
             { elo: 750, type: "—Fail Condition—", title: "V.I.Q.", description: "`Public`<br><br>If you lose your queen, you must resign." },
-            { elo: 'Hikaru', type: "—Fail Condition—", title: "V.I.E.", description: "`Public`<br><br>You must resign if you lose a)&nbsp;both&nbsp;bishops, b)&nbsp;both&nbsp;knights, c)&nbsp;both&nbsp;rooks, or d)&nbsp;your&nbsp;queen." },
+            { elo: 'Magnus', type: "—Fail Condition—", title: "V.I.E.", description: "`Public`<br><br>You must resign if you lose a)&nbsp;both&nbsp;bishops, b)&nbsp;both&nbsp;knights, c)&nbsp;both&nbsp;rooks, or d)&nbsp;your&nbsp;queen." },
             { elo: 1000, type: "—Fail Condition—", title: "Achill-e's Square", description: "`Public`<br><br>If your opponent gets a piece on |∫1| / ~∫8~, you&nbsp;must&nbsp;resign." },
             { elo: 750, type: "—Fail Condition—", title: "Capture The Flag", description: "√Private√<br><br>If your opponent lands a piece in your back rank, you must&nbsp;resign." },
             { elo: 750, type: "—Fail Condition—", title: "Check Is Mate", description: "√Private√<br><br>If your opponent puts you in check, you&nbsp;must&nbsp;resign." },           
@@ -403,15 +403,15 @@
             { elo: 1000, type: "—Endgame Rule—", title: "Squeezed By The&nbsp;Juicers", description: "`Public`<br><br>You can only use bishops to mate." },
             { elo: 1000, type: "—Endgame Rule—", title: "Drawn and Quartered", description: "`Public`<br><br>You can only use knights to mate." },
             // MULTI-RULE-------------------------------------------------------------------------------------------------------------------------------------
-            { elo: 750, type: "—Multi-Rule—", title: "Smorgasbord", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You cannot en passant.<br>-You can't castle." },
-            { elo: 750, type: "—Multi-Rule—", title: "Mish-Mash", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-En passant is forced.<br>-You can't castle queenside." },
-            { elo: 750, type: "—Multi-Rule—", title: "The Miscelanneous Drawer", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You can't move your rook on the µhµ file.<br>-Isolated pawns can't move." },
-            { elo: 750, type: "—Multi-Rule—", title: "Pot Pourri", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You can't move your rook on the µaµ file.<br>-Pawns can only capture to the left." },
-            { elo: 750, type: "—Multi-Rule—", title: "Odds & Ends", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You can't move your knight on the µbµ file.<br>-Pawns can only capture to the right." },
-            { elo: 750, type: "—Multi-Rule—", title: "Box Of Chocolates", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You can't castle kingside.<br>-Pawns can only move one square at a time." },
-            { elo: 750, type: "—Multi-Rule—", title: "Hodge Podge", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You can't move your bishop on the µfµ file.<br>-You can only promote to a knight." },
-            { elo: 750, type: "—Multi-Rule—", title: "Grab Bag", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You can't move your knight on the µgµ file.<br>-Pawns must move two squares in their opening moves." },
-            { elo: 1000, type: "—Multi-Rule—", title: "Bullseye", description: "`Public`<br><br>You have three rules to obey:<br>-Your µ∫µ pawn cannot move.<br>-You can't land a piece on the ≈ rank.<br>-You can't move pieces through the µ∫≈µ square." },
+            { elo: 750, type: "—Multi-Rule—", title: "Smorgasbord", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You cannot en passant.<br>-You can't castle." },
+            { elo: 750, type: "—Multi-Rule—", title: "Mish-Mash", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-En passant is forced.<br>-You can't castle queenside." },
+            { elo: 750, type: "—Multi-Rule—", title: "The Miscelanneous Drawer", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You can't move your rook on the µhµ file.<br>-Isolated pawns can't move." },
+            { elo: 750, type: "—Multi-Rule—", title: "Pot Pourri", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You can't move your rook on the µaµ file.<br>-Pawns can only capture to the left." },
+            { elo: 750, type: "—Multi-Rule—", title: "Odds & Ends", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You can't move your knight on the µbµ file.<br>-Pawns can only capture to the right." },
+            { elo: 750, type: "—Multi-Rule—", title: "Box Of Chocolates", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You can't castle kingside.<br>-Pawns can only move one square at a time." },
+            { elo: 750, type: "—Multi-Rule—", title: "Hodge Podge", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You can't move your bishop on the µfµ file.<br>-You can only promote to a knight." },
+            { elo: 750, type: "—Multi-Rule—", title: "Grab Bag", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You can't move your knight on the µgµ file.<br>-Pawns must move two squares in their opening moves." },
+            { elo: 1000, type: "—Multi-Rule—", title: "Bullseye", description: "`Public`<br><br>You have three rules to obey:<br><br>-Your µ∫µ pawn cannot move.<br>-You can't land a piece on the ≈ rank.<br>-You can't move pieces through the µ∫≈µ square." },
             // QUEST---------------------------------------------------------------------------------------------------------------------------------------
             { elo: 250, type: "—Quest—", title: "Headstart", description: "√Private√<br><br>You can't capture any pieces until you're down at least 4 points of&nbsp;material." }, // prob bad
             { elo: 500, type: "—Quest—", title: "Rally Cap", description: "√Private√<br><br>You can't capture any pieces until you're down at least 6 points of&nbsp;material." }, // prob bad
@@ -431,7 +431,7 @@
             { elo: 250, type: "—Quest—", title: "Pay Fealty", description: "√Private√<br><br>You must have placed a knight, bishop, rook, and queen next to your king before you can&nbsp;castle.<br>Lucky for you, a bishop and queen start&nbsp;there." },
             { elo: 500, type: "—Quest—", title: "Not So Fast!", description: "√Private√<br><br>Prevent your opponent from castling." },
             { elo: 500, type: "—Quest—", title: "Invasion", description: "`Public`<br><br>Get 5 attacking pieces on your opponent's side of the&nbsp;board." },
-            { elo: 'Hikaru', type: "—Quest—", title: "Chess 960-y", description: "`Public`<br><br>Rearrange at least a couple pieces on your backrank so that it's not the same as when you&nbsp;started." },
+            { elo: 'Magnus', type: "—Quest—", title: "Chess 960-y", description: "`Public`<br><br>Rearrange at least a couple pieces on your backrank so that it's not the same as when you&nbsp;started." },
             { elo: 500, type: "—Quest—", title: "Shared Space", description: "√Private√<br><br>Get at least 4 different pieces to land on&nbsp;µ∫≈µ.<br>If you start with a piece on µ∫≈µ, it doesn't&nbsp;count." },
             { elo: 500, type: "—Quest—", title: "Town Square", description: "√Private√<br><br>Get a knight, bishop, and rook to land on&nbsp;µ∫≈µ.<br>If you start with a piece on µ∫≈µ, it doesn't&nbsp;count." },
             { elo: 500, type: "—Quest—", title: "Swarm", description: "√Private√<br><br>Get at least four pieces on or surrounding |∫4| / ~∫5~ at&nbsp;once." },
@@ -463,15 +463,15 @@
             { elo: 1000, type: "—Sacrifice—", title: "Oh No, My Queens!", description: "`Public`<br><br>Sac your queen for a rook, bishop, or knight before turn 7.<br>Then later, promote to a queen and sac that, too." },
             { elo: 750, type: "—Sacrifice—", title: "Oh F***, My Queen!", description: "`Public`<br><br>Sac your queen for a pawn before turn 7." },
             { elo: 1000, type: "—Sacrifice—", title: "Botez Gambit", description: "√Private√<br><br>Hang your queen until it's captured,<br>then get really mad about it." },
-            { elo: 'Hikaru', type: "—Sacrifice—", title: "The Elusive Double&nbsp;Botez&nbsp;Gambit", description: "√Private√<br><br>Hang your queen until it's captured.<br>Then promote to a queen and hang that one,&nbsp;too." },
+            { elo: 'Magnus', type: "—Sacrifice—", title: "The Elusive Double&nbsp;Botez&nbsp;Gambit", description: "√Private√<br><br>Hang your queen until it's captured.<br>Then promote to a queen and hang that one,&nbsp;too." },
             { elo: 1000, type: "—Sacrifice—", title: "Pawn Seeking Missiles", description: "`Public`<br><br>Take out 3 pawns with knight, bishop, and rook&nbsp;sacrifices." },
-            { elo: 'Hikaru', type: "—Sacrifice—", title: "Four Pieces of the&nbsp;Apawncalypse", description: "`Public`<br><br>Take out 4 pawns with knight, bishop, and rook&nbsp;sacrifices." },
+            { elo: 'Magnus', type: "—Sacrifice—", title: "Four Pieces of the&nbsp;Apawncalypse", description: "`Public`<br><br>Take out 4 pawns with knight, bishop, and rook&nbsp;sacrifices." },
             // ARRESTED DEVELOPMENT---------------------------------------------------------------------------------------------------------------------------
             { elo: 250, type: "—Arrested Development—", title: "\"It's One Pawn Michael,<br>What Could It Cost? $10?\"", description: "√Private√<br><br>You can't develop any pieces until you've lost one&nbsp;pawn." },
             { elo: 500, type: "—Arrested Development—", title: "\"Say Goodbye To <i>These!</i>\"", description: "√Private√<br><br>You can't develop any pieces until you've lost two&nbsp;pawns." },
             { elo: 750, type: "—Arrested Development—", title: "\"I've Made A Huge Mistake\"", description: "√Private√<br><br>You can't develop any pieces until you've lost three&nbsp;pawns." },
             { elo: 1000, type: "—Arrested Development—", title: "\"Oh My God, We're Having A&nbsp;Fire...&nbsp;Sale!\"", description: "√Private√<br><br>You can't develop any pieces until you've lost four&nbsp;pawns." },
-            { elo: 'Hikaru', type: "—Arrested Development—", title: "\"I May Have Committed Some Light Treason\"", description: "√Private√<br><br>You can't develop any pieces until you've lost five&nbsp;pawns." },
+            { elo: 'Magnus', type: "—Arrested Development—", title: "\"I May Have Committed Some Light Treason\"", description: "√Private√<br><br>You can't develop any pieces until you've lost five&nbsp;pawns." },
             { elo: 750, type: "—Arrested Development—", title: "Recon Mission", description: "√Private√<br><br>You can't develop any other pieces until you've sent a knight into your opponent's half and then back to its starting&nbsp;square." },
             // SCORECARD QUEST--------------------------------------------------------------------------------------------------------------------------------
             { elo: 500, type: "—Scorecard Quest—", title: "The Rad One Radiates", description: "√Private√<br><br>Get |Rad1| or ~Rad8~ on your scoresheet.<br><br><font size=-2>Yeah, that would be hella rad.</font>" },
@@ -493,7 +493,7 @@
             { elo: 500, type: "—Opening Quest—", title: "Negative Nancy", description: "`Public`<br><br>You must be down <i>at least</i> a pawn by move 5, and keep a minimum 1 point material deficit for the rest of&nbsp;the&nbsp;game." },
             { elo: 750, type: "—Opening Quest—", title: "In The Red", description: "`Public`<br><br>You must sacrifice <i>at least</i> a knight or bishop by move 5, and keep a minimum 2 point material deficit for the rest of&nbsp;the&nbsp;game." },
             { elo: 1000, type: "—Opening Quest—", title: "Underwater", description: "`Public`<br><br>Sacrifice <i>at least</i> two minor pieces by move 8, and keep a minimum 4 point material deficit for the rest of&nbsp;the&nbsp;game." },
-            { elo: 'Hikaru', type: "—Opening Quest—", title: "6 Points Under", description: "`Public`<br><br>Sacrifice your queen by move 5, and keep a minimum 6 point material deficit for the rest of&nbsp;the&nbsp;game." },
+            { elo: 'Magnus', type: "—Opening Quest—", title: "6 Points Under", description: "`Public`<br><br>Sacrifice your queen by move 5, and keep a minimum 6 point material deficit for the rest of&nbsp;the&nbsp;game." },
             { elo: 500, type: "—Opening Quest—", title: "Mirror Mirror, On&nbsp;The&nbsp;Board", description: "√Private√<br><br>Mimic your opponent's moves.<br>If they ask if you're mimicking them, mimic what they say,&nbsp;too.<br><br>If you're white, start with |a3|.<br>Lasts until you can't legally mimic their move." },
             { elo: 500, type: "—Opening Quest—", title: "Same Same, But Different", description: "√Private√<br><br>Whatever piece your opponent moves, you have to move the same kind of piece as&nbsp;well.<br><br>If you're white, start with |a3|.<br>Lasts until you can't legally move the piece they move." },
             { elo: 250, type: "—Opening Quest—", title: "Pawn Storm", description: "√Private√<br><br>Open with four pawn moves in your first 5 turns." },
@@ -505,7 +505,7 @@
             { elo: 500, type: "—Opening Quest—", title: "I Wanna Prance With&nbsp;Somebody", description: "√Private√<br><br>Begin the game with 4 knight&nbsp;moves." },
             { elo: 750, type: "—Opening Quest—", title: "Save The Last Prance For Me", description: "√Private√<br><br>Begin the game with 5 knight&nbsp;moves." },
             { elo: 1000, type: "—Opening Quest—", title: "Shut Up And Prance", description: "√Private√<br><br>Begin the game with 7 knight&nbsp;moves." },
-            { elo: 'Hikaru', type: "—Opening Quest—", title: "Gotta Push 'Em All!", description: "√Private√<br><br>You have to move every major and minor piece once before you can move any of them a second&nbsp;time.<br>If your opponent captures a piece, consider it moved." },
+            { elo: 'Magnus', type: "—Opening Quest—", title: "Gotta Push 'Em All!", description: "√Private√<br><br>You have to move every major and minor piece once before you can move any of them a second&nbsp;time.<br>If your opponent captures a piece, consider it moved." },
             // SPELLING BEE-----------------------------------------------------------------------------------------------------------------------------------
             { elo: 250, type: "—Spelling Bee—", title: "The Egg", description: "√Private√<br><br>Open with |e3, g3, g4| / ~e6, g6, g5~" },
             { elo: 250, type: "—Spelling Bee—", title: "Hopefully Not Prophecy", description: "√Private√<br><br>Open with |d3, e4, a3, d4| / ~d6, e5, a6, d5~" },
@@ -608,7 +608,7 @@
                 document.body.style.backgroundColor = '#c78787'; // Light red
             } else if (eloValue === 1000) {
                 document.body.style.backgroundColor = '#ae8dc7'; // Light purple
-            } else if (eloValue === 'Hikaru') {
+            } else if (eloValue === 'Magnus') {
                 document.body.style.backgroundColor = '#f5c242'; // Light purple
             }
         }
