@@ -151,6 +151,8 @@
             display: none; /* Hide |, `, √, [, and ~ markers */
         }
 
+
+        /* Styling for links */
         a:link {
           color: black;
           background-color: transparent;
@@ -175,11 +177,11 @@
           text-decoration: underline;
         }
 
+
         /* Styling for links in the header */
         .header-link {
             color: white; /* Red color for links */
             text-decoration: none; /* Remove underlines */
-
         }
 
         .header-link:link {
@@ -206,12 +208,16 @@
           text-decoration: none;
         }
 
+
         /* Switch Stuff */
         .switch-container {
             display: block;
             align-items: center;
             margin-top: 10px;
             margin-bottom: 3px;
+            @media screen and (max-width: 768px) {
+                padding-bottom: 10px;
+            }
             font-family: 'Arial', sans-serif;
         }
 
