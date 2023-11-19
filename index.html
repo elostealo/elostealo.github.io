@@ -205,12 +205,16 @@
           text-decoration: none;
         }
 
+        /* Switch Stuff */
         .switch-container {
             display: block;
             align-items: center;
             margin-top: 10px;
             margin-bottom: 3px;
             font-family: 'Arial', sans-serif;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 7px;
+            }
         }
 
         .switch {
