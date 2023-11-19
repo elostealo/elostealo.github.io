@@ -415,8 +415,8 @@
 
 
             // King Restrictions
-            { elo: 500, type: "-King Rule—", title: "King Of The Castle, King Of The Castle", description: "√<br><br>You can't move your king." },
-            { elo: 750, type: "-King Rule—", title: "King Of The Castle, King Of The Castle", description: "`<br><br>You can't move your king." },
+            { elo: 750, type: "-King Rule—", title: "Immobile Noble", description: "√<br><br>You can't move your king." },
+            { elo: 1000, type: "-King Rule—", title: "Immobile Noble", description: "`<br><br>You can't move your king." },
             { elo: 500, type: "—King Rule—", title: "Dancing King", description: "√<br><br>You can only respond to checks by moving your&nbsp;king. If your king can't move out of check or capture the attacking piece, it's&nbsp;mate." },
             { elo: 750, type: "—King Rule—", title: "Dancing King", description: "`<br><br>You can only respond to checks by moving your&nbsp;king. If your king can't move out of check or capture the attacking piece, it's&nbsp;mate." },
             { elo: 750, type: "—King Rule—", title: "Legal Regal", description: "`<br><br>Your king can only move if it's the only legal&nbsp;move." },
@@ -456,22 +456,22 @@
 
 
             // Rook Restrictions
-            { elo: 750, type: "—Rook Rule—", title: "Magnet In The Middle", description: "`<br><br>Every move you make with your rooks must bring them either an equal distance to or one square closer to |d4| / ~d5~ for your <b>a</b> rook, and |e4| / ~e5~ for your <b>h</b> rook. Once there, they can't&nbsp;escape." },
+            { elo: 750, type: "—Rook Rule—", title: "Magnet In The Middle", description: "`<br><br>Every move you make with your rooks must bring them either an equal distance to or one square closer to |d4| / ~d5~ for your |a| rook, and |e4| / ~e5~ for your |h| rook. Once there, they can't&nbsp;escape." },
             { elo: 500, type: "—Rook Rule—", title: "No Look Rooks", description: "`<br><br>You can't connect your rooks.<br><br>If your opponent makes a move that connects them, you must disconnect them on your next&nbsp;move." },
-            { elo: 1000, type: "—Rook Rule—", title: "Rooks On Rails", description: "`<br><br>Your rooks can't leave the <b>a</b> and <b>h</b> files." },
+            { elo: 1000, type: "—Rook Rule—", title: "Rooks On Rails", description: "`<br><br>Your rooks can't leave the |a| and |h| files." },
             { elo: 1000, type: "—Rook Rule—", title: "Galaga", description: "`<br><br>Your rooks can't leave the |1st| / ~8th~ rank." },
 
-            { elo: 500, type: "—Rook Rule—", title: "Border Guards", description: "√<br><br>Your rooks can only move along the <b>a</b> and <b>h</b> files and the 1st and 8th&nbsp;rank." },
-            { elo: 750, type: "—Rook Rule—", title: "Border Guards", description: "`<br><br>Your rooks can only move along the <b>a</b> and <b>h</b> files and the 1st and 8th&nbsp;rank." },
+            { elo: 500, type: "—Rook Rule—", title: "Border Guards", description: "√<br><br>Your rooks can only move along the |a| and |h| files and the 1st and 8th&nbsp;rank." },
+            { elo: 750, type: "—Rook Rule—", title: "Border Guards", description: "`<br><br>Your rooks can only move along the |a| and |h| files and the 1st and 8th&nbsp;rank." },
             { elo: 250, type: "—Rook Rule—", title: "Ambirookstrous", description: "√<br><br>You must alternate which rook you&nbsp;move.<br><br>Lasts until you lose a&nbsp;rook." },
             { elo: 500, type: "—Rook Rule—", title: "Ambirookstrous", description: "`<br><br>You must alternate which rook you&nbsp;move.<br><br>Lasts until you lose a&nbsp;rook." },
 
 
             // Bishop Restrictions
-            { elo: 500, type: "—Bishop Rule—", title: "Born To Snipe", description: "√<br><br>Your bishops cannot move to the <b>d</b> or <b>e</b>&nbsp;files." },
-            { elo: 750, type: "—Bishop Rule—", title: "Born To Snipe", description: "`<br><br>Your bishops cannot move to the <b>d</b> or <b>e</b>&nbsp;files." },
-            { elo: 250, type: "—Bishop Rule—", title: "All The Angles", description: "√<br><br>Your bishops cannot move to the <b>a</b>, <b>b</b>, <b>g</b>, or <b>h</b>&nbsp;files." },
-            { elo: 500, type: "—Bishop Rule—", title: "All The Angles", description: "`<br><br>Your bishops cannot move to the <b>a</b>, <b>b</b>, <b>g</b>, or <b>h</b>&nbsp;files." },
+            { elo: 500, type: "—Bishop Rule—", title: "Born To Snipe", description: "√<br><br>Your bishops cannot move to the |d| or |e|&nbsp;files." },
+            { elo: 750, type: "—Bishop Rule—", title: "Born To Snipe", description: "`<br><br>Your bishops cannot move to the |d| or |e|&nbsp;files." },
+            { elo: 250, type: "—Bishop Rule—", title: "All The Angles", description: "√<br><br>Your bishops cannot move to the |a|, |b|, |g|, or |h|&nbsp;files." },
+            { elo: 500, type: "—Bishop Rule—", title: "All The Angles", description: "`<br><br>Your bishops cannot move to the |a|, |b|, |g|, or |h|&nbsp;files." },
 
 
             // Knight Restrictions
@@ -481,7 +481,7 @@
             { elo: 750, type: "—Knight Rule—", title: "You're Grounded, Mister!", description: "`<br><br>Your knights can't jump. They can only move if they have a clear diagonal or horizontal/vertical square next&nbsp;to&nbsp;them." },
 
             { elo: 500, type: "—Knight Rule—", title: "Show Ponies", description: "`<br><br>Knights can only move if it involves jumping over a&nbsp;piece." },
-            { elo: 500, type: "—Knight Rule—", title: "Smart Knights Only", description: "`<br><br>Your knights cannot land on the <b>a</b> or <b>h</b> file, or the 1st or&nbsp;8th&nbsp;rank." },
+            { elo: 500, type: "—Knight Rule—", title: "Smart Knights Only", description: "`<br><br>Your knights cannot land on the |a| or |h| file, or the |1st| or&nbsp;|8th|&nbsp;rank." },
             { elo: 250, type: "—Knight Rule—", title: "Unstompable", description: "`<br><br>Your knights can't attack the opponent's&nbsp;queen." },
             { elo: 500, type: "—Knight Rule—", title: "Zombie Paper", description: "`<br><br>If you move your knight past the |5th| / ~4th~ rank, it becomes stuck and can't be moved&nbsp;again." },
 
@@ -499,9 +499,9 @@
             { elo: 'Magnus', type: "—Pawn Rule—", title: "You Were The Chosen&nbsp;Pawn!", description: "`<br><br>You can only move one of your pawns." },
 
             { elo: 1000, type: "—Pawn Rule—", title: "Pawn v. Pawn", description: "`<br><br>You can only capture your opponent's pawns with your&nbsp;pawns." },
-            { elo: 'Magnus', type: "—Pawn Rule—", title: "Wide Peepos", description: "`<br><br>You can only move your <b>a</b> and <b>h</b> pawns." },
-            { elo: 250, type: "—Pawn Rule—", title: "Feingold is Forced", description: "√<br><br>You can't move your <b>f</b> pawn, not even to&nbsp;capture." }, //
-            { elo: 500, type: "—Pawn Rule—", title: "Feingold is Forced", description: "`<br><br>You can't move your <b>f</b> pawn, not even to&nbsp;capture." }, //
+            { elo: 'Magnus', type: "—Pawn Rule—", title: "Wide Peepos", description: "`<br><br>You can only move your |a| and |h| pawns." },
+            { elo: 250, type: "—Pawn Rule—", title: "Feingold is Forced", description: "√<br><br>You can't move your |f| pawn, not even to&nbsp;capture." }, //
+            { elo: 500, type: "—Pawn Rule—", title: "Feingold is Forced", description: "`<br><br>You can't move your |f| pawn, not even to&nbsp;capture." }, //
             { elo: 250, type: "—Pawn Rule—", title: "Stick Together!", description: "√<br><br>Your pawns can't move unless they're part of a pawn chain at the start of your&nbsp;turn." },
             { elo: 500, type: "—Pawn Rule—", title: "Stick Together!", description: "`<br><br>Your pawns can't move unless they're part of a pawn chain at the start of your&nbsp;turn." },
             { elo: 250, type: "—Pawn Rule—", title: "Stranded", description: "`<br><br>Isolated pawns can't move." },
@@ -527,10 +527,10 @@
             // Piece Restrictions
             { elo: 750, type: "—Piece Restriction—", title: "Poison Pawns", description: "√<br><br>Once you capture a pawn, you can no longer move that&nbsp;piece." },
             { elo: 1000, type: "—Piece Restriction—", title: "Poison Pawns", description: "`<br><br>Once you capture a pawn, you can no longer move that&nbsp;piece." },
-            { elo: 750, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "√<br><br>Your pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting&nbsp;a&nbsp;wall.<br>Knights move as normal, because they're immune to The&nbsp;Rage." },
-            { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "`<br><br>Your pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting&nbsp;a&nbsp;wall.<br>Knights move as normal, because they're immune to The&nbsp;Rage." },
-            { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "√<br><br>Your pieces can only move one square at a time, and never&nbsp;backwards.<br>Knights move as normal, because they're immune to&nbsp;infection." },
-            { elo: 'Magnus', type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "`<br><br>Your pieces can only move one square at a time, and never&nbsp;backwards.<br>Knights move as normal, because they're immune to&nbsp;infection." },
+            { elo: 750, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "√<br><br>Your pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting&nbsp;a&nbsp;wall.<br>Knights move as normal because horses are immune to the&nbsp;Rage." },
+            { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "`<br><br>Your pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting&nbsp;a&nbsp;wall.<br>Knights move as normal because horses are immune to the&nbsp;Rage." },
+            { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "√<br><br>Your pieces can only move one square at a time, and never&nbsp;backwards.<br>Knights move as normal because horses are immune to&nbsp;infection." },
+            { elo: 'Magnus', type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "`<br><br>Your pieces can only move one square at a time, and never&nbsp;backwards.<br>Knights move as normal because horses are immune to&nbsp;infection." },
 
             { elo: 1000, type: "—Piece Restriction—", title: "Everybody Take Turns", description: "√<br><br>You can't ever move the same piece twice in&nbsp;a&nbsp;row." },
             { elo: 'Magnus', type: "—Piece Restriction—", title: "Everybody Take Turns", description: "`<br><br>You can't ever move the same piece twice in&nbsp;a&nbsp;row." },
@@ -575,27 +575,27 @@
 
 
             // Board Restrictions
-            { elo: 500, type: "—Board Restriction—", title: "There Is No Square", description: "√<br><br>You can't put any pieces on—nor travel through—the&nbsp;<b>ƒ®</b>&nbsp;square." },
-            { elo: 750, type: "—Board Restriction—", title: "There Is No Square", description: "`<br><br>You can't put any pieces on—nor travel through—the&nbsp;<b>ƒ®</b>&nbsp;square." },
+            { elo: 500, type: "—Board Restriction—", title: "There Is No Square", description: "√<br><br>You can't put any pieces on—nor travel through—the&nbsp;|ƒ®|&nbsp;square." },
+            { elo: 750, type: "—Board Restriction—", title: "There Is No Square", description: "`<br><br>You can't put any pieces on—nor travel through—the&nbsp;|ƒ®|&nbsp;square." },
             { elo: 250, type: "—Board Restriction—", title: "The Centre Is Icky", description: "`<br><br>You can only have two pieces on the four centre squares at any given&nbsp;time." },
             { elo: 500, type: "—Board Restriction—", title: "The Centre Is Toxic", description: "`<br><br>You can only have one piece on the four centre squares at any given&nbsp;time." },
             { elo: 1000, type: "—Board Restriction—", title: "The Centre Is Lava", description: "`<br><br>You can't place any pieces on the four centre&nbsp;squares." },
             { elo: 'Magnus', type: "—Board Restriction—", title: "The Centre Is Radioactive", description: "`<br><br>You can't place any pieces on—nor travel through—the four centre&nbsp;squares." },
 
-            { elo: 1000, type: "—Board Restriction—", title: "Inner Space", description: "√<br><br>If you land a piece between <b>b2</b> and <b>g7</b>, it cannot&nbsp;leave." },
-            { elo: 'Magnus', type: "—Board Restriction—", title: "Outer Space", description: "`<br><br>If you land a piece on the <b>a</b> or <b>h</b> file, or the 1st or 8th rank, it cannot&nbsp;leave." },
-            { elo: 'Magnus', type: "—Board Restriction—", title: "Black Hole", description: "`<br><br>If you land a piece between <b>d4</b> and <b>e5</b>, it can no longer&nbsp;move." },
+            { elo: 1000, type: "—Board Restriction—", title: "Inner Space", description: "√<br><br>If you land a piece between |b2| and |g7|, it cannot&nbsp;leave." },
+            { elo: 'Magnus', type: "—Board Restriction—", title: "Outer Space", description: "`<br><br>If you land a piece on the |a| or |h| file, or the 1st or 8th rank, it cannot&nbsp;leave." },
+            { elo: 'Magnus', type: "—Board Restriction—", title: "Black Hole", description: "`<br><br>If you land a piece between |d4| and |e5|, it can no longer&nbsp;move." },
 
             { elo: 1000, type: "—Board Restriction—", title: "The Nightman", description: "√<br><br>You can only capture pieces on dark coloured&nbsp;squares.<br><br>You can still mate a king on a light&nbsp;square." },
             { elo: 'Magnus', type: "—Board Restriction—", title: "The Nightman", description: "`<br><br>You can only capture pieces on dark coloured&nbsp;squares.<br><br>You can still mate a king on a light&nbsp;square." },
             { elo: 1000, type: "—Board Restriction—", title: "The Dayman", description: "√<br><br>You can only capture pieces on light coloured&nbsp;squares.<br><br>You can still mate a king on a dark&nbsp;square." },
             { elo: 'Magnus', type: "—Board Restriction—", title: "The Dayman", description: "`<br><br>You can only capture pieces on light coloured&nbsp;squares.<br><br>You can still mate a king on a dark&nbsp;square." },
 
-            { elo: 250, type: "—Board Restriction—", title: "Square Trap!", description: "`<br><br>If you land a piece on <b>ƒ®(3-6)</b>, that piece can no longer&nbsp;move." },
-            { elo: 500, type: "—Board Restriction—", title: "Square Trap!!", description: "`<br><br>If you land a piece on <b>ƒ(1-4)®(3-6)</b> or <b>ƒ(5-8)®(3-6)</b>, that piece can no longer&nbsp;move." },
-            { elo: 750, type: "—Board Restriction—", title: "Square Trap!!!", description: "`<br><br>If you land a piece on <b>ƒ(1-3)®(3-6)</b>, <b>ƒ(4-5)®(3-6)</b>, or <b>ƒ(6-8)®(3-6)</b>, that piece can no longer&nbsp;move." },
-            { elo: 1000, type: "—Board Restriction—", title: "Square Trap!!!!", description: "`<br><br>If you land a piece on <b>ƒ(1-2)®(3-6)</b>, <b>ƒ(3-4)®(3-6)</b>, <b>ƒ(5-6)®(3-6)</b>, or <b>ƒ(7-8)®(3-6)</b>, that piece can no longer&nbsp;move." },
-            { elo: 'Magnus', type: "—Board Restriction—", title: "Square Trap!!!!!", description: "`<br><br>If you land a piece on <b>ƒ(1-3)®(3-4)</b>, <b>ƒ(1-3)®(5-6)</b>, <b>ƒ(4-5)®(3-6)</b>, <b>ƒ(6-8)®(3-4)</b>, or <b>ƒ(6-8)®(5-6)</b>, that piece can no longer&nbsp;move." },
+            { elo: 250, type: "—Board Restriction—", title: "Square Trap!", description: "`<br><br>If you land a piece on |ƒ®(3-6)|, that piece can no longer&nbsp;move." },
+            { elo: 500, type: "—Board Restriction—", title: "Square Trap!!", description: "`<br><br>If you land a piece on |ƒ(1-4)®(3-6)| or |ƒ(5-8)®(3-6)|, that piece can no longer&nbsp;move." },
+            { elo: 750, type: "—Board Restriction—", title: "Square Trap!!!", description: "`<br><br>If you land a piece on |ƒ(1-3)®(3-6)|, |ƒ(4-5)®(3-6)|, or |ƒ(6-8)®(3-6)|, that piece can no longer&nbsp;move." },
+            { elo: 1000, type: "—Board Restriction—", title: "Square Trap!!!!", description: "`<br><br>If you land a piece on |ƒ(1-2)®(3-6)|, |ƒ(3-4)®(3-6)|, |ƒ(5-6)®(3-6)|, or |ƒ(7-8)®(3-6)|, that piece can no longer&nbsp;move." },
+            { elo: 'Magnus', type: "—Board Restriction—", title: "Square Trap!!!!!", description: "`<br><br>If you land a piece on |ƒ(1-3)®(3-4)|, |ƒ(1-3)®(5-6)|, |ƒ(4-5)®(3-6)|, |ƒ(6-8)®(3-4)|, or |ƒ(6-8)®(5-6)|, that piece can no longer&nbsp;move." },
 
             { elo: 750, type: "—Board Restriction—", title: "Cover Me", description: "√<br><br>You must always have a piece on |ƒ3| / ~ƒ6~ at the end of your turn." },
             { elo: 1000, type: "—Board Restriction—", title: "Cover Me", description: "`<br><br>You must always have a piece on |ƒ3| / ~ƒ6~ at the end of your turn." },
@@ -674,8 +674,8 @@
             { elo: 500, type: "—Fail Condition—", title: "V.I.B.s", description: "√<br><br>If you lose both bishops, you must&nbsp;resign." },
             { elo: 500, type: "—Fail Condition—", title: "V.I.P.s", description: "`<br><br>If you lose all your pawns, you must&nbsp;resign." },
             { elo: 250, type: "—Fail Condition—", title: "V.I.P.s", description: "√<br><br>If you lose all your pawns, you must&nbsp;resign." },
-            { elo: 1000, type: "—Fail Condition—", title: "V.I.P.", description: "√<br><br>If you lose your <b>ƒ</b> pawn, you must&nbsp;resign." },
-            { elo: 'Magnus', type: "—Fail Condition—", title: "V.I.P.", description: "`<br><br>If you lose your <b>ƒ</b> pawn, you must&nbsp;resign." },
+            { elo: 1000, type: "—Fail Condition—", title: "V.I.P.", description: "√<br><br>If you lose your |ƒ| pawn, you must&nbsp;resign." },
+            { elo: 'Magnus', type: "—Fail Condition—", title: "V.I.P.", description: "`<br><br>If you lose your |ƒ| pawn, you must&nbsp;resign." },
             { elo: 500, type: "—Fail Condition—", title: "V.I.Q.", description: "√<br><br>If you lose your queen, you must&nbsp;resign." },
             { elo: 750, type: "—Fail Condition—", title: "V.I.Q.", description: "`<br><br>If you lose your queen, you must&nbsp;resign." },
             { elo: 'Magnus', type: "—Fail Condition—", title: "V.I.E.", description: "`<br><br>You must resign if you lose a)&nbsp;both&nbsp;bishops, b)&nbsp;both&nbsp;knights, c)&nbsp;both&nbsp;rooks, or d)&nbsp;your&nbsp;queen." },
@@ -715,8 +715,8 @@
             { elo: 'Magnus', type: "—Multi-Rule—", title: "Hodge Podge", description: "`<br><br>¡<br>¡<br>¡<br>¡<br>¡" },
             { elo: 'Magnus', type: "—Multi-Rule—", title: "Grab Bag", description: "`<br><br>¡<br>¡<br>¡<br>¡<br>¡" },
             { elo: 'Magnus', type: "—Multi-Rule—", title: "Patchwork", description: "`<br><br>¡<br>¡<br>¡<br>¡<br>¡" },
-            { elo: 1000, type: "—Multi-Rule—", title: "Crosshairs", description: "√<br><br>You can't land a piece on the <b>ƒ</b> file or on rank <b>®(3-6)</b>." },
-            { elo: 'Magnus', type: "—Multi-Rule—", title: "Crosshairs", description: "`<br><br>You can't land a piece on the <b>ƒ</b> file or on rank <b>®(3-6)</b>." },
+            { elo: 1000, type: "—Multi-Rule—", title: "Crosshairs", description: "√<br><br>You can't land a piece on the |ƒ| file or on rank |®(3-6)|." },
+            { elo: 'Magnus', type: "—Multi-Rule—", title: "Crosshairs", description: "`<br><br>You can't land a piece on the |ƒ| file or on rank |®(3-6)|." },
 
 
             // Quest
@@ -731,8 +731,8 @@
             { elo: 1000, type: "—Quest—", title: "I'm Sorry Mario, But Your King Is In Another&nbsp;Castle", description: "√<br><br>Castle to one side, then re-castle your king to the outside of your other rook&nbsp;by&nbsp;hand.<br><br>While recastling, you cannot move any pieces except your king&nbsp;and&nbsp;pawns.<br><br>Cannot be done in the endgame." },
             { elo: 'Magnus', type: "—Quest—", title: "I'm Sorry Mario, But Your King Is In Another&nbsp;Castle", description: "`<br><br>Castle to one side, then re-castle your king to the outside of your other rook&nbsp;by&nbsp;hand.<br><br>While recastling, you cannot move any pieces except your king&nbsp;and&nbsp;pawns.<br><br>Cannot be done in the endgame." },
 
-            { elo: 250, type: "—Quest—", title: "Queenside Stan", description: "√<br><br>After your first move, you must always have more pieces on the <b>a</b> through <b>d</b> files at the end of your&nbsp;turn." },
-            { elo: 250, type: "—Quest—", title: "Kingside Stan", description: "√<br><br>After your first move, you must always have more pieces on the <b>e</b> through <b>h</b> files at the end of your&nbsp;turn." },
+            { elo: 250, type: "—Quest—", title: "Queenside Stan", description: "√<br><br>After your first move, you must always have more pieces on the |a| through |d| files at the end of your&nbsp;turn." },
+            { elo: 250, type: "—Quest—", title: "Kingside Stan", description: "√<br><br>After your first move, you must always have more pieces on the |e| through |h| files at the end of your&nbsp;turn." },
             { elo: 500, type: "—Quest—", title: "Contrarian", description: "√<br><br>Castle to the opposite side of your opponent. If your opponent doesn't castle, you&nbsp;can't&nbsp;either.<br><br>If you lose castling rights, you must castle&nbsp;by&nbsp;hand." },
             { elo: 500, type: "—Quest—", title: "Middleman", description: "√<br><br>Occupy 3 of the 4 centre squares before the&nbsp;endgame." },
             { elo: 750, type: "—Quest—", title: "Middleman", description: "`<br><br>Occupy 3 of the 4 centre squares before the&nbsp;endgame." },
@@ -743,15 +743,15 @@
             { elo: 500, type: "—Quest—", title: "Invasion", description: "`<br><br>Get 5 attacking pieces on your opponent's side of the&nbsp;board." },
             { elo: 'Magnus', type: "—Quest—", title: "Chess 960-y", description: "√<br><br>Rearrange a few pieces so that your |1st| / ~8th~ rank is full, but not the same as when you&nbsp;started." },
 
-            { elo: 500, type: "—Quest—", title: "Shared Space", description: "√<br><br>Get at least 4 different pieces to land on&nbsp;<b>ƒ®(3-6)</b>." },
-            { elo: 1000, type: "—Quest—", title: "Shared Space", description: "`<br><br>Get at least 4 different pieces to land on&nbsp;<b>ƒ®(3-6)</b>." },
-            { elo: 500, type: "—Quest—", title: "Town Square", description: "√<br><br>Get a knight, bishop, and rook to land on&nbsp;<b>ƒ®(2-7)</b>." },
-            { elo: 1000, type: "—Quest—", title: "Town Square", description: "`<br><br>Get a knight, bishop, and rook to land on&nbsp;<b>ƒ®(2-7)</b>." },
+            { elo: 500, type: "—Quest—", title: "Shared Space", description: "√<br><br>Get at least 4 different pieces to land on&nbsp;|ƒ®(3-6)|." },
+            { elo: 1000, type: "—Quest—", title: "Shared Space", description: "`<br><br>Get at least 4 different pieces to land on&nbsp;|ƒ®(3-6)|." },
+            { elo: 500, type: "—Quest—", title: "Town Square", description: "√<br><br>Get a knight, bishop, and rook to land on&nbsp;|ƒ®(2-7)|." },
+            { elo: 1000, type: "—Quest—", title: "Town Square", description: "`<br><br>Get a knight, bishop, and rook to land on&nbsp;|ƒ®(2-7)|." },
 
-            { elo: 500, type: "—Quest—", title: "Sub", description: "√<br><br>Create a vertical or horizontal chain of 2 pieces anywhere between <b>a2</b> and <b>h7</b>. It must be worth at least 4 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;sub!\"" },
-            { elo: 750, type: "—Quest—", title: "Cruiser", description: "√<br><br>Create a vertical or horizontal chain of 3 pieces anywhere between <b>a2</b> and <b>h7</b>. It must be worth at least 6 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;cruiser!\"" },
-            { elo: 1000, type: "—Quest—", title: "Battleship", description: "√<br><br>Create a vertical or horizontal chain of 4 pieces anywhere between <b>a2</b> and <b>h7</b>. It must be worth at least 7 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;battleship!\"" },
-            { elo: 'Magnus', type: "—Quest—", title: "Carrier", description: "√<br><br>Create a vertical or horizontal chain of 5 pieces anywhere between <b>a2</b> and <b>h7</b>. It must be worth at least 9 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;carrier!\"" },
+            { elo: 500, type: "—Quest—", title: "Sub", description: "√<br><br>Create a vertical or horizontal chain of 2 pieces by the 5th turn. It must be worth at least 4 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;Sub!\"" },
+            { elo: 750, type: "—Quest—", title: "Cruiser", description: "√<br><br>Create a vertical or horizontal chain of 3 pieces by the 6th turn. It must be worth at least 6 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;Cruiser!\"" },
+            { elo: 1000, type: "—Quest—", title: "Battleship", description: "√<br><br>Create a vertical or horizontal chain of 4 pieces by the 7th turn. It must be worth at least 7 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;Battleship!\"" },
+            { elo: 'Magnus', type: "—Quest—", title: "Carrier", description: "√<br><br>Create a vertical or horizontal chain of 5 pieces by the 8th turn. It must be worth at least 9 points of material. Once you've \"placed\" your ship, you can no longer move any of the pieces&nbsp;in&nbsp;it.<br><br>If your opponent captures every piece in your \"ship\", you must say, \"You&nbsp;sunk&nbsp;my&nbsp;Carrier!\"" },
 
             { elo: 250, type: "—Quest—", title: "Pawns Ahead", description: "√<br><br>Get a two pawn advantage." },
             { elo: 500, type: "—Quest—", title: "Pawn Advantage", description: "√<br><br>Get a three pawn advantage." },
@@ -782,9 +782,9 @@
             { elo: 750, type: "—Unlockable—", title: "New Challenger Approaching!", description: "`<br><br>You can't move your queen until&nbsp;turn&nbsp;15." },
             { elo: 'Magnus', type: "—Unlockable—", title: "Crank", description: "`<br><br>You only have 5 turns. For each capture you make, you get 3&nbsp;more&nbsp;turns.<br><br>If you run out of turns, you must&nbsp;resign." },
 
-            { elo: 250, type: "—Unlockable—", title: "I Slept In", description: "`<br><br>Your piece on |ƒ1| / ~ƒ8~ can't move until&nbsp;turn&nbsp;10." },
-            { elo: 500, type: "—Unlockable—", title: "I Missed The Bus", description: "`<br><br>Your piece on |ƒ1| / ~ƒ8~ can't move until&nbsp;turn&nbsp;15." },
-            { elo: 750, type: "—Unlockable—", title: "My Car Broke Down", description: "`<br><br>Your piece on |ƒ1| / ~ƒ8~ can't move until&nbsp;turn&nbsp;20." },
+            { elo: 250, type: "—Unlockable—", title: "I Slept In", description: "`<br><br>Your piece on the |1st| / ~8th~ rank on the |ƒ| file can't move until&nbsp;turn&nbsp;10." },
+            { elo: 500, type: "—Unlockable—", title: "I Missed The Bus", description: "`<br><br>Your piece on the |1st| / ~8th~ rank on the |ƒ| file can't move until&nbsp;turn&nbsp;15." },
+            { elo: 750, type: "—Unlockable—", title: "My Car Broke Down", description: "`<br><br>Your piece on the |1st| / ~8th~ rank on the |ƒ| file can't move until&nbsp;turn&nbsp;20." },
 
 
             // Sacrifices
@@ -819,15 +819,15 @@
 
             // Scoresheet Quest
             { elo: 500, type: "—Scoresheet Quest—", title: "The Rad One Radiates", description: "√<br><br>Get |Rad1| or ~Rad8~ on your scoresheet.<br><br><font size=-2>Yeah, that would be hella rad.</font>" },
-            { elo: 1000, type: "—Scoresheet Quest—", title: "Chss", description: "√<br><br>You can't move your <b>e</b> pawn or land any piece on the <b>e</b>&nbsp;file." },
-            { elo: 'Magnus', type: "—Scoresheet Quest—", title: "Chss", description: "`<br><br>You can't move your <b>e</b> pawn or land any piece on the <b>e</b>&nbsp;file." },
+            { elo: 1000, type: "—Scoresheet Quest—", title: "Chss", description: "√<br><br>You can't move your |e| pawn or land any piece on the |e|&nbsp;file." },
+            { elo: 'Magnus', type: "—Scoresheet Quest—", title: "Chss", description: "`<br><br>You can't move your |e| pawn or land any piece on the |e|&nbsp;file." },
             { elo: 'Magnus', type: "—Scoresheet Quest—", title: "Thank You For Coming To My&nbsp;Ned&nbsp;Talk", description: "√<br><br>Get \"Ned\" on your scoresheet.<br><br>Here, let me help:<br>|e3, Ne2, Na3, c3, Nc2, Ned4|<br>or ~e6, Ne7, Na6, c6, Nc7, Ned5~." },
 
-            { elo: 250, type: "—Scoresheet Quest—", title: "Target Practice", description: "`<br><br>Get <b>Qƒ®(2-7)</b> on your scoresheet." },
-            { elo: 500, type: "—Scoresheet Quest—", title: "Firing Range", description: "`<br><br>Get <b>Qƒ®(2-4)</b> and <b>Qƒ®(5-7)</b>on your scoresheet." },
-            { elo: 750, type: "—Scoresheet Quest—", title: "Skeet Shooting", description: "`<br><br>Get <b>Qƒ(1-3)®(2-7)</b>, <b>Qƒ(4-5)®(2-4)</b>, and <b>Qƒ(6-8)®(2-4)</b> on your scoresheet." },
-            { elo: 1000, type: "—Scoresheet Quest—", title: "Duck Hunting", description: "`<br><br>Get <b>Qƒ(1-4)®(2-4)</b>, <b>Qƒ(1-4)®(5-7)</b>, <b>Qƒ(5-8)®(2-4)</b>, and <b>Qƒ(5-8)®(5-7)</b> on your scoresheet." },
-            { elo: 'Magnus', type: "—Scoresheet Quest—", title: "Womprat Bullseying", description: "`<br><br>Get <b>Qƒ(1-3)®(2-4)</b>, <b>Qƒ(1-3)®(5-7)</b>, <b>Qƒ(4-5)®(2-7)</b>, <b>Qƒ(6-8)®(2-4)</b>, and <b>Qƒ(6-8)®(5-7)</b> on your scoresheet." },
+            { elo: 250, type: "—Scoresheet Quest—", title: "Target Practice", description: "`<br><br>Get |Qƒ®(2-7)| on your scoresheet." },
+            { elo: 500, type: "—Scoresheet Quest—", title: "Firing Range", description: "`<br><br>Get |Qƒ®(2-4)| and |Qƒ®(5-7)|on your scoresheet." },
+            { elo: 750, type: "—Scoresheet Quest—", title: "Skeet Shooting", description: "`<br><br>Get |Qƒ(1-3)®(2-7)|, |Qƒ(4-5)®(2-4)|, and |Qƒ(6-8)®(2-4)| on your scoresheet." },
+            { elo: 1000, type: "—Scoresheet Quest—", title: "Duck Hunting", description: "`<br><br>Get |Qƒ(1-4)®(2-4)|, |Qƒ(1-4)®(5-7)|, |Qƒ(5-8)®(2-4)|, and |Qƒ(5-8)®(5-7)| on your scoresheet." },
+            { elo: 'Magnus', type: "—Scoresheet Quest—", title: "Womprat Bullseying", description: "`<br><br>Get |Qƒ(1-3)®(2-4)|, |Qƒ(1-3)®(5-7)|, |Qƒ(4-5)®(2-7)|, |Qƒ(6-8)®(2-4)|, and |Qƒ(6-8)®(5-7)| on your scoresheet." },
 
 
             // Opening Moves
@@ -863,8 +863,8 @@
             { elo: 750, type: "—Opening Quest—", title: "Pawn Hurricane", description: "√<br><br>Open with eight pawn moves in your first 11&nbsp;turns." },
             { elo: 1000, type: "—Opening Quest—", title: "Pawn Tsunami", description: "√<br><br>Open with ten pawn moves in your first 13&nbsp;turns." },
 
-            { elo: 1000, type: "—Opening Quest—", title: "Roll Call!", description: "√<br><br>Open the game with |a3| / ~a6~ while saying, \"Give me an a!\" From then on, you can only move your pawns in order from <b>b</b> through <b>h</b> while cheering, \"Give me a b!\", \"Give me an c!\" and&nbsp;so&nbsp;on.<br><br>If a pawn is lost before you get to <b>h</b>, skip it and continue in a sad&nbsp;voice.<br><br>When finished, cheer (or sadly cheer),<br>\"What does that spell? Ab-si-def-guh!\"" },
-            { elo: 500, type: "—Opening Quest—", title: "Eroooooy Jenkinsss!", description: "√<br><br>Shout, \"Eroooooooooy Jeeeenkinssssss!\" at your opponent, and then push your <b>e</b> pawn as far as it'll&nbsp;go.<br><br>As the game progresses, you must immediately play any legal move that pushes Eroy&nbsp;forward." },
+            { elo: 1000, type: "—Opening Quest—", title: "Roll Call!", description: "√<br><br>Open the game with |a3| / ~a6~ while saying, \"Give me an a!\" From then on, you can only move your pawns in order from |b| through |h| while cheering, \"Give me a b!\", \"Give me an c!\" and&nbsp;so&nbsp;on.<br><br>If a pawn is lost before you get to |h|, skip it and continue in a sad&nbsp;voice.<br><br>When finished, cheer (or sadly cheer),<br>\"What does that spell? Ab-si-def-guh!\"" },
+            { elo: 500, type: "—Opening Quest—", title: "Eroooooy Jenkinsss!", description: "√<br><br>Shout, \"Eroooooooooy Jeeeenkinssssss!\" at your opponent, and then push your |e| pawn as far as it'll&nbsp;go.<br><br>As the game progresses, you must immediately play any legal move that pushes Eroy&nbsp;forward." },
 
             { elo: 250, type: "—Opening Quest—", title: "Prancing With Myself", description: "√<br><br>Begin the game with 3 knight&nbsp;moves." },
             { elo: 500, type: "—Opening Quest—", title: "I Wanna Prance With&nbsp;Somebody", description: "√<br><br>Begin the game with 4 knight&nbsp;moves." },
@@ -882,12 +882,12 @@
 
 
             // Spelling Bee
-            { elo: 250, type: "—Spelling Bee—", title: "The Egg", description: "√<br><br>Open with |e3, g3, g4| / ~e6, g6, g5~" },
+            { elo: 250, type: "—Spelling Bee—", title: "The Egg", description: "√<br><br>Open with |e3, g3, g4| / ~e6, g6, g5~." },
             { elo: 250, type: "—Spelling Bee—", title: "Hopefully Not Prophecy", description: "√<br><br>Open with |d3, e4, a3, d4| / ~d6, e5, a6, d5~" },
             { elo: 250, type: "—Spelling Bee—", title: "Open S_s_m_", description: "√<br><br>Open with |e3, a3, e4| / ~e6, a6, e5~." },
             { elo: 250, type: "—Spelling Bee—", title: "\"Bro, It's A 100% Natty Opening,&nbsp;Bro!\"", description: "√<br><br>Open with |h3, g3, h4| / ~h6, g6, h5~." },
-            { elo: 250, type: "—Spelling Bee—", title: "Take A Load Off", description: "√<br><br>Open with pawn moves that spell \"ahh.\" Continue pushing your <b>h</b> pawn if you can. The further it moves, the longer a relaxed sigh you&nbsp;let&nbsp;out." },
-            { elo: 250, type: "—Spelling Bee—", title: "Boo!", description: "√<br><br>Open with pawn moves that spell \"aah!\" Add more <b>a</b> pawn pushes if you're feeling&nbsp;brave. Then scream. The further your <b>a</b> pawn has moved, the longer the&nbsp;scream." },
+            { elo: 250, type: "—Spelling Bee—", title: "Take A Load Off", description: "√<br><br>Open with pawn moves that spell \"ahh.\" Continue pushing your |h| pawn if you can. The further it moves, the longer a relaxed sigh you&nbsp;let&nbsp;out." },
+            { elo: 250, type: "—Spelling Bee—", title: "Boo!", description: "√<br><br>Open with pawn moves that spell \"aah!\" Add more |a| pawn pushes if you're feeling&nbsp;brave. Then scream. The further your |a| pawn has moved, the longer the&nbsp;scream." },
             { elo: 250, type: "—Spelling Bee—", title: "Knee Slapper", description: "√<br><br>Open with pawn moves that spell \"hah.\" Then laugh&nbsp;maniacally." },
             { elo: 250, type: "—Spelling Bee—", title: "Schemin' Schemer", description: "√<br><br>Open with pawn moves that spell \"heh.\" Then rub your hands together and say,&nbsp;\"heh heh heh.\"" },
             { elo: 250, type: "—Spelling Bee—", title: "She's A Witch!", description: "√<br><br>Open with pawn moves that spell \"hag.\"" },
@@ -905,10 +905,10 @@
             // Bad Ones
             // { elo: 500, type: "—Quest—", title: "Snipers!!", description: "`<br><br>Put both bishops in the corner of the board." },
             // { elo: 1000, type: "—Quest—", title: "Dunces", description: "√<br><br>Put both knights into both your corners of the board at&nbsp;once." },
-            // { elo: 1000, type: "—Quest—", title: "Queenside Purist", description: "√<br><br>Have all your attacking pieces on the <b>a</b> through <b>d</b>&nbsp;files." },
-            // { elo: 1000, type: "—Quest—", title: "Kingside Purist", description: "√<br><br>Have all your attacking pieces on the <b>e</b> through <b>h</b>&nbsp;files." },
-            // { elo: 1000, type: "—Quest—", title: "Queenside? What Queenside?", description: "√<br><br>Have all your attacking pieces plus your king on the <b>a</b> through <b>d</b> files, and no pawns on the <b>e</b> through <b>h</b>&nbsp;files." },
-            // { elo: 1000, type: "—Quest—", title: "Kingside? What Kingside?", description: "√<br><br>Have all your attacking pieces plus your king on the <b>e</b> through <b>h</b> files, and no pawns on the <b>a</b> through <b>d</b>&nbsp;files." },
+            // { elo: 1000, type: "—Quest—", title: "Queenside Purist", description: "√<br><br>Have all your attacking pieces on the |a| through |d|&nbsp;files." },
+            // { elo: 1000, type: "—Quest—", title: "Kingside Purist", description: "√<br><br>Have all your attacking pieces on the |e| through |h|&nbsp;files." },
+            // { elo: 1000, type: "—Quest—", title: "Queenside? What Queenside?", description: "√<br><br>Have all your attacking pieces plus your king on the |a| through |d| files, and no pawns on the |e| through |h|&nbsp;files." },
+            // { elo: 1000, type: "—Quest—", title: "Kingside? What Kingside?", description: "√<br><br>Have all your attacking pieces plus your king on the |e| through |h| files, and no pawns on the |a| through |d|&nbsp;files." },
             // { elo: 750, type: "—Quest—", title: "Council of Elrond", description: "√<br><br>You can't capture pieces until you've had a bishop, knight, rook, and queen next to your king at&nbsp;one&nbsp;time." },
             // { elo: 750, type: "—Quest—", title: "Fire Alarm", description: "√<br><br>Completely vacate your backrank before the&nbsp;endgame.<br><br><i>Endgame = neither player has more than 10 points of&nbsp;material.</i>" },
             // { elo: 250, type: "—Quest—", title: "Headstart", description: "√<br><br>You can't capture any pieces until you're down at least 4 points of&nbsp;material." }, // prob bad
@@ -921,17 +921,17 @@
         ];
 
         const databaseSpecialChars = [
-          { replacement: ["Your <b>ƒ</b> pawn cannot move."] },
+          { replacement: ["Your |ƒ| pawn cannot move."] },
           { replacement: ["You can't castle queenside." , "You can't castle kingside."] },
           { replacement: ["You can't en passant." , "En passant is forced."] },
-          { replacement: ["You can't move your rook on the <b>a</b>&nbsp;file." , "You can't move your rook on the <b>h</b>&nbsp;file." , "You can't move your knight on the <b>b</b>&nbsp;file." , "You can't move your knight on the <b>g</b>&nbsp;file." , "You can't move your bishop on the <b>c</b>&nbsp;file." , "You can't move your bishop on the <b>f</b>&nbsp;file."] },
+          { replacement: ["You can't move your rook on the |a|&nbsp;file." , "You can't move your rook on the |h|&nbsp;file." , "You can't move your knight on the |b|&nbsp;file." , "You can't move your knight on the |g|&nbsp;file." , "You can't move your bishop on the |c|&nbsp;file." , "You can't move your bishop on the |f|&nbsp;file."] },
           { replacement: ["You must have more pieces on light&nbsp;squares." , "You must have more pieces on dark&nbsp;squares."] },
           { replacement: ["Pawns can only capture to the left." , "Pawns can only capture to the right."] },
           { replacement: ["Isolated pawns can't move."] },
           { replacement: ["Doubled pawns can't move." , "You cannot make any move that puts two pawns on the same&nbsp;file."] },
           { replacement: ["Your king cannot pass the |4th| / ~5th~ rank." , "Your queen cannot pass the |4th| / ~5th~ rank."] },
           { replacement: ["Your king cannot capture pawns." , "Your queen cannot capture pawns."] },
-          { replacement: ["You cannot land a piece on <b>ƒ®(3-6)</b>." , "You must land a piece on <b>ƒ®(3-6)</b>."] },
+          { replacement: ["You cannot land a piece on |ƒ®(3-6)|." , "You must land a piece on |ƒ®(3-6)|."] },
           { replacement: ["Pawns can only move one square at a time in the&nbsp;opening." , "Pawns must move two squares at a time in the&nbsp;opening."] },
           { replacement: ["You can only promote to a knight." , "You can only promote to a bishop." , "You can only promote to a rook."]  },
           { replacement: ["You must fianchetto a bishop in the&nbsp;opening."] }
@@ -946,7 +946,8 @@
 
         // Set initial content for #lineDescription when the page loads
         window.onload = function() {
-            const initialText = "<br>Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br>This is in beta, so please help improve it by sending feedback to&nbsp;<a href=mailto:elostealo1@gmail.com>elostealo1@gmail.com</a>.<br><br><br><br><font size=-1><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
+            const initialText = "<br>Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br><br><u>New Features!</u><br><br>Multi-Rules have been added which give you a random set of multiple small&nbsp;challenges.<br><br>Redesigned MCBs (Much Cooler Buttons) are now 92% more fun to&nbsp;press.<br><br>Over-the-Board / Online Toggle turns off Public tasks so you can play online without having to explain the concept of Elo Stealo to&nbsp;strangers.<br><br><br>This is still in beta, so please help improve it by sending feedback to&nbsp;<a href=mailto:elostealo1@gmail.com>elostealo1@gmail.com</a>.<br><br><br><br><font size=-1><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
+
             const lineDescription = document.getElementById('lineDescription');
 
             // Set the initial text content with formatting
