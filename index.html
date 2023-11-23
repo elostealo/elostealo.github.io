@@ -57,7 +57,7 @@
             margin-right: 20px; /* Adjust the left indentation as needed */
             text-align: left; /* Ensure left alignment */
             @media screen and (max-width: 768px) {
-                margin-left: 40px; /* Adjust the left indentation as needed */
+                margin-left: 50px; /* Adjust the left indentation as needed */
             }
         }
 
@@ -66,8 +66,8 @@
             margin-left: -29px;
             color: rgba(0, 0, 0, 0.6);
             @media screen and (max-width: 768px) {
-                font-size: 130%;
-                margin-left: -25px;
+                font-size: 120%;
+                margin-left: -35px;
             }
         }
 
@@ -77,7 +77,7 @@
             color: rgba(255, 255, 255, 0.8);
             @media screen and (max-width: 768px) {
                 font-size: 120%;
-                margin-left: -22px;
+                margin-left: -33px;
             }
         }
 
@@ -836,6 +836,11 @@
             { elo: 750, type: "—Quest—", title: "Martin For A Minute", description: "π<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour, then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;8&nbsp;turns.<br><br>After his 8 turns are up, you take&nbsp;over." },
             { elo: 1000, type: "—Quest—", title: "I Am Become Martin, Destroyer&nbsp;Of&nbsp;Chances", description: "π<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour, then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;12&nbsp;turns.<br><br>After his 12 turns are up, you take&nbsp;over." },
 
+            { elo: 1000, type: "—Pawn Quest—", title: "King Bolt", description: "ß<br><br>Run your king 2 moves in a row by turn&nbsp;10." },
+            King Sprint - Make 2 king moves in a row by turn 10.
+            King Bolt, King van Niekerk, King Kiptum, King Sorokin
+            Queen Griffith-Joyner, Queen Koch, Queen Assefa, Queen Herron
+
 
             // Pawn Quests
             // { elo: 500, type: "—Pawn Quest—", title: "Shaggy and Scooby", description: "π<br><br>Get two connected pawns to the |5th|&nbsp;/&nbsp;~4th~&nbsp;rank." },
@@ -1045,7 +1050,7 @@
 
         // Set initial content for #lineDescription when the page loads
         window.onload = function() {
-          const initialText = "Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br><br><u>New Features!<br></u><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added Multi-Rules to randomize multiple smaller challenges.</li><li><span <span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Redesigned MCBs (Much Cooler Buttons) are 92% more fun to press.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Over-the-Board / Online toggle turns off Public tasks, so you can play online without having to explain the concept to strangers.</li></ul><br><br>This is still in beta, so please help improve it by emailing feedback&nbsp;<a href=mailto:elostealo1@gmail.com>here</a>.<br><br><br><font size='-1'><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
+          const initialText = "Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br><br><u>New Features!<br></u><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added Multi-Rules to randomize multiple smaller challenges.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Redesigned MCBs (Much Cooler Buttons) are 92% more fun to press.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Over-the-Board / Online toggle turns off Public tasks, so you can play online without having to explain the concept to strangers.</li></ul><br><br>This is still in beta, so please help improve it by emailing feedback&nbsp;<a href=mailto:elostealo1@gmail.com>here</a>.<br><br><br><font size='-1'><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
 
 
 
