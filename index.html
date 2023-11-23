@@ -66,7 +66,7 @@
             margin-left: -29px;
             color: rgba(0, 0, 0, 0.6);
             @media screen and (max-width: 768px) {
-                font-size: 125%;
+                font-size: 120%;
                 margin-left: -26px;
             }
         }
@@ -583,10 +583,10 @@
             { elo: 750, type: "—Pawn Rule—", title: "Just Crashing Through", description: "ß<br><br>Your pawns can only reach the |5th| / ~4th~ rank by&nbsp;capturing." },
             { elo: 1000, type: "—Pawn Rule—", title: "Just Crashing Through", description: "π<br><br>Your pawns can only reach the |5th| / ~4th~ rank by&nbsp;capturing." },
 
-            { elo: 250, type: "—Pawn Rule—", title: "The Three Amigos", description: "ß<br><br>Only your |ƒ(1-3)|, |ƒ(4-5)|, and |ƒ(6-8)| pawns can promote." },
-            { elo: 500, type: "—Pawn Rule—", title: "Sam & Frodo", description: "ß<br><br>Only your |ƒ(1-4)| and |ƒ(5-8)| pawns can promote." },
-            { elo: 750, type: "—Pawn Rule—", title: "You Were The Chosen&nbsp;Pawn!", description: "ß<br><br>Only your |ƒ| pawn can promote." },
-            { elo: 1000, type: "—Pawn Rule—", title: "You Were The Chosen&nbsp;Pawn!", description: "π<br><br>Only your |ƒ| pawn can promote." },
+            { elo: 250, type: "—Pawn Rule—", title: "John&<br>Paul&<br>Ringo&<br>George.", description: "ß<br><br>Only your |ƒ(1-2)|, |ƒ(3-4)|, |ƒ(5-6)|, and |ƒ(7-8)| pawns can promote." },
+            { elo: 500, type: "—Pawn Rule—", title: "The Three Amigos", description: "ß<br><br>Only your |ƒ(1-3)|, |ƒ(4-5)|, and |ƒ(6-8)| pawns can promote." },
+            { elo: 750, type: "—Pawn Rule—", title: "Sam & Frodo", description: "ß<br><br>Only your |ƒ(1-4)| and |ƒ(5-8)| pawns can promote." },
+            { elo: 1000, type: "—Pawn Rule—", title: "You Were The Chosen&nbsp;Pawn!", description: "ß<br><br>Only your |ƒ| pawn can promote." },
 
             { elo: 500, type: "—Pawn Rule—", title: "Alpha Pawn", description: "ß<br><br>Only one pawn can lead. If you lose that pawn, another can step up to take its&nbsp;place." },
             { elo: 750, type: "—Pawn Rule—", title: "Alpha Pawn", description: "π<br><br>Only one pawn can lead. If you lose that pawn, another can step up to take its&nbsp;place." },
@@ -870,7 +870,7 @@
             { elo: 750, type: "—Sacrifice—", title: "Oh No, My Knights!", description: "π<br><br>Sac both knights for a pawn before turn 10." },
             { elo: 250, type: "—Sacrifice—", title: "Oh No, My Bishop!", description: "π<br><br>Sac your bishop for a pawn before turn 5." },
             { elo: 750, type: "—Sacrifice—", title: "Oh No, My Bishops!", description: "π<br><br>Sac both bishops for pawns before turn 10." },
-            { elo: 250, type: "—Sacrifice—", title: "The ROOOOOK!", description: "π<br><br>Sac your rook for a bishop, knight, or pawn before turn 7" },
+            { elo: 250, type: "—Sacrifice—", title: "The ROOOOOK!", description: "π<br><br>Sac your rook for a bishop, knight, or pawn before turn 7." },
             { elo: 500, type: "—Sacrifice—", title: "The ROOOOOKS!!", description: "π<br><br>Sac both rooks for bishops, knights, or pawns before turn 12." },
             { elo: 500, type: "—Sacrifice—", title: "Oh No, My Queen!", description: "π<br><br>Sac your queen before turn 7." },
             { elo: 750, type: "—Sacrifice—", title: "Oh F***, My Queen!", description: "π<br><br>Sac your queen for a pawn before turn 7." },
@@ -1022,6 +1022,9 @@
             // { elo: 500, type: "—Quest—", title: "A Royal Affair", description: "Get your queen close enough to kiss the opponent's king." },
             // { elo: 1000, type: "—Piece Restriction—", title: "The Champion", description: "π<br><br>Pick one knight, bishop, or rook as your&nbsp;champion.<br>The rest can't move until your champion is dead.<br><br>Repeat." },
 
+
+            { elo: 0, type: "", title: "<br>Changelog", description: "<br><i>—November 22nd, 2023—</i><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added a changelog.</li><li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;New Over-the-Board / Online toggle turns off Public tasks, so you can play online without having to explain the concept to strangers.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added Multi-Rules of random smaller challenges.<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Redesigned MCBs (Much Cooler Buttons) are 92% more fun to press.</li></ul>" },
+
         ];
 
         const databaseSpecialChars = [
@@ -1055,14 +1058,12 @@
 
         // Set initial content for #lineDescription when the page loads
         window.onload = function() {
-          const initialText = "Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br><br><u>New Features!<br></u><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added Multi-Rules to randomize multiple smaller challenges.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Redesigned MCBs (Much Cooler Buttons) are 92% more fun to press.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Over-the-Board / Online toggle turns off Public tasks, so you can play online without having to explain the concept to strangers.</li></ul><br><br>This is still in beta, so please help improve it by emailing feedback&nbsp;<a href=mailto:elostealo1@gmail.com>here</a>.<br><br><br><font size='-1'><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
+          const initialText = "<br><br>Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br><br>This is still in beta, so please help improve it<br>by emailing feedback&nbsp;<a href=mailto:elostealo1@gmail.com>here</a>.<br><br><br><br><font size='-1'><a href='#' onclick='generateRandomLine(0)'><i>Changelog</i></a><br><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
 
+          const lineDescription = document.getElementById('lineDescription');
 
-
-            const lineDescription = document.getElementById('lineDescription');
-
-            // Set the initial text content with formatting
-            lineDescription.innerHTML = initialText;
+          // Set the initial text content with formatting
+          lineDescription.innerHTML = initialText;
         };
 
         // Add a global flag to track the special rule selection mode
@@ -1138,8 +1139,8 @@
 
         function generateRandomLine(eloValue) {
             const filteredDatabaseRules = showOnlyCheckRules
-                ? databaseRules.filter(line => line.elo === eloValue && line.description.includes('ß'))
-                : databaseRules.filter(line => line.elo === eloValue && (line.description.includes('ß') || line.description.includes('π')));
+                ? databaseRules.filter(line => line.elo === eloValue && line.description.includes('ß') || line.description.includes('changelog'))
+                : databaseRules.filter(line => line.elo === eloValue && (line.description.includes('ß') || line.description.includes('π') || line.description.includes('changelog')));
 
             if (filteredDatabaseRules.length === 0) {
                 document.getElementById("title").textContent = "No data available for selected elo.";
