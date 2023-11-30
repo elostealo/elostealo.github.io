@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e0e4e4;
+    margin: 0;
+}
+
+#header {
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Arial Black", sans-serif;
+    margin-top: 20px;
+    margin-bottom: -18px;
+    /* Adjust font size for mobile */
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+}
+
+#description {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#content {
+    margin-top: 18px;
+}
+
+/* List Stuff */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default padding */
+    position: left;
+}
+
+ul li {
+    margin-left: 50px; /* Adjust the left indentation as needed */
+    margin-right: 20px; /* Adjust the left indentation as needed */
+    text-align: left; /* Ensure left alignment */
+    @media screen and (max-width: 768px) {
+        margin-left: 50px; /* Adjust the left indentation as needed */
+    }
+}
+
+.featureDark {
+    font-size: 150%;
+    margin-left: -29px;
+    color: rgba(0, 0, 0, 0.6);
+    @media screen and (max-width: 768px) {
+        font-size: 120%;
+        margin-left: -26px;
+    }
+}
+
+.featureLight {
+    font-size: 150%;
+    margin-left: -29px;
+    color: rgba(255, 255, 255, 0.8);
+    @media screen and (max-width: 768px) {
+        font-size: 120%;
+        margin-left: -26px;
+    }
+}
+
+/* Button Stuff */
+button {
+    padding: 10px 25px;
+    margin: 15px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #ffffff;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s; /* Combine transitions into a single property */
+    /* Adjust padding and font size for mobile */
+    @media screen and (max-width: 768px) {
+        padding: 12px 14px;
+        margin: 5px 3px;
+        font-size: 17px;
+        box-shadow: 0 6px 0px rgba(0, 0, 0, 0.5);
+        transform: translateY(-6px);
+        background-color: #ffffff;
+    }
+}
+
+button:hover {
+    box-shadow: 0 6px 0px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    transform: translateY(-6px);
+    background-color: #ffffff;
+}
+
+button:active {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    transition:
+        transform 0.1s,
+        box-shadow 0.1s; /* Combine transitions into a single property */
+    transform: translateY(0px);
+    background-color: #ffffff;
+}
+
+#output {
+    margin: 10px;
+}
+
+#type {
+    font-size: 90%; /* Slightly smaller font size for type */
+    font-style: italic;
+}
+
+.title {
+    text-transform: none;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Arial Black", sans-serif;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    line-height: 95%;
+    /* Adjust font size for mobile */
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+    }
+}
+
+#lineDescription {
+    font-size: 16px;
+    display: inline-block;
+    max-width: 35vw; /* Adjust this value to your preferred width */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* Adjust font size for mobile */
+    @media screen and (max-width: 768px) {
+        max-width: 90vw;
+    }
+}
+
+#description-above-buttons {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#spacer {
+    height: 10px;
+}
+
+/* Outline Boxes */
+.white-box {
+    display: inline-block; /* Ensure inline-block display */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.8
+    ); /* White background for | words */
+    color: black; /* Black text for | words */
+    padding: 2px 4px; /* Adjust padding for | words */
+    border-radius: 4px; /* Rounded corners for | words */
+}
+.black-box {
+    display: inline-block; /* Ensure inline-block display */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background for ~ words */
+    color: white; /* White text for ~ words */
+    padding: 2px 4px; /* Adjust padding for ~ words */
+    border-radius: 4px; /* Rounded corners for ~ words */
+}
+.gold-box {
+    background-color: rgba(0, 0, 0, 0.15); /* Golden background for π words */
+    color: Black; /* Black text for π words */
+    padding: 2px 15px; /* Adjust padding for π words */
+    border-radius: 12px; /* Rounded corners for π words */
+}
+.gray-box {
+    background-color: rgba(0, 0, 0, 0.45); /* Gray background for ß words */
+    color: white; /* White text for ß words */
+    padding: 2px 15px; /* Adjust padding for ß words */
+    border-radius: 12px; /* Rounded corners for ß words */
+}
+.box-text {
+    display: none; /* Hide |, π, ß, [, and ~ markers */
+}
+
+/* Styling for links */
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Styling for links in the header */
+.header-link {
+    color: white; /* Red color for links */
+    text-decoration: none; /* Remove underlines */
+}
+
+.header-link:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.header-link:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.header-link:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Switch Stuff */
+.switch-container {
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 15px;
+    }
+    font-family: "Arial", sans-serif;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Adjusted size */
+    height: 20px; /* Adjusted size */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Added rounded edges */
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Adjusted size */
+    width: 16px; /* Adjusted size */
+    left: 2px; /* Adjusted size */
+    bottom: 2px; /* Adjusted size */
+    background-color: white;
+    border-radius: 50%; /* Circular button */
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px); /* Adjusted distance */
+    -ms-transform: translateX(20px); /* Adjusted distance */
+    transform: translateX(20px); /* Adjusted distance */
+}
