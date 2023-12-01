@@ -28,12 +28,8 @@
             <button id="btn250" onclick="generateRandomLine(250)">250</button>
             <button id="btn500" onclick="generateRandomLine(500)">500</button>
             <button id="btn750" onclick="generateRandomLine(750)">750</button>
-            <button id="btn1000" onclick="generateRandomLine(1000)">
-                1000
-            </button>
-            <button id="btnMagnus" onclick="generateRandomLine('Magnus')">
-                Magnus Mode
-            </button>
+            <button id="btn1000" onclick="generateRandomLine(1000)">1000</button>
+            <button id="btnMagnus" onclick="generateRandomLine('Magnus')">Magnus Mode</button>
             <div id="spacer"></div>
             <div id="output">
                 <p><span id="type"></span></p>
@@ -205,10 +201,10 @@
                 // Royal Restrictions
                 { elo: 250, type: "—Royal Rule—", title: "Ball And Chain", description: "ß<br><br>Your king and queen must be within two squares of each other, as long as your queen shall&nbsp;live." },
                 { elo: 500, type: "—Royal Rule—", title: "Ball And Chain", description: "π<br><br>Your king and queen must be within two squares of each other, as long as your queen shall&nbsp;live." },
-                { elo: 500, type: "—Royal Rule—", title: "Mawwiage", description: "ß<br><br>Your king and queen must always be next to each other, as long as your queen shall&nbsp;live." },
-                { elo: 750, type: "—Royal Rule—", title: "Mawwiage", description: "π<br><br>Your king and queen must always be next to each other, as long as your queen shall&nbsp;live." },
-                { elo: 750, type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "ß<br><br>Your king and queen must always be next to each&nbsp;other.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
-                { elo: 1000, type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "π<br><br>Your king and queen must always be next to each&nbsp;other.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
+                { elo: 500, type: "—Royal Rule—", title: "Mawwiage", description: "ß<br><br>Your king and queen must always be next to each other, either directly or diagonally, as long as your queen shall&nbsp;live." },
+                { elo: 750, type: "—Royal Rule—", title: "Mawwiage", description: "π<br><br>Your king and queen must always be next to each other, either directly or diagonally, as long as your queen shall&nbsp;live." },
+                { elo: 750, type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "ß<br><br>Your king and queen must always be next to each other, either directly or&nbsp;diagonally.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
+                { elo: 1000, type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "π<br><br>Your king and queen must always be next to each other, either directly or&nbsp;diagonally.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
                 { elo: 'Magnus', type: "—Royal Rule—", title: "Immobile Nobles", description: "π<br><br>Your king and queen can't move.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
 
 
@@ -384,13 +380,20 @@
                 { elo: 500, type: "—Piece Restriction—", title: "Deer In The Headlights", description: "π<br><br>You can't move pinned pieces." },
                 { elo: 1000, type: "—Piece Restriction—", title: "Shortsighted", description: "π<br><br>Your bishops, rooks, and queen can only move a maximum of four squares at&nbsp;once." },
 
-                { elo: 500, type: "—Piece Restriction—", title: "Piece Repellent", description: "ß<br><br>You can't place a piece adjactent to your opponent's&nbsp;king." },
-                { elo: 750, type: "—Piece Restriction—", title: "Piece Repellent", description: "π<br><br>You can't place a piece adjactent to your opponent's&nbsp;king." },
+                { elo: 500, type: "—Piece Restriction—", title: "Piece Repellent", description: "ß<br><br>You can't place a piece next to your opponent's king, either directly or&nbsp;diagonally." },
+                { elo: 750, type: "—Piece Restriction—", title: "Piece Repellent", description: "π<br><br>You can't place a piece next to your opponent's king, either directly or&nbsp;diagonally." },
 
                 { elo: 750, type: "—Piece Restriction—", title: "Stay On Your Side", description: "ß<br><br>Your pieces can't cross the centre line between the |d| and |e|&nbsp;files." },
                 { elo: 1000, type: "—Piece Restriction—", title: "Stay On Your Side", description: "π<br><br>Your pieces can't cross the centre line between the |d| and |e|&nbsp;files." },
 
-                { elo: 1000, type: "—Piece Restriction—", title: "Blunderbuss", description: "ß<br><br>You cannot move a knight, bishop, or rook to a square where it will be defended by a knight, bishop, or&nbsp;rook." },
+                { elo: 1000, type: "—Piece Restriction—", title: "Blunderbuss", description: "ß<br><br>You cannot move a knight, bishop, or rook to a square where it will defend or be defended by a knight, bishop, or&nbsp;rook." },
+                { elo: 'Magnus', type: "—Piece Restriction—", title: "Blunderbuss", description: "ß<br><br>You cannot move a knight, bishop, or rook to a square where it will defend or be defended by a knight, bishop, or&nbsp;rook." },
+
+                { elo: 250, type: "—Piece Restriction—", title: "Headstart", description: "ß<br><br>You can't capture any pieces until you're down at least 1 points of material for a&nbsp;turn." },
+                { elo: 500, type: "—Piece Restriction—", title: "Rally Cap", description: "ß<br><br>You can't capture any pieces until you're down at least 3 points of material for a&nbsp;turn." },
+                { elo: 750, type: "—Piece Restriction—", title: "Comeback Kid", description: "ß<br><br>You can't capture any pieces until you're down at least 5 points of material for a&nbsp;turn." },
+                { elo: 1000, type: "—Piece Restriction—", title: "Back From The Dead", description: "ß<br><br>You can't capture any pieces until you're down at least 7 points of material for a&nbsp;turn." },
+                { elo: 'Magnus', type: "—Piece Restriction—", title: "Back From The Dead", description: "ß<br><br>You can't capture any pieces until you're down at least 7 points of material for a&nbsp;turn." },
 
 
                 // OP Opponent
@@ -484,7 +487,7 @@
 
                 // Clock Rules
                 { elo: 250, type: "—Clock Rule—", title: "Underclocked", description: "π<br><br>You can never end your turn with more time than your&nbsp;opponent." },
-                { elo: 1000, type: "—Clock Rule—", title: "Speedrun, Any %", description: "π<br><br>Finish the game with 80% of your time left on the clock for games over 5&nbsp;minutes.<br><br>Otherwise, it's 50% of your&nbsp;time." },
+                // { elo: 1000, type: "—Clock Rule—", title: "Speedrun, Any %", description: "π<br><br>Finish the game with 80% of your time left on the clock for games over 5&nbsp;minutes.<br><br>Otherwise, it's 50% of your&nbsp;time." },
                 { elo: 250, type: "—Clock Rule—", title: "Even Steven", description: "π<br><br>If you stop your clock on an odd number, you must waste 10% of your time on your&nbsp;next&nbsp;move." },
                 { elo: 250, type: "—Clock Rule—", title: "Odd Todd", description: "π<br><br>If you stop your clock on an even number, you must waste 10% of your time on your&nbsp;next&nbsp;move." },
                 { elo: 250, type: "—Clock Rule—", title: "Time Odds", description: "ß<br><br>Use 1/5 of your time on your third move.<br><br>Make increasingly loud pondering noises while you&nbsp;wait." },
@@ -843,7 +846,7 @@
 
                 { elo: 'Magnus', type: "—Spelling Bee—", title: "Old Money", description: "ß<br><br>Your first eleven pawn moves must spell, \"agedcheddah.\"<br><br>You can move your other pieces in between. If you lose a necessary pawn, move on to the next&nbsp;letter." },
                 { elo: 'Magnus', type: "—Spelling Bee—", title: "Something Smells Off", description: "ß<br><br>Your first eleven pawn moves must spell, \"badagedbeef.\"<br><br>You can move your other pieces in between. If you lose a necessary pawn, move on to the next&nbsp;letter." },
-                { elo: 'Magnus', type: "—Spelling Bee—", title: "\"Is it because I have a cabbage for a&nbsp;head?", description: "ß<br><br>Your first eleven pawn moves must spell, \"cabbagehead.\"<br><br>You can move your other pieces in between. If you lose a necessary pawn, move on to the next&nbsp;letter." },
+                { elo: 'Magnus', type: "—Spelling Bee—", title: "\"Is It Because I Have A Cabbage For A&nbsp;Head?\"", description: "ß<br><br>Your first eleven pawn moves must spell, \"cabbagehead.\"<br><br>You can move your other pieces in between. If you lose a necessary pawn, move on to the next&nbsp;letter." },
 
                 { elo: 'Magnus', type: "—Spelling Bee—", title: "Disco Is Dead", description: "ß<br><br>Your first twelve pawn moves must spell, \"abbabeheaded.\"<br><br>You can move your other pieces in between. If you lose a necessary pawn, move on to the next&nbsp;letter." },
 
@@ -876,10 +879,6 @@
                 // { elo: 1000, type: "—Quest—", title: "Kingside? What Kingside?", description: "ß<br><br>Have all your attacking pieces plus your king on the |e| through |h| files, and no pawns on the |a| through |d|&nbsp;files." },
                 // { elo: 750, type: "—Quest—", title: "Council of Elrond", description: "ß<br><br>You can't capture pieces until you've had a bishop, knight, rook, and queen next to your king at&nbsp;one&nbsp;time." },
                 // { elo: 750, type: "—Quest—", title: "Fire Alarm", description: "ß<br><br>Completely vacate your backrank before the&nbsp;endgame.<br><br><i>Endgame = neither player has more than 10 points of&nbsp;material.</i>" },
-                // { elo: 250, type: "—Quest—", title: "Headstart", description: "ß<br><br>You can't capture any pieces until you're down at least 4 points of&nbsp;material." }, // prob bad
-                // { elo: 500, type: "—Quest—", title: "Rally Cap", description: "ß<br><br>You can't capture any pieces until you're down at least 6 points of&nbsp;material." }, // prob bad
-                // { elo: 750, type: "—Quest—", title: "Comeback Kid", description: "ß<br><br>You can't capture any pieces until you're down at least 8 points of&nbsp;material." }, // prob bad
-                // { elo: 1000, type: "—Quest—", title: "A Comeback For The Ages", description: "ß<br><br>You can't capture any pieces until you're down at least 10 points of&nbsp;material." }, // prob bad
                 // { elo: 500, type: "—Quest—", title: "A Royal Affair", description: "Get your queen close enough to kiss the opponent's king." },
                 // { elo: 1000, type: "—Piece Restriction—", title: "The Champion", description: "π<br><br>Pick one knight, bishop, or rook as your&nbsp;champion.<br>The rest can't move until your champion is dead.<br><br>Repeat." },
 
@@ -971,7 +970,7 @@
 
             // Set initial content for #lineDescription when the page loads
             window.onload = function() {
-              const initialText = "<br><br>Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br><br>This is still in beta, so please help improve it<br>by emailing feedback&nbsp;<a href=mailto:elostealo1@gmail.com>here</a>.<br><br><br><br><font size='-1'><a href='#' onclick='generateRandomLine(1)'><i>FAQ</i></a><br><font size='-1'><a href='#' onclick='generateRandomLine(0)'><i>Changelog</i></a><br><br><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
+              const initialText = "Choose your Elo gap for a rule to help equalize the game. If you can't complete your task, you&nbsp;<b><i><u>must</u></i></b>&nbsp;resign.<br><br>Or don't, I'm not your&nbsp;dad.<br><br><br>This is still in beta, so please help improve it<br>by emailing feedback&nbsp;<a href=mailto:elostealo1@gmail.com>here</a>.<br><br><br><br><font size='-1'><a href='#' onclick='generateRandomLine(1)'><i>FAQ</i></a><br><font size='-1'><a href='#' onclick='generateRandomLine(0)'><i>Changelog</i></a><br><br><i>Current Tally: <b>" + itemCount + "</b> Rules</i></font>";
 
               initialLoad = false;
               const lineDescription = document.getElementById('lineDescription');
@@ -1106,15 +1105,20 @@
 
                     // Change background color based on the eloValue
                     if (eloValue === 250) {
-                        document.body.style.backgroundColor = '#b88c64'; // Blue Grey
+                        document.body.style.backgroundColor = '#b88c64'; // Brown
                     } else if (eloValue === 500) {
                         document.body.style.backgroundColor = '#88a464'; // Green
                     } else if (eloValue === 750) {
-                        document.body.style.backgroundColor = '#98acb4'; // Blue
+                        document.body.style.backgroundColor = '#98acb4'; // BlueGrey
                     } else if (eloValue === 1000) {
-                        document.body.style.backgroundColor = '#a894bc'; // purple
+                        document.body.style.backgroundColor = '#a894bc'; // Purple
                     } else if (eloValue === 'Magnus') {
                         document.body.style.backgroundColor = '#cc9c14'; // Gold
+                        document.getElementById("btn250").style.backgroundColor = '#fff'; // Reset
+                        document.getElementById("btn500").style.backgroundColor = '#fff'; // Reset
+                        document.getElementById("btn750").style.backgroundColor = '#fff'; // Reset
+                        document.getElementById("btn1000").style.backgroundColor = '#fff'; // Reset
+                        document.getElementById("'Magnus'").style.backgroundColor = '#fff'; // Reset
                     }
 
                     if (!initialLoad) {
