@@ -104,20 +104,24 @@ ul li {
 
 .featureDark {
     font-size: 150%;
+    line-height: 67%;
     margin-left: -29px;
     color: rgba(0, 0, 0, 0.6);
     @media screen and (max-width: 768px) {
         font-size: 120%;
+        line-height: 83%;
         margin-left: -26px;
     }
 }
 
 .featureLight {
     font-size: 150%;
+    line-height: 67%;
     margin-left: -29px;
     color: rgba(255, 255, 255, 0.8);
     @media screen and (max-width: 768px) {
         font-size: 120%;
+        line-height: 83%;
         margin-left: -26px;
     }
 }

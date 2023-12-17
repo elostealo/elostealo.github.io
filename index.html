@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Elo Stealo</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
@@ -84,7 +84,6 @@
                 { elo: 500, type: "—Castling Rule—", title: "Practically Regicide", description: "π<br><br>You can't castle." },
                 { elo: 250, type: "—Castling Rule—", title: "You Gotta Fight. For Your Right. To&nbsp;Caaaaastle.", description: "ß<br><br>You can only castle if you have a piece or pawn on |ƒ®(4-5)|." },
                 { elo: 500, type: "—Castling Rule—", title: "You Gotta Fight. For Your Right. To&nbsp;Caaaaastle.", description: "π<br><br>You can only castle if you have a piece or pawn on |ƒ®(4-5)|." },
-                { elo: 250, type: "—Castling Rule—", title: "Check Please!", description: "ß<br><br>You can't castle until after you've been put&nbsp;in&nbsp;check." },
 
 
                 // Piece Restriction Categories
@@ -106,15 +105,15 @@
                 { elo: 500, type: "—Queen Rule—", title: "Before The Clock Strikes&nbsp;12", description: "π<br><br>Your queen can't move after turn&nbsp;12." },
                 { elo: 750, type: "—Queen Rule—", title: "Sleeping Beauty", description: "π<br><br>Your queen can't move after turn&nbsp;9." },
                 { elo: 1000, type: "—Queen Rule—", title: "Poisoned Apple", description: "π<br><br>Your queen can't move after turn&nbsp;6." },
-                { elo: 500, type: "—Rook Rule—", title: "Wrong Permits", description: "π<br><br>Your rooks can't move after turn&nbsp;20." },
-                { elo: 750, type: "—Rook Rule—", title: "Not To Code", description: "π<br><br>Your rooks can't move after turn&nbsp;15." },
-                { elo: 1000, type: "—Rook Rule—", title: "Condemnable", description: "π<br><br>Your rooks can't move after turn&nbsp;10." },
-                { elo: 250, type: "—Bishop Rule—", title: "Long Service", description: "π<br><br>Your bishops can't move after turn&nbsp;15." },
-                { elo: 500, type: "—Bishop Rule—", title: "A Sermon Or Two", description: "π<br><br>Your bishops can't move after turn&nbsp;12." },
-                { elo: 750, type: "—Bishop Rule—", title: "Quick Prayer", description: "π<br><br>Your bishops can't move after turn&nbsp;9." },
-                { elo: 250, type: "—Knight Rule—", title: "Good Night", description: "π<br><br>Your knights can't move after turn&nbsp;15." },
-                { elo: 500, type: "—Knight Rule—", title: "Sleep Tight", description: "π<br><br>Your knights can't move after turn&nbsp;12." },
-                { elo: 750, type: "—Knight Rule—", title: "Don't Let The Bedbugs&nbsp;Bite", description: "π<br><br>Your knights can't move after turn&nbsp;9." },
+                { elo: 500, type: "—Rook Rule—", title: "Wrong Permits", description: "π<br><br>Your rooks can't move after turn&nbsp;25." },
+                { elo: 750, type: "—Rook Rule—", title: "Not To Code", description: "π<br><br>Your rooks can't move after turn&nbsp;20." },
+                { elo: 1000, type: "—Rook Rule—", title: "Condemnable", description: "π<br><br>Your rooks can't move after turn&nbsp;15." },
+                { elo: 250, type: "—Bishop Rule—", title: "Long Service", description: "π<br><br>Your bishops can't move after turn&nbsp;20." },
+                { elo: 500, type: "—Bishop Rule—", title: "A Sermon Or Two", description: "π<br><br>Your bishops can't move after turn&nbsp;15." },
+                { elo: 750, type: "—Bishop Rule—", title: "Quick Prayer", description: "π<br><br>Your bishops can't move after turn&nbsp;10." },
+                { elo: 250, type: "—Knight Rule—", title: "Good Night", description: "π<br><br>Your knights can't move after turn&nbsp;20." },
+                { elo: 500, type: "—Knight Rule—", title: "Sleep Tight", description: "π<br><br>Your knights can't move after turn&nbsp;15." },
+                { elo: 750, type: "—Knight Rule—", title: "Don't Let The Bedbugs&nbsp;Bite", description: "π<br><br>Your knights can't move after turn&nbsp;10." },
 
                 { elo: 500, type: "—Queen Rule—", title: "Queen On Ice", description: "π<br><br>When moving your queen, it must continue forward until it either captures a piece or pawn, is stopped by one of your pieces, or reaches the edge of the&nbsp;board." },
                 { elo: 500, type: "—Rook Rule—", title: "Rooks On Ice", description: "π<br><br>When moving your rook, it must continue forward until it either captures a piece or pawn, is stopped by one of your pieces, or reaches the edge of the&nbsp;board." },
@@ -143,14 +142,14 @@
                 { elo: 250, type: "—Bishop Rule—", title: "Building Faith", description: "ß<br><br>Your bishops can move 1 square the first time you move a bishop, up to 2 squares the second time, up to 3 the third, and so on until they're at full&nbsp;strength." },
                 { elo: 500, type: "—Bishop Rule—", title: "Building Faith", description: "π<br><br>Your bishops can move 1 square the first time you move a bishop, up to 2 squares the second time, up to 3 the third, and so on until they're at full&nbsp;strength." },
 
-                { elo: 250, type: "—Rook Rule—", title: "You've Been Disconnected", description: "ß<br><br>If you lose a rook, you can no longer move the other&nbsp;one." },
-                { elo: 500, type: "—Rook Rule—", title: "You've Been Disconnected", description: "π<br><br>If you lose a rook, you can no longer move the other&nbsp;one." },
-                { elo: 250, type: "—Bishop Rule—", title: "Apostasy", description: "ß<br><br>If you lose a bishop, you can no longer move the other&nbsp;one." },
-                { elo: 500, type: "—Bishop Rule—", title: "Apostasy", description: "π<br><br>If you lose a bishop, you can no longer move the other&nbsp;one." },
-                { elo: 250, type: "—Knight Rule—", title: "Bonded Pair", description: "ß<br><br>If you lose a knight, you can no longer move the other&nbsp;one." },
-                { elo: 500, type: "—Knight Rule—", title: "Bonded Pair", description: "π<br><br>If you lose a knight, you can no longer move the other&nbsp;one." },
-                { elo: 250, type: "—Royal Rule—", title: "Bad Breakup", description: "ß<br><br>If you lose your queen, you can no longer move your&nbsp;king." },
-                { elo: 500, type: "—Royal Rule—", title: "Bad Breakup", description: "π<br><br>If you lose your queen, you can no longer move your&nbsp;king." },
+                { elo: 500, type: "—Rook Rule—", title: "You've Been Disconnected", description: "ß<br><br>If you lose a rook, you can no longer move the other&nbsp;one." },
+                { elo: 750, type: "—Rook Rule—", title: "You've Been Disconnected", description: "π<br><br>If you lose a rook, you can no longer move the other&nbsp;one." },
+                { elo: 500, type: "—Bishop Rule—", title: "Apostasy", description: "ß<br><br>If you lose a bishop, you can no longer move the other&nbsp;one." },
+                { elo: 750, type: "—Bishop Rule—", title: "Apostasy", description: "π<br><br>If you lose a bishop, you can no longer move the other&nbsp;one." },
+                { elo: 500, type: "—Knight Rule—", title: "Bonded Pair", description: "ß<br><br>If you lose a knight, you can no longer move the other&nbsp;one." },
+                { elo: 750, type: "—Knight Rule—", title: "Bonded Pair", description: "π<br><br>If you lose a knight, you can no longer move the other&nbsp;one." },
+                { elo: 750, type: "—Royal Rule—", title: "Bad Breakup", description: "ß<br><br>If you lose your queen, you can no longer move your&nbsp;king." },
+                { elo: 1000, type: "—Royal Rule—", title: "Bad Breakup", description: "π<br><br>If you lose your queen, you can no longer move your&nbsp;king." },
 
                 { elo: 500, type: "—Queen Rule—", title: "Scaredy Queen", description: "ß<br><br>Your queen can't move when threatened." },
                 { elo: 750, type: "—Queen Rule—", title: "Scaredy Queen", description: "π<br><br>Your queen can't move when threatened." },
@@ -161,6 +160,12 @@
                 { elo: 250, type: "—Knight Rule—", title: "Scaredy Horse", description: "ß<br><br>Your knights can't move when threatened." },
                 { elo: 500, type: "—Knight Rule—", title: "Scaredy Horse", description: "π<br><br>Your knights can't move when threatened." },
 
+                { elo: 250, type: "—Knight Rule—", title: "Can't Stomp Her", description: "ß<br><br>Your knights can't capture the opponent's&nbsp;queen." },
+                { elo: 500, type: "—Knight Rule—", title: "Can't Stomp Her", description: "π<br><br>Your knights can't capture the opponent's&nbsp;queen." },
+                { elo: 250, type: "—Knight Rule—", title: "Can't Convert Her", description: "ß<br><br>Your bishops can't capture the opponent's&nbsp;queen." },
+                { elo: 500, type: "—Knight Rule—", title: "Can't Convert Her", description: "π<br><br>Your bishops can't capture the opponent's&nbsp;queen." },
+                { elo: 250, type: "—Knight Rule—", title: "Can't Imprison Her", description: "ß<br><br>Your rooks can't capture the opponent's&nbsp;queen." },
+                { elo: 500, type: "—Knight Rule—", title: "Can't Imprison Her", description: "π<br><br>Your rooks can't capture the opponent's&nbsp;queen." },
 
                 // King Restrictions
                 { elo: 750, type: "-King Rule—", title: "Immobile Noble", description: "ß<br><br>You can't move your king." },
@@ -203,13 +208,13 @@
 
 
                 // Royal Restrictions
-                { elo: 250, type: "—Royal Rule—", title: "Ball And Chain", description: "ß<br><br>Your king and queen must be within two squares of each other, as long as your queen shall&nbsp;live." },
-                { elo: 500, type: "—Royal Rule—", title: "Ball And Chain", description: "π<br><br>Your king and queen must be within two squares of each other, as long as your queen shall&nbsp;live." },
-                { elo: 500, type: "—Royal Rule—", title: "Mawwiage", description: "ß<br><br>Your king and queen must always be next to each other, either directly or diagonally, as long as your queen shall&nbsp;live." },
-                { elo: 750, type: "—Royal Rule—", title: "Mawwiage", description: "π<br><br>Your king and queen must always be next to each other, either directly or diagonally, as long as your queen shall&nbsp;live." },
-                { elo: 750, type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "ß<br><br>Your king and queen must always be next to each other, either directly or&nbsp;diagonally.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
-                { elo: 1000, type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "π<br><br>Your king and queen must always be next to each other, either directly or&nbsp;diagonally.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
-                { elo: 'Magnus', type: "—Royal Rule—", title: "Immobile Nobles", description: "π<br><br>Your king and queen can't move.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
+                { elo: 500, type: "—Royal Rule—", title: "Ball And Chain", description: "ß<br><br>Your king and queen must be within two squares of each other, as long as your queen shall&nbsp;live." },
+                { elo: 750, type: "—Royal Rule—", title: "Ball And Chain", description: "π<br><br>Your king and queen must be within two squares of each other, as long as your queen shall&nbsp;live." },
+                { elo: 750, type: "—Royal Rule—", title: "Mawwiage", description: "ß<br><br>Your king and queen must always be next to each other, either directly or diagonally, as long as your queen shall&nbsp;live." },
+                { elo: 1000, type: "—Royal Rule—", title: "Mawwiage", description: "π<br><br>Your king and queen must always be next to each other, either directly or diagonally, as long as your queen shall&nbsp;live." },
+                { elo: 1000, type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "ß<br><br>Your king and queen must always be next to each other, either directly or&nbsp;diagonally.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
+                { elo: 'Magnus', type: "—Royal Rule—", title: "Wuv, Twue Wuv", description: "π<br><br>Your king and queen must always be next to each other, either directly or&nbsp;diagonally.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
+                { elo: 'Magnus', type: "—Royal Rule—", title: "Immobile Nobles", description: "ß<br><br>Your king and queen can't move.<br><br>If you lose your queen, you&nbsp;must&nbsp;resign." },
 
 
                 // Rook Restrictions
@@ -242,14 +247,11 @@
                 // Knight Restrictions
                 { elo: 500, type: "—Knight Rule—", title: "You're Grounded, Mister!", description: "ß<br><br>Your knights can't jump. They can only move if they have a clear diagonal or horizontal/vertical square next&nbsp;to&nbsp;them." },
                 { elo: 750, type: "—Knight Rule—", title: "You're Grounded, Mister!", description: "π<br><br>Your knights can't jump. They can only move if they have a clear diagonal or horizontal/vertical square next&nbsp;to&nbsp;them." },
-                { elo: 250, type: "—Knight Rule—", title: "Show Ponies", description: "ß<br><br>Knights can only move if it involves jumping over a piece or&nbsp;pawn." },
-                { elo: 500, type: "—Knight Rule—", title: "Show Ponies", description: "π<br><br>Knights can only move if it involves jumping over a piece or&nbsp;pawn." },
+                { elo: 250, type: "—Knight Rule—", title: "Show Ponies", description: "ß<br><br>Knights can only move if it involves jumping over at least one piece or&nbsp;pawn." },
+                { elo: 500, type: "—Knight Rule—", title: "Show Ponies", description: "π<br><br>Knights can only move if it involves jumping over at least one piece or&nbsp;pawn." },
 
                 { elo: 250, type: "—Knight Rule—", title: "Smart Knights Only", description: "ß<br><br>Your knights cannot land on the |a| or |h| file, or the |1st| or&nbsp;|8th|&nbsp;rank." },
                 { elo: 500, type: "—Knight Rule—", title: "Smart Knights Only", description: "π<br><br>Your knights cannot land on the |a| or |h| file, or the |1st| or&nbsp;|8th|&nbsp;rank." },
-
-                { elo: 250, type: "—Knight Rule—", title: "Unstompable", description: "ß<br><br>Your knights can't capture the opponent's&nbsp;queen." },
-                { elo: 500, type: "—Knight Rule—", title: "Unstompable", description: "π<br><br>Your knights can't capture the opponent's&nbsp;queen." },
 
                 { elo: 250, type: "—Knight Rule—", title: "Riders On The Storm", description: "ß<br><br>You must always have a knight on a dark&nbsp;square.<br><br>Lasts until you lose a knight." },
                 { elo: 500, type: "—Knight Rule—", title: "Riders On The Storm", description: "π<br><br>You must always have a knight on a dark&nbsp;square.<br><br>Lasts until you lose a knight." },
@@ -283,10 +285,10 @@
                 { elo: 500, type: "—Pawn Rule—", title: "Stick Together!", description: "π<br><br>Your pawns can't move unless they're part of a pawn chain at the start of your&nbsp;turn." },
                 { elo: 250, type: "—Pawn Rule—", title: "Stranded", description: "π<br><br>Isolated pawns can't move." },
 
-                { elo: 250, type: "—Pawn Rule—", title: "Centre Game", description: "ß<br><br>You can only move the four centre&nbsp;pawns.<br><br>If a pawn captures its way into the 4 outside files, it can still&nbsp;move." },
-                { elo: 500, type: "—Pawn Rule—", title: "Centre Game", description: "π<br><br>You can only move the four centre&nbsp;pawns.<br><br>If a pawn captures its way into the 4 outside files, it can still&nbsp;move." },
-                { elo: 500, type: "—Pawn Rule—", title: "Wing Game", description: "ß<br><br>You can only move the four outside&nbsp;pawns.<br><br>If a pawn captures its way into the 4 centre files, it can still&nbsp;move." },
-                { elo: 750, type: "—Pawn Rule—", title: "Wing Game", description: "π<br><br>You can only move the four outside&nbsp;pawns.<br><br>If a pawn captures its way into the 4 centre files, it can still&nbsp;move." },
+                { elo: 500, type: "—Pawn Rule—", title: "Centre Game", description: "ß<br><br>You can only move the four centre&nbsp;pawns.<br><br>If a pawn captures its way into the 4 outside files, it can still&nbsp;move." },
+                { elo: 750, type: "—Pawn Rule—", title: "Centre Game", description: "π<br><br>You can only move the four centre&nbsp;pawns.<br><br>If a pawn captures its way into the 4 outside files, it can still&nbsp;move." },
+                { elo: 750, type: "—Pawn Rule—", title: "Wing Game", description: "ß<br><br>You can only move the four outside&nbsp;pawns.<br><br>If a pawn captures its way into the 4 centre files, it can still&nbsp;move." },
+                { elo: 1000, type: "—Pawn Rule—", title: "Wing Game", description: "π<br><br>You can only move the four outside&nbsp;pawns.<br><br>If a pawn captures its way into the 4 centre files, it can still&nbsp;move." },
 
                 { elo: 250, type: "—Pawn Rule—", title: "To The Left", description: "ß<br><br>Your pawns can only capture to the left." },
                 { elo: 500, type: "—Pawn Rule—", title: "To The Left", description: "π<br><br>Your pawns can only capture to the left." },
@@ -324,33 +326,33 @@
                 { elo: 1000, type: "—Pawn Rule—", title: "Solidarity", description: "ß<br><br>If you lose your |ƒ| pawn, the rest of your pawns can no longer&nbsp;move." },
                 { elo: 'Magnus', type: "—Pawn Rule—", title: "Solidarity", description: "π<br><br>If you lose your |ƒ| pawn, the rest of your pawns can no longer&nbsp;move." },
 
-                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Get Together", description: "ß<br><br><i>The Pawn Brahs make plans to get poutine after school, but their classrooms are so far apart! Can they find their way to each other when everyone runs into the schoolyard after class? Or will they stay separated until they get picked up and miss out on their cheese curds and&nbsp;gravy?</i><br><br>Your |a| and |e| pawns can only capture towards each&nbsp;other." },
-                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Sleep In", description: "ß<br><br><i>Oh no! The Pawn Brahs slept through their alarms and now there isn't enough time to walk to hockey practice! Can they find enough loonies in the couch to pay for their bus tickets to the rink? Or will Coach Rookerson make them skate laps to make up for being&nbsp;late?</i><br><br>Your |a| and |e| pawns can't move until turn 15." },
-                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Are Full", description: "ß<br><br><i>The Pawn Brahs are invited to grandma's for AAA prime Alberta Angus beef, but they went and spoiled their appetites by eating Ruffles ketchup chips all day! Will they fess up to grandma about their mistake and miss steak? Or will they find space in their stomachs to eat it&nbsp;anyway?</i><br><br>Your |a| and |e| pawns are too full to eat any&nbsp;pieces." },
-                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Go To An&nbsp;AYCE", description: "ß<br><br><i>The Pawn Brahs get invited to a friend's birthday party at the Mandarin, an all-you-can-eat Chinese buffet. There's so much food there that they can't stop filling their plates. But will they be able to eat it all when they get back to their table? Or will their eyes have been too big for their&nbsp;stomachs?</i><br><br>If your |a| or |e| pawn can capture a piece or pawn, it&nbsp;must." },
+                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Get Together", description: "ß<br><br><i>The Pawn Brahs make plans to grab a poutine after school, but their classroom portables are so far apart! Can they find their way to each other when everyone runs into the schoolyard after class? Or will they stay separated until they get picked up and miss out on their cheese curds and&nbsp;gravy?</i><br><br>Your |a| and |e| pawns can only capture towards each&nbsp;other." },
+                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Sleep In", description: "ß<br><br><i>Quel dommage! The Pawn Brahs slept through their alarms and now there isn't enough time to walk to hockey practice! Can they find enough loonies in the couch to pay for their bus ride to the rink? Or will Coach Rookerson make them skate laps to make up for being&nbsp;late?</i><br><br>Your |a| and |e| pawns can't move until turn 15." },
+                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Are Full", description: "ß<br><br><i>The Pawn Brahs are invited to grandma's for AAA prime Alberta Angus beef, but they went and spoiled their appetites by eating ketchup Ruffles all day! Will they fess up to grandma about their mistake and miss steak? Or will they find space in their stomachs to eat up&nbsp;anyway?</i><br><br>Your |a| and |e| pawns are too full to eat any&nbsp;pieces." },
+                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Go To An&nbsp;AYCE", description: "ß<br><br><i>The Pawn Brahs get invited to a friend's birthday party at the Mandarin, and there's so much food to try that they can't stop filling their plates. But will they be able to eat it all when they get back to their table? Or will their eyes have been too big for their&nbsp;stomachs?</i><br><br>If your |a| or |e| pawn can capture a piece or pawn, it&nbsp;must." },
                 { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Get Even", description: "ß<br><br><i>\"Car!\" The Pawn Brahs invite the kids from the cul de sac one street over to come play street hockey, but they can't seem to win a game! Can they tie it up by wristing a couple orange balls up into the top shelf where Aunt Jemima keeps the peanut butter? Or will their neighbours take them to the cleaners for&nbsp;good?</i><br><br>Your |a| and |e| pawns can only move on even-numbered&nbsp;turns." },
-                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Act Odd", description: "ß<br><br><i>After the Pawn Brahs don't feel like eating their beavertails for dessert, skip Saturday Night Hockey on CBC, and won't listen to their new Tragically Hip CD, their parents drive them a few kilometres to see the family doctor. Are they coming down with something? Or are they just playing make believe for&nbsp;attention?</i><br><br>Your |a| and |e| pawns can only move on odd-numbered&nbsp;turns." },
+                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Act Odd", description: "ß<br><br><i>After the Pawn Brahs don't feel like eating their beavertails for dessert, skip Saturday Night Hockey on CBC, and won't listen to their favourite Tragically Hip CD, their parents drive them a few kilometres to see the family doctor. Are they coming down with something? Or are they just playing make believe for&nbsp;attention?</i><br><br>Your |a| and |e| pawns can only move on odd-numbered&nbsp;turns." },
                 { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Stay Close To&nbsp;Home", description: "ß<br><br><i>The Pawn Brahs want to go off on an adventure with their friends, but it's already getting dark and mom says it'll be dinner time soon. Can they convince their friends to find adventure without leaving the neighbourhood? Or will they get left behind to play on their own until the streetlights come&nbsp;on?</i><br><br> Your |a| and |e| pawns can't go past the |5th| / ~4th~ rank." },
                 // { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Take An Exam", description: "ß<br><br>If you move your |a| or |e| pawn, the other one must copy the move on the next turn. If they can't copy it, then they fail and neither pawn can move&nbsp;anymore." },
                 { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Take Turns", description: "ß<br><br><i>The Pawn Brahs got a new Nintendo game called Blades of Steel, but they only have one controller to play with. Will they be able to play nice and take turns with each other? Or will they act up and force mom to hide the Nintendo from&nbsp;them?</i><br><br>You must alternate moving your |a| and |e| pawns." },
-                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Stick Together", description: "ß<br><br><i>When the rep league scout Mrs. Queensly comes looking for star players for her hockey team, the Pawn Brahs lace up to impress her. But when she reveals that she can only take one of them, are the Pawn Brahs willing to split up for a shot at glory? Or will they refuse to leave each other&nbsp;behind?</i><br><br>If you lose your |a| or |e| pawn, the other one can no longer&nbsp;move." },
-                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Rock 'Em and Sock&nbsp;'Em", description: "ß<br><br><i>Coach Rookerson thinks that the Pawn Brahs skate well enough to make rep, but if they're going to play hockey with the big kids they'll need to practice their bodychecking first. Can the Pawn Brahs get good enough at playing rough before the rep team tryouts? Or will they get left behind like an old&nbsp;zamboni?</i><br><br>You can only move your |a| and |e| pawns by&nbsp;capturing." },
-                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Lead The&nbsp;Way", description: "ß<br><br><i>When their boy scout troupe gets lost in Algonquin Park, only the Pawn Brahs can remember the way back. Now it's up to them to get everyone safely back to camp before they miss out on spider dogs at the bonfire. But do they have enough GORP to keep everyone energized for the hike?</i><br><br>No other pawn can be ahead of your |a| or |e|&nbsp;pawn." },
+                { elo: 250, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Stick Together", description: "ß<br><br><i>When the rep league scout Mrs. Queensly comes looking for star players for her hockey team, the Pawn Brahs lace up to impress her. But when she reveals that she can only take one of them, are the Pawn Brahs willing to split up for a shot at glory? Or will they refuse to abandon each other like a bag of&nbsp;pylons?</i><br><br>If you lose your |a| or |e| pawn, the other one can no longer&nbsp;move." },
+                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Rock 'Em and Sock&nbsp;'Em", description: "ß<br><br><i>Coach Rookerson thinks that the Pawn Brahs skate well enough to make rep, but if they're going to play hockey with the big kids from around the province they'll need to practice their bodychecking first. Can the Pawn Brahs get good enough at playing rough before the rep team tryouts? Or will they get left behind like an old&nbsp;zamboni?</i><br><br>You can only move your |a| and |e| pawns by&nbsp;capturing." },
+                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Lead The&nbsp;Way", description: "ß<br><br><i>Sorry! When their boy scout troupe gets lost while portaging in Algonquin Park, only the Pawn Brahs can remember the way back. Now it's up to them to get everyone safely back to camp before they miss out on spider dogs at the bonfire. But do they have enough GORP to keep everyone energized for the hike?</i><br><br>No other pawn can be ahead of your |a| or |e|&nbsp;pawn." },
                 { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Have&nbsp;Indigestion", description: "ß<br><br><i>Oh no! The Pawn Brahs ate some leftover Kraft Dinner that'd been out on the counter for too long, and now they've got upset stomachs. Will they find the Pepto in the medicine cupboard? Or will they be sick to their stomachs all&nbsp;day&nbsp;long?</i><br><br>If you capture a piece with your |a| or |e| pawn, it can no longer&nbsp;move." },
-                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Want Promotions", description: "ß<br><br><i>When their school has a model Parliament project, the Pawn Brahs are assigned to be local MPs. But that's not enough for them, and they decide that they're going to be Premiers. Can they prove to Mrs. Knightly that they're up to the task? Or will the other students get elected to mock Parliament&nbsp;instead?</i><br><br>You can only promote your |a| and |e| pawns." },
-                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Get In A&nbsp;Fight", description: "ß<br><br><i>After an argument over whose turn it is to do shovel the driveway, the Pawn Brahs decide that they don't want to hang out anymore. Will they keep their feud up forever? Or will they learn to forgive each other and shovel the driveway&nbsp;together?</i><br><br>Your |a| pawn can't capture, and your |e| pawn can only capture toward the |h|&nbsp;file." },
+                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Want To Rule", description: "ß<br><br><i>When their school has a model Parliament project, the Pawn Brahs are assigned to be local MPs. But that's not enough for them, and they decide that they're going to be the Premiers of their provinces. Can they prove to Mrs. Knightly that they're up to the task? Or will the other students get elected to mock Parliament&nbsp;instead?</i><br><br>You can only promote your |a| and |e| pawns." },
+                { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Get In A&nbsp;Fight", description: "ß<br><br><i>After an argument over whose turn it is to do shovel the driveway, the Pawn Brahs decide that they don't want to hang out with each other anymore. Will they keep their feud up forever? Or will they learn to forgive each other and shovel the driveway&nbsp;together?</i><br><br>Your |a| pawn can't capture, and your |e| pawn can only capture toward the |h|&nbsp;file." },
                 { elo: 500, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Stay Home Sick", description: "ß<br><br><i>Uh oh! The Pawn Brahs drank too much bagged milk and now they're sick to their stomachs. They ask to stay home from school, but are they really under the weather? Or are they pretending so they can avoid taking their test on the metric&nbsp;system?</i><br><br>Your |a| and |e| pawns can't move." },
                 { elo: 750, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Go It Alone", description: "ß<br><br><i>The Pawn Brahs have to do an assignment about the Prime Minister with their classmates. But instead of working together as a team, they decide to go it alone. Will the Pawn Brahs be able to finish their project by themselves? Or will they learn a valuable lesson about&nbsp;teamwork?</i><br><br>You can only move your |a| and |e| pawns." },
-                { elo: 750, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Need Protection", description: "ß<br><br><i>When a rival hockey team comes to town for a scrimmage on the pond, the Pawn Brahs are the only players standing in their way. Can the rest of the team protect them on the ice so they can put a few between the bars? Or will their rivals deke past the enforcers to pick them off one-by-one?</i><br><br>If you lose your |a| and |e| pawns, you&nbsp;must&nbsp;resign." },
+                { elo: 750, type: "—Scholastic Book Fair—", title: "The Pawn Brahs Need Protection", description: "ß<br><br><i>Holy mackinaw! When a rival hockey team comes to town for a game of shinny on the pond, the Pawn Brahs are the only players who can stand in their way. Can the rest of the team protect them on the ice so they can clap a few biscuits into the basket? Or will their rivals deke past the enforcers to jersey them one-by-one?</i><br><br>If you lose your |a| and |e| pawns, you&nbsp;must&nbsp;resign." },
 
                 // Piece Restrictions
                 { elo: 750, type: "—Piece Restriction—", title: "Poison Pawns", description: "ß<br><br>Once you capture a pawn, you can no longer move that&nbsp;piece." },
                 { elo: 1000, type: "—Piece Restriction—", title: "Poison Pawns", description: "π<br><br>Once you capture a pawn, you can no longer move that&nbsp;piece." },
 
-                { elo: 750, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "ß<br><br>Your chess pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting the edge of the&nbsp;board.<br>Knights move as normal because horses are immune to The&nbsp;Rage." },
-                { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "π<br><br>Your chess pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting the edge of the&nbsp;board.<br>Knights move as normal because horses are immune to The&nbsp;Rage." },
-                { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "ß<br><br>Your chess pieces can only move one square at a time, and never&nbsp;backwards.<br>Knights move as normal because horses are immune to&nbsp;infection." },
-                { elo: 'Magnus', type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "π<br><br>Your chess pieces can only move one square at a time, and never&nbsp;backwards.<br>Knights move as normal because horses are immune to&nbsp;infection." },
+                { elo: 750, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "ß<br><br>Your chess pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting the edge of the&nbsp;board.<br><br>Knights move as normal because horses are immune to The&nbsp;Rage." },
+                { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Boyle)", description: "π<br><br>Your chess pieces must always move their maximum distance unless capturing a piece, colliding with a friendly piece, or hitting the edge of the&nbsp;board.<br><br>Knights move as normal because horses are immune to The&nbsp;Rage." },
+                { elo: 1000, type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "ß<br><br>Your chess pieces can only move one square at a time, and never&nbsp;backwards.<br><br>Knights move as normal because horses are immune to&nbsp;infection." },
+                { elo: 'Magnus', type: "—Piece Restriction—", title: "Actual Zombies (Romero)", description: "π<br><br>Your chess pieces can only move one square at a time, and never&nbsp;backwards.<br><br>Knights move as normal because horses are immune to&nbsp;infection." },
 
                 { elo: 1000, type: "—Piece Restriction—", title: "Everybody Take Turns", description: "ß<br><br>You can't ever move the same piece or pawn twice in&nbsp;a&nbsp;row." },
                 { elo: 'Magnus', type: "—Piece Restriction—", title: "Everybody Take Turns", description: "π<br><br>You can't ever move the same piece or pawn twice in&nbsp;a&nbsp;row." },
@@ -562,6 +564,66 @@
                 { elo: 750, type: "—Endgame Rule—", title: "Subjects Only", description: "π<br><br>You can't use your queen to mate." },
 
 
+                // Dungeons & Diagonals
+                { elo: 250, type: "—Dungeons & Diagonals—", title: "Roll For Opening", description: "π<br><br>You must announce when you want to move a pawn, then roll a d8 to determine which pawn it will be.<br><br>If you can't move that pawn, roll again.<br>If you need a d8, click <a href=https://rolladie.net/roll-a-d8-die>here</a>.<br><br>Expires after two turns." },
+                { elo: 500, type: "—Dungeons & Diagonals—", title: "Roll For Opening", description: "π<br><br>You must announce when you want to move a pawn, then roll a d8 to determine which pawn it will be.<br><br>If you can't move that pawn, roll again.<br>If you need a d8, click <a href=https://rolladie.net/roll-a-d8-die>here</a>.<br><br>Expires after four turns." },
+                { elo: 750, type: "—Dungeons & Diagonals—", title: "Roll For Opening", description: "π<br><br>You must announce when you want to move a pawn, then roll a d8 to determine which pawn it will be.<br><br>If you can't move that pawn, roll again.<br>If you need a d8, click <a href=https://rolladie.net/roll-a-d8-die>here</a>.<br><br>Expires after six turns." },
+                { elo: 1000, type: "—Dungeons & Diagonals—", title: "Roll For Opening", description: "π<br><br>You must announce when you want to move a pawn, then roll a d8 to determine which pawn it will be.<br><br>If you can't move that pawn, roll again.<br>If you need a d8, click <a href=https://rolladie.net/roll-a-d8-die>here</a>.<br><br>Expires after eight turns." },
+                { elo: 'Magnus', type: "—Dungeons & Diagonals—", title: "Roll For Opening", description: "π<br><br>You must announce when you want to move a pawn, then roll a d8 to determine which pawn it will be.<br><br>If you can't move that pawn, roll again.<br>If you need a d8, click <a href=https://rolladie.net/roll-a-d8-die>here</a>.<br><br>Does not expire." },
+
+                { elo: 250, type: "—Dungeons & Diagonals—", title: "Roll To Attack", description: "π<br><br>You must announce when you want to capture a piece, then roll a d20 to determine if your attack is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you capture the&nbsp;piece.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, the attack misses and you must make a different move. If it's another capture, roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, the attack misses and you blunder instead, either by moving the attacking piece to a square where it can be captured or, if that's not an option, by making the worst move you can&nbsp;find.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, the attack is successful and you must describe the gruesome details of how the piece is&nbsp;captured.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after one capture." },
+                { elo: 500, type: "—Dungeons & Diagonals—", title: "Roll To Attack", description: "π<br><br>You must announce when you want to capture a piece, then roll a d20 to determine if your attack is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you capture the&nbsp;piece.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, the attack misses and you must make a different move. If it's another capture, roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, the attack misses and you blunder instead, either by moving the attacking piece to a square where it can be captured or, if that's not an option, by making the worst move you can&nbsp;find.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, the attack is successful and you must describe the gruesome details of how the piece is&nbsp;captured.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after two captures." },
+                { elo: 750, type: "—Dungeons & Diagonals—", title: "Roll To Attack", description: "π<br><br>You must announce when you want to capture a piece, then roll a d20 to determine if your attack is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you capture the&nbsp;piece.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, the attack misses and you must make a different move. If it's another capture, roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, the attack misses and you blunder instead, either by moving the attacking piece to a square where it can be captured or, if that's not an option, by making the worst move you can&nbsp;find.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, the attack is successful and you must describe the gruesome details of how the piece is&nbsp;captured.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after three captures." },
+                { elo: 1000, type: "—Dungeons & Diagonals—", title: "Roll To Attack", description: "π<br><br>You must announce when you want to capture a piece, then roll a d20 to determine if your attack is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you capture the&nbsp;piece.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, the attack misses and you must make a different move. If it's another capture, roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, the attack misses and you blunder instead, either by moving the attacking piece to a square where it can be captured or, if that's not an option, by making the worst move you can&nbsp;find.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, the attack is successful and you must describe the gruesome details of how the piece is&nbsp;captured.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after four captures." },
+                { elo: 'Magnus', type: "—Dungeons & Diagonals—", title: "Roll To Attack", description: "π<br><br>You must announce when you want to capture a piece, then roll a d20 to determine if your attack is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you capture the&nbsp;piece.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, the attack misses and you must make a different move. If it's another capture, roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, the attack misses and you blunder instead, either by moving the attacking piece to a square where it can be captured or, if that's not an option, by making the worst move you can&nbsp;find.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, the attack is successful and you must describe the gruesome details of how the piece is&nbsp;captured.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Does not expire." },
+
+                { elo: 250, type: "—Dungeons & Diagonals—", title: "Saving Throw", description: "π<br><br>When you are put in check, you must announce your intended move and then roll a d20 to determine if it is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you defend&nbsp;successfully.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, choose a new move. You don't have to roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, choose a new move and roll&nbsp;again.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, you defend successfully and must describe in detail how it is carried&nbsp;out.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after one use." },
+                { elo: 500, type: "—Dungeons & Diagonals—", title: "Saving Throw", description: "π<br><br>When you are put in check, you must announce your intended move and then roll a d20 to determine if it is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you defend&nbsp;successfully.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, choose a new move. You don't have to roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, choose a new move and roll&nbsp;again.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, you defend successfully and must describe in detail how it is carried&nbsp;out.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after two uses." },
+                { elo: 750, type: "—Dungeons & Diagonals—", title: "Saving Throw", description: "π<br><br>When you are put in check, you must announce your intended move and then roll a d20 to determine if it is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you defend&nbsp;successfully.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, choose a new move. You don't have to roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, choose a new move and roll&nbsp;again.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, you defend successfully and must describe in detail how it is carried&nbsp;out.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after three uses." },
+                { elo: 1000, type: "—Dungeons & Diagonals—", title: "Saving Throw", description: "π<br><br>When you are put in check, you must announce your intended move and then roll a d20 to determine if it is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you defend&nbsp;successfully.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, choose a new move. You don't have to roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, choose a new move and roll&nbsp;again.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, you defend successfully and must describe in detail how it is carried&nbsp;out.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Expires after four uses." },
+                { elo: 'Magnus', type: "—Dungeons & Diagonals—", title: "Saving Throw", description: "π<br><br>When you are put in check, you must announce your intended move and then roll a d20 to determine if it is&nbsp;successful.<br><ul>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 10 through 19, you defend&nbsp;successfully.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 2 through 9, choose a new move. You don't have to roll&nbsp;again.</li>" +
+                "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 1, choose a new move and roll&nbsp;again.</li>" +
+                "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If you roll a 20, you defend successfully and must describe in detail how it is carried&nbsp;out.</li></ul><br><br>If you need a d20, click <a href=https://rolladie.net/roll-a-d20-die>here</a>.<br>Does not expire." },
+
+
                 // Unlockable
                 { elo: 500, type: "—Unlockable—", title: "Endgame Hero", description: "π<br><br>You can't move your queen until you're down to 10% of your original starting&nbsp;time." },
                 { elo: 500, type: "—Unlockable—", title: "New Challenger Approaching!", description: "ß<br><br>You can't move your queen until&nbsp;turn&nbsp;15." },
@@ -595,23 +657,51 @@
                 // Arrested Development
                 { elo: 250, type: "—Arrested Development—", title: "\"It's One Pawn Michael,<br>What Could It Cost? $10?\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost one&nbsp;pawn." },
                 { elo: 500, type: "—Arrested Development—", title: "\"Say Goodbye To <i>These!</i>\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost two&nbsp;pawns." },
-                { elo: 750, type: "—Arrested Development—", title: "\"I've Made A Huge Mistake\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost three&nbsp;pawns." },
-                { elo: 1000, type: "—Arrested Development—", title: "\"Oh My God, We're Having A&nbsp;Fire...&nbsp;Sale!\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost four&nbsp;pawns." },
-                { elo: 'Magnus', type: "—Arrested Development—", title: "\"I May Have Committed Some Light Treason\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost five&nbsp;pawns." },
+                { elo: 750, type: "—Arrested Development—", title: "\"I've Made A Huge Mistake\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost four&nbsp;pawns." },
+                { elo: 1000, type: "—Arrested Development—", title: "\"Oh My God, We're Having A&nbsp;Fire...&nbsp;Sale!\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost six&nbsp;pawns." },
+                { elo: 'Magnus', type: "—Arrested Development—", title: "\"I May Have Committed Some Light Treason\"", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until you've lost eight&nbsp;pawns." },
 
-                { elo: 750, type: "—Arrested Development—", title: "Recon Mission", description: "ß<br><br>You can't develop any other pieces until you've sent a knight into your opponent's half and then back to its starting&nbsp;square." },
-                { elo: 750, type: "—Arrested Development—", title: "Help Build The Castle", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until after you've&nbsp;castled." },
-                { elo: 250, type: "—Arrested Development—", title: "Come At Me, Bro", description: "ß<br><br>You can't develop any pieces until your opponent has a piece on your&nbsp;side." },
+                { elo: 750, type: "—Arrested Development—", title: "Operation Hot Mother", description: "ß<br><br>You can't develop any other pieces until you've sent a knight into your opponent's half and then back to its starting square. Or until it&nbsp;dies." },
 
-                { elo: 750, type: "—Arrested Development—", title: "Rally The Troops", description: "ß<br><br>Start with |Na3| / ~Na6~. Then you can't develop any of your pieces until either your knight reaches the |h| file, or&nbsp;is&nbsp;captured." },
-                { elo: 1000, type: "—Arrested Development—", title: "Rally The Troops", description: "π<br><br>Start with |Na3| / ~Na6~. Then you can't develop any of your pieces until either your knight reaches the |h| file, or&nbsp;is&nbsp;captured." },
+                { elo: 250, type: "—Arrested Development—", title: "\"No touching!\"", description: "ß<br><br>You can't move any chess pieces onto your opponent's side until they have a piece on your&nbsp;side." },
+                { elo: 250, type: "—Arrested Development—", title: "\"Well excuuuuuuse me.\"", description: "ß<br><br>You can't move any chess pieces onto your opponent's side until you've been put&nbsp;in&nbsp;check." },
+                { elo: 500, type: "—Arrested Development—", title: "\"Her?\"", description: "ß<br><br>You can't move any chess pieces onto your opponent's side until you've lost your queen." },
 
+                // { elo: 750, type: "—Arrested Development—", title: "\"Take a look at banner, Michael!\"", description: "ß<br><br>Start with |Na3| / ~Na6~, then rally the troops by parading your knight across the board. You can't develop any of your pieces until either your knight reaches the |h| file, or&nbsp;is&nbsp;captured." },
+                // { elo: 1000, type: "—Arrested Development—", title: "\"Take a look at banner, Michael!\"", description: "π<br><br>Start with |Na3| / ~Na6~, then rally the troops by parading your knight across the board. You can't develop any of your pieces until either your knight reaches the |h| file, or&nbsp;is&nbsp;captured." },
+                // { elo: 500, type: "—Arrested Development—", title: " ", description: "ß<br><br>You can't develop any pieces past the |3rd| / ~6th~ rank until after you've&nbsp;castled." },
+
+                // Baby, you got a stew going.
+                // No touching!
+                // Steve Holt!
+                // There are dozens of us. Dozens!
+                // And that's why you always leave a note.
+                // I'm afraid I just blew myself.
+                // There's always money in the banana stand.
+                // Oh Tobias, you blowhard.
+                // You can always tell a Milford man.
+                // Ooh look at all these parts!
+                // It's an illusion, Michael.
+                // Wow, we are just blowing through nap time.
+                // Heeeey, brother.
+                // Mr. Manager.
+                // You are now punished. I punish thee.
+                // Marry me.
+                // There's no I in Teamocil, at least not where you'd think.
+                // Your son is going to be all right.
+                // You must teach me the ways of the secular flesh.
+                // We're kids, we're supposed to work.
+                // You can always tell a Milford man.
+                // A darkish area, with points.
+                // Would a coward have THIS?
+                // Dr. Funke's 100% Natural Good Time Family Band Solution.
+                // If this scene I recreate, perhaps I can resnare my mate.
 
                 // Quest
                 { elo: 500, type: "—Quest—", title: "Pawn Eater", description: "π<br><br>You must capture all your opponent's&nbsp;pawns." },
-                { elo: 1000, type: "—Quest—", title: "The Preakness", description: "π<br><br>Get a knight to the |8th| / ~1st~ rank before turn&nbsp;30." },
-                { elo: 'Magnus', type: "—Quest—", title: "The Belmont Stakes", description: "π<br><br>Get a knight to the |8th| / ~1st~ rank and then back again before turn&nbsp;40." },
-                { elo: 250, type: "—Quest—", title: "Sniper!", description: "π<br><br>Put a bishop in the corner of the board by turn&nbsp;12." },
+                { elo: 1000, type: "—Quest—", title: "The Preakness", description: "ß<br><br>Get a knight to the |8th| / ~1st~ rank before turn&nbsp;30." },
+                { elo: 'Magnus', type: "—Quest—", title: "The Belmont Stakes", description: "ß<br><br>Get a knight to the |8th| / ~1st~ rank and then back again before turn&nbsp;40." },
+                { elo: 250, type: "—Quest—", title: "Sniper!", description: "ß<br><br>Put a bishop in the corner of the board by turn&nbsp;12." },
                 { elo: 500, type: "—Quest—", title: "Nerf a Knight", description: "ß<br><br>Put a knight in your corner of the board by turn&nbsp;15." },
 
                 { elo: 500, type: "—Quest—", title: "DIY", description: "ß<br><br>Castle by hand, getting your king to the left or right of a rook on the |1st| / ~8th~ rank before turn&nbsp;30." },
@@ -656,22 +746,20 @@
 
                 { elo: 500, type: "—Quest—", title: "Spawn Camper", description: "ß<br><br>Get 3 attacking pieces on the |7th| / ~2nd~ rank.</i>" },
                 { elo: 750, type: "—Quest—", title: "Spawn Camper", description: "π<br><br>Get 3 attacking pieces on the |7th| / ~2nd~ rank.</i>" },
-                { elo: 1000, type: "—Pawn Quest—", title: "Pawn Shot", description: "ß<br><br>Get check with a pawn." },
-                { elo: 'Magnus', type: "—Pawn Quest—", title: "Pawn Shot", description: "π<br><br>Get check with a pawn." },
 
                 { elo: 500, type: "—Quest—", title: "Martin For A Moment", description: "π<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour and then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;5&nbsp;turns.<br><br>After his 5 turns are up, you take&nbsp;over." },
                 { elo: 750, type: "—Quest—", title: "Martin For A Minute", description: "π<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour, then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;8&nbsp;turns.<br><br>After his 8 turns are up, you take&nbsp;over." },
                 { elo: 1000, type: "—Quest—", title: "I Am Become Martin, Destroyer&nbsp;Of&nbsp;Chances", description: "π<br><br>Open Chess.com and start a game against the bot Martin. Make him your colour, then let Martin either |begin the game| or ~respond to your opponent's moves~ for&nbsp;12&nbsp;turns.<br><br>After his 12 turns are up, you take&nbsp;over." },
 
-                { elo: 500, type: "—Quest—", title: "King Bolt", description: "ß<br><br>Run your king 2 moves in a row by turn&nbsp;7." },
-                { elo: 750, type: "—Quest—", title: "King van Niekerk", description: "ß<br><br>Run your king 3 moves in a row by turn&nbsp;9." },
-                { elo: 1000, type: "—Quest—", title: "King Kiptum", description: "ß<br><br>Run your king 4 moves in a row by turn&nbsp;12." },
-                { elo: 'Magnus', type: "—Quest—", title: "King Sorokin", description: "ß<br><br>Run your king 5 moves in a row by turn&nbsp;15." },
+                { elo: 500, type: "—Quest—", title: "King Bolt", description: "ß<br><br>Move your king 2 times in a row by turn&nbsp;8." },
+                { elo: 750, type: "—Quest—", title: "King van Niekerk", description: "ß<br><br>Move your king 3 times in a row by turn&nbsp;11." },
+                { elo: 1000, type: "—Quest—", title: "King Kiptum", description: "ß<br><br>Move your king 4 times in a row by turn&nbsp;15." },
+                { elo: 'Magnus', type: "—Quest—", title: "King Sorokin", description: "ß<br><br>Move your king 5 times in a row by turn&nbsp;15." },
 
-                { elo: 500, type: "—Quest—", title: "Queen Griffith-Joyner", description: "ß<br><br>Run your queen 3 moves in a row by turn&nbsp;5." },
-                { elo: 750, type: "—Quest—", title: "Queen Koch", description: "ß<br><br>Run your queen 4 moves in a row by turn&nbsp;7." },
-                { elo: 1000, type: "—Quest—", title: "Queen Assefa", description: "ß<br><br>Run your queen 5 moves in a row by turn&nbsp;10." },
-                { elo: 'Magnus', type: "—Quest—", title: "Queen Herron", description: "ß<br><br>Run your queen 7 moves in a row by turn&nbsp;12." },
+                { elo: 500, type: "—Quest—", title: "Queen Griffith-Joyner", description: "ß<br><br>Move your queen 3 times in a row by turn&nbsp;7." },
+                { elo: 750, type: "—Quest—", title: "Queen Koch", description: "ß<br><br>Move your queen 4 times in a row by turn&nbsp;9." },
+                { elo: 1000, type: "—Quest—", title: "Queen Assefa", description: "ß<br><br>Move your queen 5 times in a row by turn&nbsp;12." },
+                { elo: 'Magnus', type: "—Quest—", title: "Queen Herron", description: "ß<br><br>Move your queen 6 times in a row by turn&nbsp;15." },
 
                 { elo: 500, type: "—Quest—", title: "Tower", description: "ß<br><br>Stack four connected chess pieces on the |ƒ| file before turn 30." },
                 { elo: 750, type: "—Quest—", title: "Church Spire", description: "ß<br><br>Stack four connected chess pieces on the |ƒ| file before turn 30. The piece on top must be a&nbsp;bishop." },
@@ -686,12 +774,25 @@
                 { elo: 1000, type: "—Quest—", title: "Teutral Zone Trench", description: "ß<br><br>Occupy the entire |4th| / ~5th~ rank." },
                 { elo: 'Magnus', type: "—Quest—", title: "Infiltration Trench", description: "ß<br><br>Occupy the entire |5th| / ~4th~ rank." },
 
-                { elo: 500, type: "—Quest—", title: "Home Square", description: "ß<br><br>Make a square of chess pieces somewhere on the |3rd and 4th| / ~5th and 6th~ ranks." },
-                { elo: 750, type: "—Quest—", title: "Central Square", description: "ß<br><br>Make a square of chess pieces somewhere on the |4th and 5th| ranks." },
-                { elo: 1000, type: "—Quest—", title: "Square Over There", description: "ß<br><br>Make a square of chess pieces somewhere on the |5th and 6th| / ~3rd and 4th~ ranks." },
+                { elo: 500, type: "—Quest—", title: "Home Square", description: "ß<br><br>Make a square of chess pieces somewhere on the |3rd and 4th| / ~5th and 6th~&nbsp;ranks." },
+                { elo: 750, type: "—Quest—", title: "Central Square", description: "ß<br><br>Make a square of chess pieces somewhere on the |4th and 5th|&nbsp;ranks." },
+                { elo: 1000, type: "—Quest—", title: "Square Over There", description: "ß<br><br>Make a square of chess pieces somewhere on the |5th and 6th| / ~3rd and 4th~&nbsp;ranks." },
+
+                { elo: 500, type: "—Quest—", title: "Diagonal Dash", description: "ß<br><br>Move a bishop from one corner to the other before turn&nbsp;30." },
+                { elo: 750, type: "—Quest—", title: "Diagonal Dash", description: "π<br><br>Move a bishop from one corner to the other before turn&nbsp;30." },
+                { elo: 500, type: "—Quest—", title: "Full Send", description: "ß<br><br>Move a rook from one end of the board to the other before turn&nbsp;30." },
+                { elo: 750, type: "—Quest—", title: "Full Send", description: "π<br><br>Move a rook from one end of the board to the other before turn&nbsp;30." },
 
 
                 // Pawn Quests
+                { elo: 1000, type: "—Pawn Quest—", title: "Pawn Attack", description: "ß<br><br>Get check with a pawn." },
+                { elo: 'Magnus', type: "—Pawn Quest—", title: "Pawn Attack", description: "π<br><br>Get check with a pawn." },
+
+                { elo: 250, type: "—Pawn Quest—", title: "Pawn Walk", description: "ß<br><br>Get a pawn to the |6th| / ~3rd~ rank by move 40." },
+                { elo: 500, type: "—Pawn Quest—", title: "Pawn Jog", description: "ß<br><br>Get a pawn to the |6th| / ~3rd~ rank by move 30." },
+                { elo: 750, type: "—Pawn Quest—", title: "Pawn Race", description: "ß<br><br>Get a pawn to the |6th| / ~3rd~ rank by move 25." },
+                { elo: 1000, type: "—Pawn Quest—", title: "Pawn Sprint", description: "ß<br><br>Get a pawn to the |6th| / ~3rd~ rank by move 20." },
+
                 // { elo: 500, type: "—Pawn Quest—", title: "Shaggy and Scooby", description: "π<br><br>Get two connected pawns to the |5th|&nbsp;/&nbsp;~4th~&nbsp;rank." },
                 // { elo: 750, type: "—Pawn Quest—", title: "Thelma and Louise", description: "π<br><br>Get two connected pawns to the |6th|&nbsp;/&nbsp;~3rd~&nbsp;rank." },
                 // { elo: 750, type: "—Pawn Quest—", title: "Sam and Frodo", description: "π<br><br>Get two connected pawns to the |7th|&nbsp;/&nbsp;~2nd~&nbsp;rank." },
@@ -735,7 +836,7 @@
                 // Opening Quest
                 { elo: 500, type: "—Opening Quest—", title: "Out Of Book", description: "π<br><br>Create a four-move opening that you think has never been played before. Then name&nbsp;that&nbsp;opening." },
 
-                { elo: 250, type: "—Opening Quest—", title: "Double Diagonals", description: "π<br><br>Fianchetto both bishops to |b2 and g2| / ~b7 and g7~." },
+                { elo: 250, type: "—Opening Quest—", title: "Double Diagonals", description: "π<br><br>Fianchetto both bishops to |b2 and g2| / ~b7 and g7~ by turn&nbsp;7." },
 
                 { elo: 500, type: "—Opening Quest—", title: "Negative Nancy", description: "π<br><br>You must be down <i>at least</i> a pawn by move 5, and keep a minimum 1 point material deficit for the rest of&nbsp;the&nbsp;game." },
                 { elo: 750, type: "—Opening Quest—", title: "In The Red", description: "π<br><br>You must sacrifice <i>at least</i> a knight or bishop by move 5, and keep a minimum 2 point material deficit for the rest of&nbsp;the&nbsp;game." },
@@ -886,9 +987,9 @@
 
 
                 // Multi-Rules
-                { elo: 500, type: "—Multi-Rule—", title: "Habits Brah Lvl 3", description: "π<br><br>Obey the following habits rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No gambits.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No sacrifices.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Castle early (but not ASAP).</li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Once finished development, create an escape square for the king.</li></ul>" },
-                { elo: 750, type: "—Multi-Rule—", title: "Habits Brah Lvl 2", description: "π<br><br>Obey the following habits rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No gambits.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No sacrifices.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Can only premove when under 10 seconds.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Pawns always capture towards the centre.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Castle early (but not ASAP).</li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Once finished development, create an escape square for the king.</li></ul>" },
-                { elo: 1000, type: "—Multi-Rule—", title: "Habits Brah Lvl 1", description: "π<br><br>Obey the following habits rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No pre-moves.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No tactics.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No gambits.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No sacrifices.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Pawns always capture towards the centre.</li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Always capture pieces of equal or greater value.</li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Castle as soon as possible.</li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Once finished development, create an escape square for the king.</li></ul>" },
+                { elo: 500, type: "—Multi-Rule—", title: "Habits Brah Lvl 3", description: "π<br><br>Obey the following habits rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No gambits.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No sacrifices.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Castle early (but not ASAP).</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Once finished development, create an escape square for the king.</li></ul>" },
+                { elo: 750, type: "—Multi-Rule—", title: "Habits Brah Lvl 2", description: "π<br><br>Obey the following habits rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No gambits.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No sacrifices.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Can only premove when under 10 seconds.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Pawns always capture towards the centre.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Castle early (but not ASAP).</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Once finished development, create an escape square for the king.</li></ul>" },
+                { elo: 1000, type: "—Multi-Rule—", title: "Habits Brah Lvl 1", description: "π<br><br>Obey the following habits rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No pre-moves.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No tactics.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No gambits.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;No sacrifices.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Pawns always capture towards the centre.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Always capture pieces of equal or greater value.</li><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Castle as soon as possible.</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Once finished development, create an escape square for the king.</li></ul>" },
 
                 { elo: 500, type: "—Multi-Rule—", title: "Smorgasbord", description: "π<br><br>Obey the following two rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;¡</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;¡</li></ul>" },
                 { elo: 500, type: "—Multi-Rule—", title: "Mish-Mash", description: "π<br><br>Obey the following two rules:<br><br><ul><li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;¡</li><li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;¡</li></ul>" },
