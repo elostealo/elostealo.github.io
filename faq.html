@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>FAQ</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div id="header">
+            <h1><a href="index.html" class="header-link">Elo Stealo</a></h1>
+            <p id="description">Stupid rules for fairer chess.</p>
+        </div>
+        <div id="content">
+            <div id="output">
+                <p><span id="type"></span></p>
+                <p class="title"><span id="title"></span></p>
+                <p><span id="lineDescription"></span></p>
+            </div>
+        </div>
+        <script>
+            // Set initial content for #lineDescription when the page loads
+            window.onload = function () {
+                const initialText =
+                    "<span class='title'>FAQ</span><br><br><br><ul>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>So what is this exactly?</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Elo Stealo is a collection of new rules, restrictions, and quests that fit neatly on top of the existing rules of chess. They make games between mismatched opponents more fun and rewarding, so that the stronger player is forced to play their best instead of deciding when to cut their opponent some slack, and the weaker player has a shot to win on their own&nbsp;merit.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>What makes this better than time or piece&nbsp;odds?</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;It's mostly meant for variety, and to give new and surprising challenges to throw off the stronger player's&nbsp;game.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>What if I don't know my&nbsp;Elo?</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;You just need to have a rough idea, it's not an exact science. In fact, it's not a science at&nbsp;all.</li><br><br>" +
+                    '<li><span class=\'featureDark\'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>What do "Secret" and "Public"&nbsp;mean?</i></li>' +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;If a rule is secret, you keep it to yourself. If it's public, you share it with your opponent. Public usually provides more challenge, because now your opponent can play into your new&nbsp;rules.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>Is this meant for OTB or online?</i></li>" +
+                    '<li><span class=\'featureLight\'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Both! OTB mode will include both "Secret" and "Public" rulesets, while Online just uses "Public" ones. Note that most online chess sites have rules against sandbagging (losing on purpose), so you might want to keep it to unrated&nbsp;games.</li><br><br>' +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>What happens if I don't like the rule I&nbsp;get?</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Try again! There are no rules. Except the rules, which are&nbsp;rules.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>If a rule changes how a piece moves, can it still check and pin like&nbsp;usual?</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Yes and no. If it's a secret rule, then as far as your opponent knows, it's still the same piece it always was and acts accordingly. If it's public, then the new rules dictate how the situation should play&nbsp;out.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>Do I really have to resign if I can't finish my&nbsp;quest?</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;It's up to you and your opponent if you want to just keep playing. But I would decide beforehand so it doesn't come to blows. That's chess boxing. Different&nbsp;sport.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>What if my rule needs me to make an illegal move?</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Don't. Just follow it as best you can.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>Some of these are too easy&nbsp;/&nbsp;hard.</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Probably. The balancing is very tricky, as what works for a 1200 vs. 950 won't work for a 2200 vs. 1950. If any rules are <i>really</i> off, please let me&nbsp;know.</li><br><br>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;<i>Some of these are impossible.</i></li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Probably. I'm not the greatest chess player, so there are likely a bunch that sound fun in my head, but are more or less guaranteed losses. Again, let me know if you find&nbsp;any.</li><br><br>" +
+                    "</ul>";
+
+                const lineDescription =
+                    document.getElementById("lineDescription");
+
+                // Set the initial text content with formatting
+                lineDescription.innerHTML = initialText;
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Changelog</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div id="header">
+            <h1><a href="index.html" class="header-link">Elo Stealo</a></h1>
+            <p id="description">Stupid rules for fairer chess.</p>
+        </div>
+        <div id="content">
+            <div id="output">
+                <p><span id="type"></span></p>
+                <p class="title"><span id="title"></span></p>
+                <p><span id="lineDescription"></span></p>
+            </div>
+        </div>
+        <script>
+            // Set initial content for #lineDescription when the page loads
+            window.onload = function () {
+                const initialText =
+                    "<span class='title'>Changelog</span><br><br><br><ul>" +
+                    "<br><i>—November 30th, 2023—</i><br><br><ul>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Colours now match common Lichess boards.</li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added another hundred-ish rules.</li>" +
+                    "</ul><br>" +
+                    "&zwnj;<br><i>—November 24th, 2023—</i><br><br><ul>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added a FAQ. Or is it an FAQ?</li>" +
+                    "</ul><br>" +
+                    "<br><i>—November 22nd, 2023—</i><br><br><ul>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added a changelog.</li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;New Over-the-Board / Online toggle turns off Public tasks, so you can play online without having to explain the concept to strangers.</li>" +
+                    "<li><span class='featureDark'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Added Multi-Rules of random smaller challenges.</li>" +
+                    "<li><span class='featureLight'>&#x25A0;</span>&nbsp;&nbsp;&nbsp;Redesigned MCBs (Much Cooler Buttons) are 92% more fun to press.</li>" +
+                    "</ul>";
+
+                const lineDescription =
+                    document.getElementById("lineDescription");
+
+                // Set the initial text content with formatting
+                lineDescription.innerHTML = initialText;
+            };
+        </script>
+    </body>
+</html>
